@@ -120,11 +120,11 @@
           <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="images/logo.png"/></a>
           <nav class="mastnav font2">
             <ul>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" class="main-nav-link" href="#">intro</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href="#">portfolio</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" class="main-nav-link" href="#">pages</a></li>
-              <li><a class="ajax-link" href="project01.html">project</a></li>
-              <li><a target="_blank" href="http://themeforest.net/user/designova/portfolio">HI theme</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" class="main-nav-link" href="#">About</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Projects</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" class="main-nav-link" href="#">Process</a></li>
+              <li><a class="ajax-link" href="project01.html">Resume</a></li>
+              
             </ul>
           </nav>
       </div>
@@ -264,9 +264,9 @@
                       <p class="center"> Web Developer - Musician - Reocrding Eingineer - Nature Enthusiast - Kayak Owner </p>
                       <br>
                       <ul class="center">
-                          <i class="fas fa-map-marker-alt fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                          <i class="fas fa-map-marker-alt fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                          <i class="fas fa-map-marker-alt fa-2x"></i>
+                          <i class="fab fa-linkedin fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fab fa-github fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fab fa-facebook-square fa-2x"></i>
                       </ul>
                       <br>
                       
@@ -277,7 +277,9 @@
 
               <!-- start : works-item -->
               <div class="works-item works-item-two-third-spaced zoom about spcolor1 sppad ">
-              <h3 class="sppad" > About </h3>
+
+              
+              <h4 class="sppad"> About </h4>
               <p class="sppad"> Farmer bicycle partner trinity park bay 7 community northgate park the state of things slow-food herald sun, plaid the eleanor dino trail geer street duke the west end nc central scrap exchange, coffee subaru sustain-a-bull american tobacco triangle localista dapper seventy the indy. Erwin square herald sun nasher lakewood full frame watts-hillandale farmer's market, five points bouncing bulldogs authentic vest west village the indy, the bulls old five points southpoint cleveland holloway old west. Gritty french press major the bull the state of things arm wrestling fixie miami boulevard, scooter main street bimbe science and math brick, seventy fixie history hub nccu durham mag. </p> 
                       {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/02.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/02.jpg">
@@ -287,13 +289,13 @@
                           </div>
                       </a> {% endcomment %}
 
-                 <div class="sppad">
+                       <ul class="center">
+                          <p> <i class="fas fa-envelope fa-2x" ></i>  &nbsp; Get in Touch </p>
+                          
+                          
+                      </ul>
 
-                 
-
-
-
-                 </div>      
+                     
 
 
 
@@ -302,51 +304,62 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom branding about ">
-              <p>  UI/UX </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/03.jpg"/>
+              <div class="works-item works-item-one-third-spaced zoom branding about spcolor1 ">
+              <h4 class="sppad"> Back End Dev </h4>
+              <p class="sppad"> Farmer bicycle partner trinity park bay 7 community northgate park the state of things slow-food herald sun, plaid the eleanor dino trail geer street duke the west end nc central scrap exchange, coffee subaru sustain-a-bull american tobacco triangle localista dapper seventy the indy. Erwin square herald sun nasher lakewood full frame watts-hillandale farmer's market, five points bouncing bulldogs authentic vest west village the indy, the bulls old five points southpoint cleveland holloway old west. Gritty french press major the bull the state of things arm wrestling fixie miami boulevard, scooter main street bimbe science and math brick, seventy fixie history hub nccu durham mag. </p>
+              
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/03.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/03.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
-                      </a>
+                      </a> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
           <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom about">
-              <p>  Front End Dev  </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/04.jpg"/>
+              <div class="works-item works-item-one-third-spaced zoom about spcolor1">
+              <h4 class="sppad"> Front End Dev </h4>
+              <p class="sppad"> Farmer bicycle partner trinity park bay 7 community northgate park the state of things slow-food herald sun, plaid the eleanor dino trail geer street duke the west end nc central. Farmer bicycle partner trinity park bay 7 community northgate park the state of things slow-food herald sun, plaid the eleanor dino trail geer street duke the west end nc central. Farmer bicycle partner trinity park bay 7 community northgate  </p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/04.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/04.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
-                      </a>
+                      </a> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom about">
-              <p>  Back End Dev </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/05.jpg"/>
+              <div class="works-item works-item-one-third-spaced zoom about spcolor1">
+              <h4 class="sppad"> UI / UX </h4>
+              <p class="sppad"> Farmer bicycle partner trinity park bay 7 community northgate park the state of things slow-food herald sun, plaid the eleanor dino trail geer street duke the west end nc central. Farmer bicycle partner trinity park bay 7 community northgate park the state of things slow-food herald sun, plaid the eleanor dino trail geer street duke the west end nc central. Farmer bicycle partner trinity park bay 7 community northgate  </p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/05.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/05.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
-                      </a>
+                      </a> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
 
 
 
+
+
+
+
+
+
+
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui">
+              <div class="works-item works-item-one-third-spaced zoom ">
               <p>  UI Approach 1 </p>
                       <img alt="" title="" class="img-responsive" src="static/images/photography/07.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/07.jpg">
@@ -361,7 +374,7 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom logos ui">
+              <div class="works-item works-item-one-third-spaced zoom logos ">
               <p>  UI Approach 2 </p>
               
               
@@ -378,7 +391,7 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui">
+              <div class="works-item works-item-one-third-spaced zoom ">
               <p>  UI Approach 3 </p>
                       <img alt="" title="" class="img-responsive" src="static/images/photography/06.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/06.jpg">
@@ -394,7 +407,7 @@
 
 
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui">
+              <div class="works-item works-item-one-third-spaced zoom ">
               <p>  UI Approach 4 </p>
                       <img alt="" title="" class="img-responsive" src="static/images/photography/09.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/09.jpg">
@@ -409,7 +422,7 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced ui">
+              <div class="works-item works-item-one-third-spaced">
               <p>  UI Approach 5 </p>
                       <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
@@ -423,15 +436,122 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui">
-              <p>  UI Approach 6 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <article class="text-left news-sidebar">
+              <br>
+                <h3 class="font2 dark">  <i class="fas fa-book "></i>&nbsp;&nbsp;Analysis</h3>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
-                      </a>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <article class="text-left news-sidebar">
+              <br>
+                <h3 class="font2 dark">  <i class="fas fa-edit"></i>&nbsp;&nbsp;Card Sorting</h3>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <article class="text-left news-sidebar">
+              <br>
+                <h3 class="font2 dark">  <i class="far fa-object-group"></i>&nbsp;&nbsp; Visual Design </h3>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+               <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <article class="text-left news-sidebar">
+              <br>
+                <h3 class="font2 dark">  <i class="fas fa-code"></i> &nbsp;&nbsp;Front End Development </h3>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+               <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <article class="text-left news-sidebar">
+              <br>
+                <h3 class="font2 dark"> <i class="fas fa-users"></i>&nbsp;&nbsp;User Testing</h3>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+               <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <article class="text-left news-sidebar">
+              <br>
+                <h3 class="font2 dark">  <i class="fas fa-redo-alt"></i> &nbsp;&nbsp;Iteration</h3>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
@@ -512,6 +632,9 @@
                       </a>
               </div>
               <!-- end : works-item -->
+
+
+              
 
 
 
