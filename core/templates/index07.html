@@ -63,7 +63,7 @@
 
   
 <!-- mobile only navigation : starts -->
-<nav class="mobile-nav">
+{% comment %} <nav class="mobile-nav">
             <ul class="slimmenu">
               <li>
                   <a class="sub-collapser" href="">home</a>
@@ -106,7 +106,7 @@
               <li><a class="ajax-link" href="project01.html">project</a></li>
               <li><a target="_blank" href="http://themeforest.net/user/designova/portfolio">HI theme</a></li>
             </ul>
-</nav>
+</nav> {% endcomment %}
 <!-- mobile only navigation : ends -->
 
 
@@ -117,15 +117,21 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="images/logo.png"/></a>
+          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a>
           <nav class="mastnav font2">
-            <ul>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" class="main-nav-link" href="#">About</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Projects</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" class="main-nav-link" href="#">Process</a></li>
-              <li><a class="ajax-link" href="project01.html">Resume</a></li>
+            <ul class="works-filter">
+              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="#">About</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href=  "#" >Projects</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Design Process</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
+              {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Link</a></li> {% endcomment %}
               
             </ul>
+            
+
+
           </nav>
       </div>
     </div>
@@ -134,14 +140,14 @@
           
     <div class="sticky-icons">
         <ul>
-            <li><a class="fullscreen-toggle" href="#"><img alt="" title="" src="images/prev.svg"/></a></li>
+            <li><a class="fullscreen-toggle" href="#"><img alt="" title="" src="static/images/prev.svg"/></a></li>
         </ul>
     </div>
   </header>
 
 
   <!-- sub navigation panel : starts -->
-  <section class="sub-nav-wrap fullheight dark-bg white font2">
+  {% comment %} <section class="sub-nav-wrap fullheight dark-bg white font2">
             <div class="valign">
 
 
@@ -181,7 +187,7 @@
               </ul>
 
             </div>
-  </section>
+  </section> {% endcomment %}
   <!-- sub navigation panel : ends -->
 
 
@@ -251,11 +257,11 @@
               <br>
               <br>
                       <img alt="" title="" class="img-responsive imgcenter" width="50%" src="static/images/photography/sam.png"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/sam.png">
-                          <div class="works-item-inner">
+                      {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/sam.png"> {% endcomment %}
+                          {% comment %} <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
-                          </div>
+                          </div> {% endcomment %}
                       </a>
                       <br>
                       <h1 class="center"> Sam LoCascio </h1>
@@ -434,6 +440,70 @@
               </div>
               <!-- end : works-item -->
 
+               <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui ">
+              <article class="text-left news-sidebar">
+              <br>
+                <h2 class="font2 dark">  Design Process</h2>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui ">
+              <article class="text-left news-sidebar">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br> 
+                      <br> 
+                      
+                      
+                
+            </article>
+              
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui ">
+              <article class="text-left news-sidebar">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>    
+                      <br> 
+                      
+
+            </article>
+              
+              
+              </div>
+              <!-- end : works-item -->
+             
+              
+
+
+
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
@@ -556,8 +626,93 @@
               <!-- end : works-item -->
 
               <!-- start : works-item -->
+              <div class="works-item works-item-full-width zoom ui ">
+              <article class="text-left news-sidebar">
+                <ul class="works-filter">
+                  <li class="trigger-sub-nav"><a  data-filter=".about"  href="#"> Back </a></li>
+                
+                {% comment %} <h4 class="font2 dark"> <a  data-filter=".about"  href="#"> <i class="fas fa-angle-left"></i> &nbsp;&nbsp;Back</a></h4> {% endcomment %}
+                </ul>
+                
+            </article>
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p> {% endcomment %}
+                      
+              </div>
+              <!-- end : works-item -->
+
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar">
+              <br>
+                <h2 class="font2 dark">  Projects </h2>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br> 
+                      
+                      
+                      
+                
+            </article>
+              
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>    
+                      
+                      
+
+            </article>
+              
+              
+              </div>
+              <!-- end : works-item -->
+             
+              
+
+
+
+
+
+
+
+
+              <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project">
-              <p>  Project 1 </p>
+              
                       <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
                           <div class="works-item-inner">
@@ -565,6 +720,8 @@
                             <p><span class="dark font4">Caption</span></p>
                           </div>
                       </a>
+                      <h3>  The Little Triangle </h3>
+                      <p>  Full Stack Developer  </p>
               </div>
               <!-- end : works-item -->
 
@@ -610,8 +767,8 @@
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project">
               <p>  Project 5 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+                      <img alt="" title="" class="img-responsive" src="static/images/photography/oak.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/oak.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
@@ -654,7 +811,7 @@
   <footer class="mastfoot container-fluid white-bg">
     <div class="row">
           <article class="credits col-md-6">
-              <p class="font4 dark">Copyright &copy; 2015 <a target="_blank" href="http://wwww.designova.net">Designova</a>.<br/><a target="_blank" href="http://themeforest.net/user/designova/portfolio">Buy this template</a></p>
+              <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > sloc design </a></p>
           </article>
           <ul class="foot-social col-md-6 text-right">
             <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
