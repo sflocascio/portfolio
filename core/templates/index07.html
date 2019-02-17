@@ -126,7 +126,7 @@
               <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
               {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
-              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Link</a></li> {% endcomment %}
+               <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'elements' %}">Link</a></li> 
               
             </ul>
             
@@ -354,6 +354,7 @@
               </div>
               <!-- end : works-item -->
 
+              
 
 
 
@@ -364,6 +365,8 @@
 
 
 
+
+{% comment %} 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom ">
               <p>  UI Approach 1 </p>
@@ -438,7 +441,7 @@
                           </div>
                       </a>
               </div>
-              <!-- end : works-item -->
+              <!-- end : works-item --> {% endcomment %}
 
                <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom ui ">
@@ -671,7 +674,8 @@
                       <br>
                       <br>
                       <br>
-                      <br> 
+                      <br>
+                       
                       
                       
                       
@@ -691,7 +695,8 @@
                       <br>
                       <br>
                       <br>
-                      <br>    
+                      <br>
+                           
                       
                       
 
@@ -713,9 +718,39 @@
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project">
               
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
+                      <img alt="" title="" class="img-responsive" src="static/images/photography/flashcard.png"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
                           <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  Quizzer </h3>
+                      <p>  Full Stack Developer  </p>
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="static/images/photography/chant1.png"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  CHANT </h3>
+                      <p>  Full Stack Developer  </p>
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="static/images/photography/tlt.png"/>
+                      {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg"> {% endcomment %}
+                          <a href="{% url 'post' %} "> <div class="works-item-inner"> 
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
@@ -727,66 +762,47 @@
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project">
-              <p>  Project 2 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
+              
+                      <img alt="" title="" class="img-responsive" src="static/images/photography/itunes.png"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
                       </a>
+                      <h3>  Itunes Seacrh </h3>
+                      <p>  Front End Design </p>
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project">
-              <p>  Project 3 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
-              <p>  Project 4 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
-              <p>  Project 5 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/oak.jpg"/>
+              
+                      <img alt="" title="" class="img-responsive" src="static/images/photography/way.png"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/oak.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
                       </a>
+                      <h3>  Wayfinder </h3>
+                      <p>  Front End Design </p>
+                      
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project">
-              <p>  Project 6 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
+              
+                      <img alt="" title="" class="img-responsive" src="static/images/photography/oak.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
                           <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
                             <p><span class="dark font4">Caption</span></p>
                           </div>
                       </a>
+                      <h3>  The Oak House  </h3>
+                      <p>  Front End Design </p>
               </div>
               <!-- end : works-item -->
 

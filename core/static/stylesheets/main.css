@@ -41,6 +41,19 @@
   
 }
 
+.sppic{
+  display: inline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sppic2{
+  display: inline;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
 /*  End Sams Classes  */
 
 

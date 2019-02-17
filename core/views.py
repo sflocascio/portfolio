@@ -8,3 +8,7 @@ def index (request):
 
 def post (request):
     return render(request, 'post.html')
+
+
+def elements (request):
+    return render(request, 'elements.html')

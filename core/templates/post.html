@@ -63,7 +63,7 @@
 
   
 <!-- mobile only navigation : starts -->
-<nav class="mobile-nav">
+{% comment %} <nav class="mobile-nav">
             <ul class="slimmenu">
               <li>
                   <a class="sub-collapser" href="">home</a>
@@ -106,7 +106,7 @@
               <li><a class="ajax-link" href="project01.html">project</a></li>
               <li><a target="_blank" href="http://themeforest.net/user/designova/portfolio">buy theme</a></li>
             </ul>
-</nav>
+</nav> {% endcomment %}
 <!-- mobile only navigation : ends -->
 
 
@@ -119,13 +119,19 @@
       <div class="inner">
           <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="images/logo.png"/></a>
           <nav class="mastnav font2">
-            <ul>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" class="main-nav-link" href="#">intro</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href="#">portfolio</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" class="main-nav-link" href="#">pages</a></li>
-              <li><a class="ajax-link" href="project01.html">project</a></li>
-              <li><a target="_blank" href="http://themeforest.net/user/designova/portfolio">buy theme</a></li>
+
+
+          <ul >
+              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">Abouuut</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href=  "#" >Projects</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Design Process</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
+              {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Link</a></li> {% endcomment %}
+              
             </ul>
+            
           </nav>
       </div>
     </div>
@@ -139,7 +145,7 @@
     </div>
   </header>
 
-
+{% comment %} 
   <!-- sub navigation panel : starts -->
   <section class="sub-nav-wrap fullheight dark-bg white font2">
             <div class="valign">
@@ -182,7 +188,7 @@
 
             </div>
   </section>
-  <!-- sub navigation panel : ends -->
+  <!-- sub navigation panel : ends --> {% endcomment %}
 
 
   <section class="sticky-sidebar white-bg fullheight text-center">
@@ -214,37 +220,265 @@
     <section class="sub-wrap pad-top-half pad-bottom-half">
         <div class="container">
           <div class="row">
-            <article class="col-md-8 text-left news-post">
-                <h1 class="font2 dark">a simple template, minimal design &amp; practical layout</h1>
+            <article class="col-md-12 text-left news-post">
+                <h1 class="font2 dark"> The Little Triangle </h1>
                 <div class="liner color-bg"></div>
-                <h5 class="font4 grey">22 Dec, 2014 / By Admin</h5>
-                <img alt="" title="" class="img-responsive add-bottom-quarter" src="images/news/post/01.jpg"/>
-                <p class="font4">Everyone here has the sense that right now is one of those moments when we are influencing the future. Design is not just what it looks like and feels like. Design is how it works When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something.It seemed obvious to them after a while. That's because they were able to connect experiences they've had and synthesize new things. <br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, massa congue laoreet commodo, sem neque feugiat dui, faucibus congue diam purus accumsan libero. Sed non mauris in justo gravida malesuada nec ac tellus. Ut id eleifend justo. Suspendisse dignissim ligula lorem, vel varius ipsum convallis quis. In lobortis dui a elit sodales tincidunt ac tempus dolor. Suspendisse potenti. Fusce vehicula sagittis semper. Cras ligula mauris, vestibulum auctor leo et, feugiat fermentum ante. Mauris ultrices ex eget pretium pellentesque. Ut a felis vitae est tincidunt lacinia. Aenean posuere lobortis suscipit. Nulla nisi tortor, elementum et arcu congue, hendrerit facilisis leo.</p>
+                <h5 class="font4 grey"> a web app built to offer parents in North Carolina’s Triangle Region a platform to discover, review, and gain valuable insights about the best activities, camps, and businesses in their area. </h5>
+                
+
+
+
+
+                <div class="row add-top-quarter add-bottom-quarter">
+            <article class="text-center col-md-12">
+              <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
+  <!-- Overlay -->
+  {% comment %} <div class="overlay"></div> {% endcomment %}
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides slide-1 active">
+    </div>
+    <div class="item slides slide-2">
+    </div>
+    <div class="item slides slide-3">
+    </div>
+  </div> 
+</div>
             </article>
-            <article class="col-md-4 text-left news-sidebar">
-                <h3 class="font2 dark">recent posts</h3>
+          </div>
+
+          <h3 class="font2 dark"> The Problem  </h3>
                 <div class="liner color-bg"></div>
-                <ul class="font4 dark">
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                </ul>
-                <h3 class="font2 dark">popular posts</h3>
-                <div class="liner color-bg"></div>
-                <ul class="font4 dark">
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                  <li><a href="post.html">Lorem ipsum dolor sit amet elit</a></li>
-                </ul>
-                <div class="post-tags">
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">creative</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">design</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">modern</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">simple</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">minimal</a>
+
+                  <p class="font4">All parents have faced it. You see a new exciting camp, class, or activity out there and you want to sign your kid up for it. It seems like a great idea but once you start going through the registration process these questions come to mind :  
+                    <br>
+                    <br>
+                  Is it safe? Is it worth the money? Is it worth the time? 
+                    <br>
+                    <br>
+                  The concept for the little Triangle was created by such a parent, seeking  to give parents in her region a voice and platform for sharing insights about these important things. .
+                  </p>
+
+              <div class=" add-top-half">
+                <article class="services-item">
+                  <i class="ion-social-buffer color"></i>
+                    <h4 class="font2 black">Discovery</h4>
+                        <ul class="font4">
+                              <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                              <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                        </ul> 
+                       <p class="font4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, massa congue laoreet commodo.</p>
+                </article>
+              </div>
+
+
+
+
+
+              
+
+              <div class=" add-top-half">
+                <article class="services-item">
+                  <i class="ion-social-buffer color"></i>
+                    <h4 class="font2 black">Ideation</h4>
+                     <p class="font4"> with a clear need for the product, my team set out to deliver the best product we coule </p> 
+                     <img class="sppic center " alt="" title="" width="65%" src="https://lh3.googleusercontent.com/vz-tIsuUKNZvcEB4AwyEGYMbfN-hI1xw0II5gT7qoeVOil5oeeIrA3un4zta7uXpJEYgIIwjeI8owXMxJwU5G6IlruC--of8I1xEmhIS87Kap-e6e-ay2_wtUcQITjenf7cssqfFl_IAppAlE1qhYrC1TOnxIyzXIkHsgusY_sxIXtoUtLLFXkT5QxTGyIi78be5Q0Ql-_caHutiZE-QTV5NCDPzQUyxa8qEWnI9OyFN0fZbmfJmqa9_xtbdUq8BFolPgJ-r6kC47ia5iNC01xG_EQzK2nxbhS2T9zIlCtn9LteA7l-4Y3wafsq40LYjpcZUTW-rLQ2lBbf8R0m-eI_0n8u2LEtUL4IIaXXKcZKIEFEQdj5O27Fy0Urwod1T9FwDsVkzAGF4rccMyGaF3gcAy9s7ezT3ue35E_0FZqU_2Zbw068ESExrz8dLvECfTqL_mXdI7ZpXzAlcJiWSqNEfjl4Og2SvJiVenAe4fdm10i1vR4d1CdlFQJRmLSctOrjI7yyeqqtwn0RulVvnZEkL9b90ZJeiSxjwzp2HvdZv0TB_158ErCVnk3k4yvT9jv_HC8rRPhjzKJwt_84azZzVJ8VTrDFe-hFAPXLA7Sqz_8x5-01SBvF_OledIKaeA1yvxWrwP5oqflQgOm666h6_nkh4M_Q=w675-h663-no"/>
+                     <img class="sppic center " alt="" title="" width="34%" src="https://t4.ftcdn.net/jpg/02/17/73/35/500_F_217733540_iJOHXVdw3zYyhkyjUOwfDP7twkize47D.jpg"/>
+                     <br>
+                     <br>
+                     <br>
+                    
+                     <ul class="font4">
+                              <li> User Stories : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                              <li> WireFrames :  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                              <li> Mockups:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                        </ul>
+
+                        <img class="img-responsive sppic2 imgcenter" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/Qnwkpd15aTP8Z20KLX8q2j6KIeXWOg20yEloHgsIeiKbJ6nTQjn2vNM9XeEOc0IWK1j8QmTVo0CKH75sORsQDMBxbZVKg0fJjtsAEBVhn0y9ozzDR8YYxKk7Z1e4owWMKh35nAX1XBPyTNhg95vp38yz1z1_liYvx8PmqJcoxxiA_qdpIBMsNqz6XmFdfEwHEcuHLyuO8_m8ihAPu1Hy93TEN_qus_2Yzdk8n2diIR0fRFfSL00Ra2dZfVAdHbTuP8J2LSN2PTpS7Jg_FMsYjaAmpFcMogPkAhwLHyhJMa8uJfAV5W5K1wrmmN75SvaikmquMgM5MTWpJ7JFD_63QzSsltda1l4kdaw_mgH7l0ShPXH06zd2f7NU1GzZBlis4eHlezhVgIRAhVaFYMugoPaEmacY2pdtBIjp4Y-x1kCxE8CMwKR09RxdB3bq-4Kh74nLmgp_5FCfia7Irna_GmNB522l5GyXtU48LJ3AkXFOP7uvvQl1NWAJrd7WfgwMuhoSaoT2a9g8TI9F7do1xOtJm1A-ZXqoSkpTr338Ft7KKCNUP7QGuBIklaVWj9b798IeVSxSO8kffSc_k2zLnjBnMdOT0xHi97kCvMCjxFVqcT4bcYrLFmmhlC8jewQMUdsQ2XBXKF7PAfZZne9vSqu80zJgJEA=w499-h974-no"/>
+                        <img class="img-responsive sppic2 imgcenter" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/50FKqpnpGAOCZlOHq72FRLAfz8xHZHSZw5aWbw5LIgjbxvEVdnS7Y8jjXWY0CONFwzi4bL2Bd-CmOeLHLRW7EhN6sRxXA11oMmhsSmqLktObeCWX6oN--vRHtqKBah3lMohY3NBK_d_CqdROvXzO_9_JH-q4npLTEvj5yqHE_7pJ5zFrsCoY2QEbEUiP1hNshwuFco4sUnqDnxWelxZ-tQSD50iVD2Fmlw3GnZbxIUQWfj-eRJQQgIQt7Q5-bMdI5fdS0Ob17yVfSqkJCfK8UZy81bOlF1aijE7qknocN_N8sX9zm8wQHzLhvNIw3BiQnSgdjvGuTxbhWRJXBQuP7oQuDEbCUZ8u-N77tBGPLyeFKe9paxCWgyF_eFepJzi2Yp1PCT3SvHbiBKDqi8lYEo6nGPDY7IPffwhb0h1lX0KsZNaurnKziT3rNT3v_KCzADgB_CmNH8Ni9NisF49k4dsfCc9U9RLLc3IQc4a_6J3KDrt-Zqz-FWDSbaJwhpfMYAcaQtyULhNM2gx6cQAtkIYNX1mCEk5pAn5Xgu2X0Mu8o5um5Nhi4kzGdLFtizplq-JL7V4nQJ7JJZQYN1fkU-XDLH1vqrusFlhJsaJMzjqbgjfp8G4fhs1_ew6xXWvNxg9Lby7mrAF74_Hn4QRlkKoJL2HjClk=w499-h974-no"/>
+{% comment %} 
+                    <div class="row add-top-quarter add-bottom-quarter">
+                      <article class="text-center col-md-12">
+                        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
+            <!-- Overlay -->
+            
+          
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#bs-carousel" data-slide-to="1"></li>
+              <li data-target="#bs-carousel" data-slide-to="2"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item slides slide-1 active">
+              </div>
+              <div class="item slides slide-2">
+              </div>
+              <div class="item slides slide-3">
+              </div>
+            </div> 
+          </div>
+                      </article>
+                    </div> {% endcomment %}
+
+                    <!-- Working Carosel  -->
+            <!-- <article class="text-center col-md-15">
+                  <div class="carousel slide" id="myCarousel">
+          <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
                 </div>
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a class="" href="#"><img data-no-retina alt="" title=""  src="http://fioextremadura.es/wp-content/uploads/placeholder-blue-800x600px.png" class="img-responsive"></a></div>
+                </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+            </article> -->
+            <!-- End Working Carosel  -->
+          
+
+
+                        
+                       <p class="font4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, massa congue laoreet commodo.</p>
+                </article>
+              </div>
+
+
+
+              <div class=" add-top-half">
+                <article class="services-item">
+                  <i class="ion-social-buffer color"></i>
+                    <h4 class="font2 black">Challeneges</h4>
+                        <!-- <ul class="font4">
+                              <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                              <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                        </ul>  -->
+                       <p class="font4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, massa congue laoreet commodo.</p>
+
+                       <img class="sppic" alt="" title="" width="100%" src="https://lh3.googleusercontent.com/NhB6iNq9GnaVS0JOmQ9ZizkDP4s4yFDOq-5IJh9XWVnRoNo0fF-QdsHxSIC7PZPPKOtnxHaQn3Ewohgwr27H_O-KTzHeoA4sfRSiK81dEVMPN4mbWhC7VCBiY4ZJ8w7bMAqx47WsqozGuh1oT1rUGLbruLn9810n5whVdASQIlkiMG6WcrNvsrwcvT1DhPImE6YChZrOVlAsyqE0Ouxt1IQEEcZ7jSZDvQHoKcdHci4cGOAiW4clUYvknf6Zq0FdY_LnS66RPgnfJDtRcu1G3kml9dvvKB1_8sHg6Wa4qA_CDucRV0OKiMaqNSI_MfgxCGr2s4dk2fJx89jsEoY4NwrT3yqev8DTvw7GCAHHSdvKJXvOqKLoAeNCwPgQB1Pqf2SJX8Kp0bSIhryC_onTcqNZQ4XjOuebqGt5NuD5bJtWk57HbJyAjCzqKi-HZdhZT7XuYHH1Hfry0CTci1cFtOPsmCq-oRQup9X6E85WJbxDbkz9rJu_4jXj5QibeT60YaMnx_plqaL9Lg1c8xkA3n020ysJYXstCFDUeu2jmIuk8pAdM7iWfKtPBR1KfC77LyKeBZn2pcw6_V08WNXULr34xMGOsb8x2rMrdlZbLw0DE5ydtSiAIl4sn19rmaMj0ScCMa0RBScdsHvWqu9nNJJzfcY6_dc=w900-h700-no"/>
+                            <p class="font4"> Distinct Card Elements make the site easy to navigate </p>
+                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="33%" src="https://lh3.googleusercontent.com/C2kK8Kh_yM9esT2rCYVQDfE2jbNrpWDWHVKP_-bqCydVOGvAxMM0u7dYgb3kvApoJ0VRZrtFy02WXs9G4xVnWMDq-oVXaW_IasUhavBQehlFphd-BjVMxl4zbBQ-YO1c8yoSks7hglmb5TAh7kVzJjq2f1ME6fOfxs1t5r74PHWf0r1eGM8iZk7mAUldV8eamrVsJwvJfEbL7itS3tt11yOUdkJu305HerzDPuuTvBYx26CORJY88rnA6tlBXoR6vb-aUJrR87CJ-sOKRG2UsNDEjUMU_7i3PimUrybQf_Gd5P-9MQmTVF5hVTUkqQNDR6bu2PG_p1zyZJQMn7uk7quLuFVwKmNSrEoyC4gaAbeA0svPLjQd83tHXAvFgiSr-1uX_2vWRZPxvK0jTAAGVctT7w-s6-SbgcB2YU4XoLJfXzXVkn_HuLoq5ZgMjyeUG3vaceh6u_COWVfLuViIXjBl9WBPOaZdXO4FrwqomrLgBOIRqx_2nHTX5OPByIXy0nXWTBvpbd76m9OgtxO5R5YiTtG1fsIsagFhlDXllyQ9w0753o7S38y9cXW3xVPEbFl8HYlWDkQzAuB4n0GWKTjCnigrdRs5SzQm-QKIBp25v5xDTbRvZMoHlksjDEV8HJYjt2SRDyQkz-bDkaIad3JLzB6Q4h4=w357-h463-no"/>
+                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="33%" src="https://lh3.googleusercontent.com/w3l6y0xAtuf1csbAFa6yoYiQMuTFhgpr1QUlGWoUFsGXfD2_-KKQtcYQfGmg2oKPQNk8FHB3wDnS4Ly7aqDjJ3sIl305jm0Z2-Qrla8Hoc5hixug3gI5gpynmjAjv512V0GVYKRVtHozrUUWZoh3m7eQUM0PAArdGcBoqfIzP7l7qokY7m1KYKS9Oh_aXlnu9a3ly7w81VSA97MwOBq090CBH1xy9MnfweAn3QtUhEcsvyueh0VpoXy4wSrsv7nyFxGEupn3oPh6jMYo_MJd6kqfQKNyHbBXhOo23pbFPk5baObViz0yI8C0CAlJMWwJDV1zdtFuZ7DhNIzOKerT-amBrLkzVkNkYhD42PlK3YIBxbTu10LhFC6pTNAunPuAlvYCza62kJkIYcGgmwrrkgllnHB8SxhcVVKpDLuOiUqTcYyCTY-7bRbbvoWRqCNB0f3ODipIB5Wtu7-GUToC7Yaxzh0cIvvYGaq0HEzzN6ieXOe5AjR0YdhyPkApI_AO8-Xqiy0a-YOPBo70ZqLgia64jU53Kq4KXOae7c7T4fkCoKDVGUab4H0CSc7R1zlwyPOyCE7i1yGS7iAyl6mJAZLXaK_bj96zjhkDdoNLCgaIb-NOBJi5WXADmz2Yxwkb6c30KnpDSrWlPZ9YnaTHQiDny08Kkxs=w356-h464-no"/>
+                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="33%" src="https://lh3.googleusercontent.com/qSbvF7al764YeS4dbcQ7YSWKMMTQEv0gdQYxsjgSrTsErvH6_n0_SubIKphk1fDFP8t7BaWRVupU1kA85EjlZLGqZLmaJTal8C4xYwtq6z5oZOC8gpUms9EUI9JTxo8HgEzcc5Mx6wgnW7LRPAmDQOVsC-yBoEgrXYugBbtNdCSBMz1HlZ7PbTb2Oj5hSaqfHjK4vD2dRxJd6zPuQB3twBoJVOh4KY4PCTihd1MiLpi9zq8o55Jg6_5qDKEHuIG5PLY3-xJmcEWdsXM2PXunbZ0ZoqeA-zXNNpMQFall4efa8Dzt8E_ITGR75GeJQvT2MiARYUs4AvSk9YPZ0IhUgfvmAbg9DzHWNjZ9HoH8tFOrBcUUfD0hiEOpxpPVghoYkxZuXSqje_1q6vo81M19PmVvghn_s8CK0171w0QiJ813i1psLqfy5cjh3NotRlIDH24uM-5oVjdcoaFkbvxpPYLpCjZ4eOzkSN9WjXysb4icy-w-M9VS_6xzMt4eqdmkTOk5qmu-LQiWaWej9qWCVoTNmLRlm127F0IILtUZccUFW2AnudW4ANxixAZADQtOk06KPeopOf5JaR24zPdOnjUmO5qQM3ViI963JDpAGFagtIy5D7dyHWMkX7vYkOoT8pZMaQN2xwL7Ru39FmWsqbx8NnOKbfQ=w357-h490-no"/>
+                            <p class="font4"> Rankings and live feedback, giving users an opportunity to share their thoughts 
+                       <img class="sppic" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/NJgoETd1MdVXN7MVRy-ax4c3oJS3nYlMN7ULy0si0UsfCxAf7UlZlIU4IZZgwh3zaJ6rJ1ImJPoVv-5fzC9ezCh1cbSb-AC7U8vrhbI_NvT2YUxm71hKWfrfIU0Ztk7eBQNxdTCQwb8CLECzs3gLFXA3LvGZw6jv3ia2j9lQe40FeXzU6xCNKzsA7e3glL1y12QdBBH6QUZmzyb8nBpe_i9A_zQLBoVv43qWZvfAMWjBTB2Q5PsgFPeND11_5uX60srk4ZaNQmZdRUfnxy7mspfAXseV0hs2iviv2Z3O9j5GjxASXlDrHOq2rbFYp_e_FnZ7STKN4CCxfBMya2uSKpDwyxNFiY1L7kkq7mpCcm9-8KdDAU4F4ydq2UzbkOb1tr4AM7pck3IvS6WLu-f6RV7dEb4-umUa0N0a3HMlKpHOEJke8Tt7uWTKpk9WKKLMP82LZT4k8jzqzhbo_HCDECAVgSEb9u0UreKcr_V66aKo9YnDGOxl4H4aaE9Otssh84AFTfyd-WUuY46Dn5TC717icj8i_k3X7YgWkKTswC3Iy76mKYFfimQ6-hLOufD1QlJSYtXOnnJcTN2OrE5ZHYsmMFg1VPcI3HxgCh5aWBxsZ05azdytFguIzNGQ0WVpC6nmUNFBTrjM1vtE9elM4yyKRcMiwTQ=w597-h264-no"/>
+                       <img class="sppic" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/59hr-8O3E6KDEsvoE1ARodUvwcBOFPvPDtksqYlwnw-56sTY8bixPzP7B1XN4ShlmkAlNieCudu7ywipb5h4LZMfJyhaQWXzSD9s4KUCPds0Rec5Rv6QefuunrToKCxuv5vATZ_zqPdEYYJFqZRpayLTcvZFYH1gQ3T42MU-ZxdrGuaWZEU6x_69f9ZvfBp-aJ_LShqLR5QwlQzVS2C1ULcRzhRfK4WCPehQUrGOp2_bgKg_HujIWQh8lL4BSp4yHhq5iO_WXWYPnQPhUvbggzReHhcmV5B1Kj8RS2lUECJSDU0qW7DXj2BUwa-LuduEbYpXdwbgwlclIPtjUtrdxgpCpKp0MZZxgAfaF_BzMpAUR5zKtl4V_zlsAX3w1PJ4sC62jSXT23YkWxXJqp4m5_NwA_A7zbwMydTduv8nE716xkw7vupMwxf8DZVMbgOEU2bhe3rR0P1fqVOLB3Z5Eyx7s33OnlPo8QeKaYxKFI_Nc784O89TdK93S-oguTbyjP3-PJEShW9UN-xIJmHCgkFqvjbMvlobNZhjsaMZZiPJTbyBq4EZ5u9w3MrA8RZmI_QvqUMhogq9VkjEaRsWfyvr2EAFRrVF9x-cxJuEwqkNz9L6n7fhN_1FLCFzQ6-lJ_7ob3dRl8f0Kict6hUX1IirMywHu9Y=w596-h222-no"/>
+                       </p>
+                       {% comment %} <p class="font4"> Distinct Card Elements make the site easy to navigate </p>
+                       <img class="img-responsive sppic imgcenter" alt="" title="" width="49%" src="https://res.cloudinary.com/jmperez/image/upload/w_auto:100:684,f_auto/v1509278557/placeholder-options_vtwp6b.png"/>
+                       <img class="img-responsive sppic imgcenter" alt="" title="" width="49%" src="https://res.cloudinary.com/jmperez/image/upload/w_auto:100:684,f_auto/v1509278557/placeholder-options_vtwp6b.png"/>
+                       <p class="font4"> Data Collection: Was maanged by a webscraper that found the list of oa popular website online  </p> {% endcomment %}
+                </article>
+              </div>
+
+
+              <div class=" add-top-half">
+                <article class="services-item">
+                  <i class="ion-social-buffer color"></i>
+                    <h4 class="font2 black">Color Theory </h4>
+                        <!-- <ul class="font4">
+                              <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                              <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
+                        </ul>  -->
+                       
+                       <p class="font4"> Two distint fonts we chosen to blend the maturity of the site with the youthfulness  </p>
+                       <img class="img-responsive sppic imgcenter" alt="" title="" width="49%" src="https://images.techhive.com/images/article/2016/08/mac911-characters-palette-font-variants-100677513-large.png"/>
+                       <img class="img-responsive sppic imgcenter" alt="" title="" width="49%" src="https://images.techhive.com/images/article/2016/08/mac911-characters-palette-font-variants-100677513-large.png"/>
+                       <p class="font4"> Rankings and live feedback, giving users an opportunity to share their thoughts </p>
+                       <img class="sppic" alt="" title="" width="100%" src="https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/previews/whats-in-a-color-palette-01.png"/>
+                       <p class="font4"> Distinct Card Elements make the site easy to navigate </p>
+                       <img class="sppic" alt="" title="" width="100%" src="https://image.flaticon.com/sprites/authors/smashicons.png"/>
+                       <img class="sppic" alt="" title="" width="100%" src="https://lh3.googleusercontent.com/HqcUGO8PRCsOSDO5eDVe2SmBjGZaCKK0xerCDaGz7MY7vGVPQplgnMsvvZgAm53hp9N0dO8fV6HVaWfVQ-w5vR3SI39nyYxFujimyjUQEK-6imDQppm5F8oMvUkIYjZ2NrEuuEO3liS_XMYKYnxSjEx5u_2poZ7ZBRRj8DhqWKIloZ8tXbO1pbGtakqva-lnOBpfEILLJt0dgoOqsjEs-CWvW0wbB6ypseAXAvuueA48Qwea1E56q460ZBlklzh5uty8dWMlrZP1SN9WwS7fgq2t8jOf_8_VzbQ7T7_yWg3N313c35lLBg6xsn-kBcJ9HEbTjJtND3Qd8kd3NU0k9olg_zlHUnDuSGt2JJ8T61mkZD4WiWwsopRasvPdW3fvmgYLA7i6ZfpVnms96FlzqDLR4sTgb3BaWzK9bM8knknib1M21Q8jZ1QjHeVu0Pewt76_J2ncHZ1E78vwc6bhFTh2i-YcW_CnV_OvsIl0UK-m2tFuhWxmMbF9Y01degiBGxcCpdU8AqfBqU4ZBT5ntyg1eLh3UVreoP_FlEY8P4y3UNd9R0BHN9cG3oBqCNF0rDUrKi2JQIWYfLHnx8cSi6cDvacDo9z_D3QdqjOha2QoEFkvG5cS9j-Q2IwuAG1RUe8pxNsZC_UoHm-yCTTAQ_1kLUOj0bg=w931-h698-no"/>
+
+
+                                 
+                       <p class="font4"> Data Collection: Was maanged by a webscraper that found the list of oa popular website online  </p>
+                </article>
+              </div>
+
+
+              <div class=" add-top-half">
+                <article class="services-item">
+                  <i class="ion-social-buffer color"></i>
+                    <h4 class="font2 black">Next Steps </h4>
+                        
+                       <p class="font4">Currently being reviewd and tested with possibility of a laucnh in 2019 </p>
+                       <br>
+                       <br>
+                       <br>
+                 </article>
+              </div>
+              
+
+
+
+
+
+
+            </article>
+            
+            
+            <article class="col-md-12 text-left news-sidebar">
+                <h3 class="font2 dark">More Projects</h3>
+                <div class="liner color-bg"></div>
+                <ul class="font4 dark">
+                  <li><a href="post.html">Quizzer</a></li>
+                  <li><a href="post.html">CHANT</a></li>
+                  <li><a href="post.html">The Oak House</a></li>
+                  <li><a href="post.html">Itunes</a></li>
+                  <li><a href="post.html">Wayfinder</a></li>
+                </ul>
+                
+                <!-- <div class="post-tags">
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Django</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Python</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">HTML</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">CSS</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">PostgreSQL</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Heroku</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">jQuery</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">JavaScript</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Sketch</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">minimal</a>
+                </div> -->
             </article>
           </div>
         </div>
@@ -284,105 +518,6 @@
 
 
 
-<!--featured works panel :starts -->
-<section class="featured-panel cd-panel from-right">
-    <div class="cd-panel-header white-bg">
-      <h1 class="featured-projects-heading font3 dark">Featured Projects</h1>
-      <a href="#0" class="cd-panel-close white">x</a>
-    </div> <!-- cd-panel-header -->
-
-    <div class="cd-panel-container">
-      <div class="cd-panel-content">
-
-          <!-- featured-item -->
-          <div class="featured-item-block">
-              <img alt="" title="" class="img-responsive" src="images/featured/01.jpg"/>
-              <a class="ajax-link" href="project01.html">
-                <div class="featured-panel-item-overlay">
-                  <div class="valign">
-                    <h3 class="font2 white"><span>Project Title</span></h3>
-                  </div>
-                </div>
-              </a>
-          </div>
-
-          <!-- featured-item -->
-          <div class="featured-item-block">
-              <img alt="" title="" class="img-responsive" src="images/featured/02.jpg"/>
-              <a class="ajax-link" href="project02.html">
-                <div class="featured-panel-item-overlay">
-                  <div class="valign">
-                    <h3 class="font2 white"><span>Project Title</span></h3>
-                  </div>
-                </div>
-              </a>
-          </div>
-
-          <!-- featured-item -->
-          <div class="featured-item-block">
-              <img alt="" title="" class="img-responsive" src="images/featured/03.jpg"/>
-              <a class="ajax-link" href="project01.html">
-                <div class="featured-panel-item-overlay">
-                  <div class="valign">
-                    <h3 class="font2 white"><span>Project Title</span></h3>
-                  </div>
-                </div>
-              </a>
-          </div>
-
-          <!-- featured-item -->
-          <div class="featured-item-block">
-              <img alt="" title="" class="img-responsive" src="images/featured/04.jpg"/>
-              <a class="ajax-link" href="project02.html">
-                <div class="featured-panel-item-overlay">
-                  <div class="valign">
-                    <h3 class="font2 white"><span>Project Title</span></h3>
-                  </div>
-                </div>
-              </a>
-          </div>
-
-          <!-- featured-item -->
-          <div class="featured-item-block">
-              <img alt="" title="" class="img-responsive" src="images/featured/05.jpg"/>
-              <a class="ajax-link" href="project01.html">
-                <div class="featured-panel-item-overlay">
-                  <div class="valign">
-                    <h3 class="font2 white"><span>Project Title</span></h3>
-                  </div>
-                </div>
-              </a>
-          </div>
-
-          <!-- featured-item -->
-          <div class="featured-item-block">
-              <img alt="" title="" class="img-responsive" src="images/featured/06.jpg"/>
-              <a class="ajax-link" href="project02.html">
-                <div class="featured-panel-item-overlay">
-                  <div class="valign">
-                    <h3 class="font2 white"><span>Project Title</span></h3>
-                  </div>
-                </div>
-              </a>
-          </div>
-
-          <!-- featured-item -->
-          <div class="featured-item-block">
-              <img alt="" title="" class="img-responsive" src="images/featured/07.jpg"/>
-              <a class="ajax-link" href="project01.html">
-                <div class="featured-panel-item-overlay">
-                  <div class="valign">
-                    <h3 class="font2 white"><span>Project Title</span></h3>
-                  </div>
-                </div>
-              </a>
-          </div>
-
-
-      </div> <!-- cd-panel-content -->
-    </div> <!-- cd-panel-container -->
-</section> 
-<!-- featured works panel :ends -->
 
 
 <!--share panel :starts -->
