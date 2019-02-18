@@ -22,4 +22,13 @@ urlpatterns = [
     path ('', views.index, name='home'),
     path ('post/', views.post, name='post'),
     path ('elements/', views.elements, name='elements'),
+    path ('portfolio/', views.portfolio, name='portfolio'),
+
+    path ('itunes/', views.itunes, name='itunes'),
+    path ('oakhouse/', views.oakhouse, name='oakhouse'),
+    path ('chant/', views.chant, name='chant'),
+    path ('quizzer/', views.quizzer, name='quizzer'),
+    path ('wayfinder/', views.wayfinder, name='wayfinder'),
+    path ('design/', views.design, name='design'),
+    
 ]

@@ -1,0 +1,511 @@
+{% load staticfiles %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Info
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>SLOC Welcome</title>
+  <meta name="description" content="OTTO - A premium web template from Designova">
+  <meta name="author" content="Designova">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600%7CMontserrat:400,700%7COpen+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- ICONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=" {% static 'stylesheets/ionicons.min.css' %} ">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static  "stylesheets/isotope.css" %}" >
+  <link rel="stylesheet" href="{% static  "stylesheets/venobox.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/owl.carousel.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/sidepanel.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/elements.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/slimmenu.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/main.css" %} ">
+  <link rel="stylesheet" href="{% static "stylesheets/main-bg.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/main-responsive.css" %} ">
+
+  <link href=" {% static ' plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet' %}"/>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <!-- LESS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet/less" type="text/css" href="{% static "less/color.less" %}" >
+  <link rel="stylesheet/less" type="text/css" href="{% static "less/fonts.less" %}" >
+  <script src= "{% static "less/less.min.js" %}"> </script>
+
+
+</head>
+
+<body>
+
+  <!-- Preloader
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="preloader"> 
+    <div id="status"></div> 
+  </div>
+
+  
+
+
+  <a class="onscreen-trigger" href="#"><img alt="" title="" src="images/next.svg"/></a>
+
+  <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="masthead white-bg fullheight">
+    <div class="valign">
+      <div class="inner">
+          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a>
+          <nav class="mastnav font2">
+            <ul class="#">
+              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href=" {% url 'home'%} ">About</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href=  "#" >Projects</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="{% url 'design' %}"> Design Process</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
+              
+              {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
+               <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'elements' %}">Link</a></li> 
+              
+            </ul>
+            
+
+
+          </nav>
+      </div>
+    </div>
+
+          
+          
+    <div class="sticky-icons">
+        <ul>
+            <li><a class="fullscreen-toggle" href="#"><img alt="" title="" src="static/images/prev.svg"/></a></li>
+        </ul>
+    </div>
+  </header>
+
+
+
+
+  <section class="sticky-sidebar white-bg fullheight text-center">
+      <div class="valign">
+          <ul>
+            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
+            <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
+          </ul>
+      </div>
+  </section>
+
+
+<!-- dummy overlay for whole page when sidebar is active -->
+<section class="featured-mask-overlay"></section>
+
+
+
+
+<section class="mastwrap-outer cd-main-content">
+  
+
+  <!-- MASTER CONTENT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="ajax-content" class="mastwrap spaced-left">
+      
+
+<!--works filter panel :starts -->
+<section id="works-filter-panel" class="works-filter-panel silver-bg">
+<div class="works-filter-wrap">
+      <ul class="works-filter text-left clearfix font4light" >
+          {% comment %} <li><a id="all" href="#" data-filter=".about" class="active"><span>All</span></a></li>  {% endcomment %}
+          <li><a href="#" data-filter=".branding"><span>Branding</span></a></li>
+          <li><a href="#" data-filter=".graphics"><span>Graphics</span></a></li>
+          <li><a href="#" data-filter=".logos"><span>Logos</span></a></li>
+          <li><a href="#" data-filter=".ui"><span>UI</span></a></li>
+          <li><a href="#" data-filter=".web"><span>Web</span></a></li>
+          <li><a href="#" data-filter=".about"><span>About</span></a></li>
+          <li><a href="#" data-filter=".project"><span>Projects</span></a></li>
+      </ul>
+</div>
+</section>
+<!-- works filter panel :ends -->
+
+    <section class="sub-wrap about white-bg">
+        <div class="container-fluid">
+          <div class="row">
+            <article class="col-md-12 text-left caption add-top-quarter">
+                {% comment %} <h6 class="font2 dark">Sam LoCascio</h6> {% endcomment %}
+            </article>
+          </div>
+        </div>
+    </section>
+
+
+          <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
+
+
+
+
+
+             
+
+
+             
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar">
+              <br>
+                <h2 class="font2 dark">  Projects </h2>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p>
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                       
+                      
+                      
+                      
+                
+            </article>
+              
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                           
+                      
+                      
+
+            </article>
+              
+              
+              </div>
+              <!-- end : works-item -->
+             
+              
+
+
+
+
+
+
+
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/WeuyQF-oWPFe73VyN8ESimwUKFTXVm1S4BWKeNxk_CiEVf_XJ_i9sQdkxlTEPhSiFKufHQARzngq7Xj53G6p13LfOzjuC9Rh_HYE9CN_OlCsbE1dhUZ7i13dDBfljWeIHUYNYGKB-Wv9P7k7NGEBM6iFpjhkraBVqB9SZWOherybzKry-kypcwc5WI6IFaCW7u7QIf_a2GGg_L2cRQb9jICMfGCpVEhl1mOh6hhNWSK8arsZcdtxc6z9GXqx_Rmxinz37qrvKPhkVK-IOwjO4aQn0jJFCGnkjBTAmnXMEXAaGHFwVdibFUxba533HRkfDcHlKVTosFVTJQ-2RnQNaX2FbZta4-h-ATmCrGBX-1NEuA71K8--F6WE3WC5QLXP0bSnleRA4_exuG_S8Ekdx2WR71S7EvNwgyu3Irn9UqlaGREPC1JRKn_ObmF4vudoKSX-CcQYxAN-dnyzwEVxl7KJcw-JaDdEypnHAwugC-etAHhs0Y8ctPnR88LgG2Rsap3tdVwJdscWrYJ7slzsQHsngZ8B5sZcX46I1uatEK8PjUF_6QP-FQwBf8fBd2Ianc8B_rxnpLedlLyamP2tp72Nl-zMZMEaXxlWhZAEpybmnvP36itoi2UJJlEYQUb0FStMeb-rJ1awl2r_Y0uMH6kCJWfJ5rQ=w802-h422-no"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  Quizzer </h3>
+                      <p>  Full Stack Developer  </p>
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/pDK6_6BC1RGpQFZgZ7-2a1dVtnw8BZOjRBVjJGTnJh3Rewi6BjBJMkHV4uwkVVhsUtAI0gAxJfxjbwycNwZr563vy5MA_k7hHaiBsv9LAVd_NECBA-GUnAM5xqpJTbIIdGwbaU0KU8mlqvocOdG1gO1qyl_L0DtszIXlIJSZAKddmJkLG3fd08QxlkC5vcGm8uvWPqwQ_DMIfD8FUktpnvvF2cLwdzc_K_eqCBGyeZSU6Fs_t84jVi10kCzJ5wWxFI2UIyYx2HSFHImsOljJRZfDaArGDpmxxQefQXbFh_uLK_BLI94ad_YNmYCgVVgXRGICxJOdO425pljeTAiaaajhMf3PB6uwLeU8XShaRadJDtfEPHItYWcyMDTyqlCenhmEPrtNYzmYAIZkEf5OZdF6oaH0R_HIgiE5e9q-hqzDmhitOCMA7MCE6_FUl8TztiWSRNIncXYbGata1wd8okMQfrXXiXNvkblK8bTcr3z5Irz7Z3ZbPw-Tea_wFhHyTMDqNi6Wgw0rR3XWz1meEIX9pNe4M4XGPtqqmD-dmhbL4XW_GV1SWfS43Y-dmOreZvD0W31wFatJisTQfPzFNZTU9fRQlKbWItffxZqtjLO1ewHS0ydZNU9CzRzNHMY22odFh2u-01-SaXgcH96dKL_Ay4hG6ls=w1065-h770-no"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  CHANT </h3>
+                      <p>  Full Stack Developer  </p>
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/GDtlL0D1vbUImo5QdRnT4E7Qk0CtCOfkRLQCRc8eXw-S7xV1zfPhWaF6GiGKiMcvLvXTp16Izf9GnyWCHkGSxiNwkixYHoA12qPqEusAS8k_71PcKG2TfXq4v-jPmF9usmOwMQseUheLQVxlzxWWjxAD__reJhfUtFcfp3yjrAEc1wqhPT4XgsehotMSDbu4n5HPYMmq8ya2WoMF8pYk9oMhXkt9i8mhZK2Kt9nIJdEMVMuRgBiBhhtwsDZWXfpAVCijYRBvHK-Zk7dhwRVfWeCFU6CNWERDatnF7uvL9q0_kVH0oFJNxXZpN0l7WbvqBHLS8rqkpdYH4H-ffBm2xzV7WvKB4QTeyYZU_A4tQLaB9MfpVEzGswR2inzCjov1fYQG6uBJWHD1Mnum-aohVb2SNQGpGpHp4eUiPrrRvVjbCKIWLAZIkYrjC-P1alaXxvtc0tJ23RJeESNlbUYu1trOpKRdyw-8wJvXRiGm8XxLs9y1T8uesSHOvlm9yFEIcSrIjCQL-OlVSVQS1PP3XoVRI3iusiQls-_qp2SUHTqANcOkw1oKutg7RQgptTV394SiCv4QlcA61g9OVyK2ntxL2imYbpmJ1CrdIF3hct6aqMM07Rac6zj2_H7r2ZP336Y-wnxlcvv_1H2fu061vPzJDWAQFgE=w1018-h770-no"/>
+                      {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg"> {% endcomment %}
+                          <a href="{% url 'post' %} "> <div class="works-item-inner"> 
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  The Little Triangle </h3>
+                      <p>  Full Stack Developer  </p>
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/sWIgs0QNDFcbvQ4i51lg1h7QfEh5JrraW4DPTfCAA1YxrJIYU1JFyCgQbPWFgw12g4R8T_EE8zySgtth_RXEQ_ZcxlUvjdL4NZHzBP9oxIKgttcbUPjAkMu_am77eH0Mcsz7FeN8NMhNDKk6opbzA96sRhn6te8J0chkBpvzzbtWn7Jy7pn3IYX8boIAq-cPWiAB1yptjvYgFw6oM93kN0NfSUgOajk_PoYoYG6LWvYyq6c77dBDPboD1J9V9U6wRWhHEEmHdBh_RvlsT78bC6lRbVnsI-cE10ICPG2Y4xwRfbeSoEgP9nf7vHiHHOhq-E4Iv58Pp3Cj9_M7FYUNSvfic4Ctge5jJC3x8tpa3_Ou2q_Ne5FSDi018jwoLg_NwGOzryK_0QtKHU8EKqrST0EQOWRP3ZVb_Y5uDfvmmhv0TuJLoo3l9p0Sn3RvIKpbO7DPTfvh-lQytFzKl3HOGmbL6vufku0N5P0powuq--qqKxOO_UPBi_VLqK9ixGPzuaw-Eo5Ada6BzsucuELTX8W6eu_pLUMcWaLrlJaRMg5fJQ3mUeloKrh63GLyIpHJwOS4uUb5yN5Ayl40GX3Lt2HuCW7clwjeMnUXOV5VI1jowNBcvfH0i33p90hXlNfKcUyftqOPkuXP19arJ-OYk04-4W0jvs0=w963-h770-no"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  Itunes Seacrh </h3>
+                      <p>  Front End Design </p>
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/fbgpFhE2l9NqFrm1P5am9WSPE1SzqATBXEBqwLmOKPtS6MbCdqB3ax2Kg75dzTm5vropNKwyhcoezOUg9rQoBFKbnmO56hA1i2gO4p0wR794nPvAUNKNzGJQ1pXGIxrsUq3hyMTp61CcszLCNJYYWbT1YNi0hJzdGgbsWQTUUB3Z9MpPB_ZBzDXLmAjGNqR7wmmD2q53oSds5IggFn2ONAPjYfUcQQ6pLwlJIyOYXqjXdLUwqHQC6RLyVKsRx86k22fvT6KwEhoXGzNxARQ1PLAfTqbEN6UTTZjdHvmfsNDSovr6tUTO7Np7mQKjTKfXIfQjh_S7Frucm9pNS4Yh8iPUujZJqaJkXQgtnLsRGUU4665d8CVkPOobWOQn3rThgXzo2vEj_HaEADLsnko-IRpfEVdONiVBDJixSGVTFScW6jV9n2ASZLXEGFJo7LU-Km6XZlN2mtAL3qYOkNfzsfeHG722l-VU-dqeVxCJ0mrcVKHnZ_u3S5AsAGB0cyQqkDliF6QDJ5gFB174kiDrqCKEPb95wRe2ICg88cyjtHAH8PHJmFtyTrhwWk2GZm1epIEj8dS53wNBxId3ZZSgcr9MGuGUAttAhK46O3OXAM0CxkWsNePNwJ4pB7pMu6qauQE8BWLQHESjqcb1skCRJ6Hkij327kY=s344-no"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/oak.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  Wayfinder </h3>
+                      <p>  Front End Design </p>
+                      
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/9_ojWpv1B1y9QchLW1JUrHx0wcR8JzTS6mR_5ylRRgYOK3bU69q_ijA-uXTn0HUlofZfmEAF5nrRk_Y7cZ0TG25KYWGrfCcCOYAgOm1kJ5iL8j2A1OONab_tKwu-fmrWmlDO4rssqRjQ8-sFptUGr3AofBw0dd-Vy2JlOIv6q2zA1Nud_n_AWc_6JJJhcsmL7pK7wSuh4B7FsztmLmwenN4VFttgfuUMLXBWcnNzVHQE1hKNiifCTshmB0hN1ruyUtHiaKfIuPrfiAkLgqF7GMFF9f2fjwiR8DnSHG9y_-6lVGSpVWQHafhn7Irm7yTi-v01emSg026XU105FshANUf6YNGd8Ol7P84Pnm3c7U39288ys9XpobwNrnOog28IS8RYfTp7BBI6slD7sE0avPwomnTzL8WuYpvvbt6F8J8CXy4KOaag7SYK9GUw_VrnEvD57Z4vZlLr-5eA270HtQYB7CdtH6l3hVjlNjKUFH1LG5diaeWL6YiXs8HBieaoHa8yl5SzDS-e6yO2e-AMshqGTNpqm__SD3JdgdjAlIrWeHLhm-LZEtlkJV6EGqxnE-wSbtcQMgoYXA81BQ-zMDKVLX-m2F5tFvwT-AGrU10OPkADuSkDPl98wRTe7pJuSXgaeYTzVHnEgoi4d3G8NQvEBE399vs=s750-no"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a>
+                      <h3>  The Oak House  </h3>
+                      <p>  Front End Design </p>
+              </div>
+              <!-- end : works-item -->
+
+
+              
+
+
+
+
+
+
+
+
+            </div>
+            <!-- end : works-container -->
+
+
+
+
+  <!-- FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer class="mastfoot container-fluid white-bg">
+    <div class="row">
+          <article class="credits col-md-6">
+              <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > sloc design </a></p>
+          </article>
+          <ul class="foot-social col-md-6 text-right">
+            <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
+            <li><a href="#"><img alt="" title="" src="images/social/02.svg"/></a></li>
+            <li><a href="#"><img alt="" title="" src="images/social/03.svg"/></a></li>
+            <li><a href="#"><img alt="" title="" src="images/social/04.svg"/></a></li>
+          </ul>
+    </div>
+  </footer>
+
+
+  </section>
+  <!-- end : mastwrap -->
+
+
+
+
+
+
+</section>
+<!-- mastwrap-outer ends -->
+
+
+<!--featured works panel :starts -->
+<section class="featured-panel cd-panel from-right">
+    <div class="cd-panel-header white-bg">
+      <h1 class="featured-projects-heading font3 dark">Featured Projects</h1>
+      <a href="#0" class="cd-panel-close white">x</a>
+    </div> <!-- cd-panel-header -->
+
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+
+          <!-- featured-item -->
+          <div class="featured-item-block">
+              <img alt="" title="" class="img-responsive" src="images/featured/01.jpg"/>
+              <a class="ajax-link" href="project01.html">
+                <div class="featured-panel-item-overlay">
+                  <div class="valign">
+                    <h3 class="font2 white"><span>Project Title</span></h3>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+          <!-- featured-item -->
+          <div class="featured-item-block">
+              <img alt="" title="" class="img-responsive" src="images/featured/02.jpg"/>
+              <a class="ajax-link" href="project02.html">
+                <div class="featured-panel-item-overlay">
+                  <div class="valign">
+                    <h3 class="font2 white"><span>Project Title</span></h3>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+          <!-- featured-item -->
+          <div class="featured-item-block">
+              <img alt="" title="" class="img-responsive" src="images/featured/03.jpg"/>
+              <a class="ajax-link" href="project01.html">
+                <div class="featured-panel-item-overlay">
+                  <div class="valign">
+                    <h3 class="font2 white"><span>Project Title</span></h3>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+          <!-- featured-item -->
+          <div class="featured-item-block">
+              <img alt="" title="" class="img-responsive" src="images/featured/04.jpg"/>
+              <a class="ajax-link" href="project02.html">
+                <div class="featured-panel-item-overlay">
+                  <div class="valign">
+                    <h3 class="font2 white"><span>Project Title</span></h3>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+          <!-- featured-item -->
+          <div class="featured-item-block">
+              <img alt="" title="" class="img-responsive" src="images/featured/05.jpg"/>
+              <a class="ajax-link" href="project01.html">
+                <div class="featured-panel-item-overlay">
+                  <div class="valign">
+                    <h3 class="font2 white"><span>Project Title</span></h3>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+          <!-- featured-item -->
+          <div class="featured-item-block">
+              <img alt="" title="" class="img-responsive" src="images/featured/06.jpg"/>
+              <a class="ajax-link" href="project02.html">
+                <div class="featured-panel-item-overlay">
+                  <div class="valign">
+                    <h3 class="font2 white"><span>Project Title</span></h3>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+          <!-- featured-item -->
+          <div class="featured-item-block">
+              <img alt="" title="" class="img-responsive" src="images/featured/07.jpg"/>
+              <a class="ajax-link" href="project01.html">
+                <div class="featured-panel-item-overlay">
+                  <div class="valign">
+                    <h3 class="font2 white"><span>Project Title</span></h3>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+
+      </div> <!-- cd-panel-content -->
+    </div> <!-- cd-panel-container -->
+</section> 
+<!-- featured works panel :ends -->
+
+
+<!--share panel :starts -->
+<section class="share-panel white-bg fullheight">
+      <a href="#0" class="share-panel-close white">x</a>
+      <div class="share-panel-heading font3 dark">social share</div>
+      <div class="valign">
+          <ul>
+            <li><a href="#"><span class="ion-social-twitter dark"></span></a></li>
+            <li><a href="#"><span class="ion-social-facebook dark"></span></a></li>
+            <li><a href="#"><span class="ion-social-pinterest dark"></span></a></li>
+          </ul>
+      </div>
+</section> 
+<!-- share panel :ends -->
+
+
+
+
+
+
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <script src= "{% static "javascripts/libs/common.js" %}" ></script>
+  <script src="{% static "javascripts/libs/bootstrap.min.js" %}"></script>
+  <script src="{% static "javascripts/custom/main.js" %}"></script>
+
+</body>
+</html>

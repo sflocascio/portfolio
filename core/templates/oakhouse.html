@@ -1,0 +1,304 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Info
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>SLOC Welcome</title>
+  <meta name="description" content="OTTO - A premium web template from Designova">
+  <meta name="author" content="Designova">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600%7CMontserrat:400,700%7COpen+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- ICONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=" {% static 'stylesheets/ionicons.min.css' %} ">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static  "stylesheets/isotope.css" %}" >
+  <link rel="stylesheet" href="{% static  "stylesheets/venobox.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/owl.carousel.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/sidepanel.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/elements.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/slimmenu.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/main.css" %} ">
+  <link rel="stylesheet" href="{% static "stylesheets/main-bg.css" %}">
+  <link rel="stylesheet" href="{% static "stylesheets/main-responsive.css" %} ">
+
+  <link href=" {% static ' plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet' %}"/>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <!-- LESS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet/less" type="text/css" href="{% static "less/color.less" %}" >
+  <link rel="stylesheet/less" type="text/css" href="{% static "less/fonts.less" %}" >
+  <script src= "{% static "less/less.min.js" %}"> </script>
+
+
+</head>
+
+<body>
+
+  <!-- Preloader
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="preloader"> 
+    <div id="status"></div> 
+  </div>
+
+  
+
+
+  <a class="onscreen-trigger" href="#"><img alt="" title="" src="images/next.svg"/></a>
+
+  <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="masthead white-bg fullheight">
+    <div class="valign">
+      <div class="inner">
+          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/nBkFUJP3AM0H-sb2eESd5G1Brh8LXElfxyIjaraGmRbSMzcs-IsgBx7akbuP6oFa8bWeUyTNetBkSbvsz-mMtY15kGdEbG59FBGEejwaw9VSsFG3XwJ8oTg5lk7B0p2JKkKZW_KwyCTgoArcp3bsWz-0G2kIjnCMXSF4TerXcONTRlv8anGysCT11EGUZygPIXv8t7e0TTcjthaE70A50x70SlS9LMb_B9sXpjvsGkrMZF9qr0BgC0xyP-Ngi5p1d9BpIp6dUi5mDkjF0y5RQ61lsEHYmJf1tBrTVpWiJIwDplo5jjLy6k9jNjeMZARf6c_76gdSX6h6lR82EhQXiuvYKAlC4Jzblm06h_Uraj31zgKUpy4wQbunRIvUavYYxMedurroJplANa-uSf78hEfdXS2xEZlorG34tNkWgKguNPsjOHj1fu2UbPGf2r_HO02DEhJrFkcwKtZbWaff1G3ZHJlSvHrQ8acT3hDh6TMOiSAClmx3PWbfV0P19RfzT73AzNBbhYF6qUchWjx622yj9G9onwQKfcGc5p1x9nWv_4Qq-UH0VhrVtTZVqSjexF9oU_QVlp_NpdHv_5iKSYSt5cem0RSBeKrWzcIdlUJ4JCESjk4tuydA9cqV7FR75lZyrJzHywJ4ONGusx2_MYe-8hn_JvI=s60-no"/></a>
+          <nav class="mastnav font2">
+
+
+          <ul >
+              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href= "{% url 'portfolio' %}">Projects</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="{% url 'design' %}"> Design Process</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
+              {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Link</a></li> {% endcomment %}
+              
+            </ul>
+            
+          </nav>
+      </div>
+    </div>
+
+          
+          
+    <div class="sticky-icons">
+        <ul>
+            <li><a class="fullscreen-toggle" href="#"><img alt="" title="" src="images/prev.svg"/></a></li>
+        </ul>
+    </div>
+  </header>
+
+
+
+  <section class="sticky-sidebar white-bg fullheight text-center">
+      <div class="valign">
+          <ul>
+            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
+            <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
+          </ul>
+      </div>
+  </section>
+
+
+<!-- dummy overlay for whole page when sidebar is active -->
+<section class="featured-mask-overlay"></section>
+
+
+
+
+<section class="mastwrap-outer cd-main-content">
+
+  <!-- MASTER CONTENT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="ajax-content" class="mastwrap spaced-left">
+      
+
+
+    <section class="sub-wrap pad-top-half pad-bottom-half">
+        <div class="container">
+          <div class="row">
+            <article class="col-md-12 text-left news-post">
+                <h1 class="font2 dark"> The Oak House </h1>
+                <div class="liner color-bg"></div>
+                <h5 class="font4 black"> A web app built to offer parents in North Carolina’s Triangle Region a platform to discover, review, and gain valuable insights about the best activities, camps, and offerings in their area. </h5>
+                
+
+<img class="img-responsive sppic imgcenter spshadow" alt="" title="" width="100%" src="https://lh3.googleusercontent.com/9_ojWpv1B1y9QchLW1JUrHx0wcR8JzTS6mR_5ylRRgYOK3bU69q_ijA-uXTn0HUlofZfmEAF5nrRk_Y7cZ0TG25KYWGrfCcCOYAgOm1kJ5iL8j2A1OONab_tKwu-fmrWmlDO4rssqRjQ8-sFptUGr3AofBw0dd-Vy2JlOIv6q2zA1Nud_n_AWc_6JJJhcsmL7pK7wSuh4B7FsztmLmwenN4VFttgfuUMLXBWcnNzVHQE1hKNiifCTshmB0hN1ruyUtHiaKfIuPrfiAkLgqF7GMFF9f2fjwiR8DnSHG9y_-6lVGSpVWQHafhn7Irm7yTi-v01emSg026XU105FshANUf6YNGd8Ol7P84Pnm3c7U39288ys9XpobwNrnOog28IS8RYfTp7BBI6slD7sE0avPwomnTzL8WuYpvvbt6F8J8CXy4KOaag7SYK9GUw_VrnEvD57Z4vZlLr-5eA270HtQYB7CdtH6l3hVjlNjKUFH1LG5diaeWL6YiXs8HBieaoHa8yl5SzDS-e6yO2e-AMshqGTNpqm__SD3JdgdjAlIrWeHLhm-LZEtlkJV6EGqxnE-wSbtcQMgoYXA81BQ-zMDKVLX-m2F5tFvwT-AGrU10OPkADuSkDPl98wRTe7pJuSXgaeYTzVHnEgoi4d3G8NQvEBE399vs=s750-no"/>
+
+
+                
+          <br>
+          <br>
+          <br>
+
+          <h3 class="font2 dark"> The Problem  </h3>
+                <div class="liner color-bg"></div>
+
+                  <p class="font4 black">Three questions nearly all parents ask themselves when they are about to register a child for a brand new class or program:  
+                    <br>
+                    <br>
+                  Is it safe? Is it worth the money? Is it worth the time? 
+                    <br>
+                    <br>
+                  The concept for the little Triangle was envisioned by such a parent, looking for a place to discover quality events and activities for her child, while getting valuable insights and feedback from other parents in her area
+                  </p>
+
+              {% comment %} <div class=" add-top-half">
+                <article class="services-item">
+                <i class="fas fa-search fa-2x"></i>
+                    <h4 class="font2 black">Discovery</h4>
+                        
+                              <p class="font4 black"> <b>Polling</b> - After reaching out to popular parenting forums and groups in the region we received overwhelming positive feedback, confirming a need for the concept my team envisioned</p>
+                              <br>
+                              <p class="font4 black"> <b>Competitive Analysis</b> - A quick comparison of current offerings in our area helped us define opportunities and features that our concept would capitalize on </p>
+                </article>
+              </div> {% endcomment %}
+
+
+
+              {% comment %} <div class=" add-top-half">
+                <article class="services-item">
+                <i class="fas fa-pen-fancy fa-2x"></i>
+                    <h4 class="font2 black">Design Theory </h4>
+                       <p class="font4 "> Two distinct branding fonts were chosen to deliver a clear message within the site while allowing it to maintain its youthful roots. From the beginning I wanted the website be be bright and colorful, reflecting the content inside it. Inspired by the aesthetic of crayola crayons, I chose a color palette that incorporated primary colors, many of which were the color codes from Crayolas original eight pack. Icons deliver a consistent voice throughout the site and add a much needed visual element that we found was lacking from other sites  </p>
+                       <img class="img-responsive sppic imgcenter" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/KgDx1baQ_jbao3L6a0YX73hLkJeBStojgECgNBg8eaQj3enaPLHPxweouz0yuyz9bi_VvOEJVAW-viUCZ-Pu0ed1LGYTRSROv_eXesG2ZBDM7_ZtMYgoneyhCy5jbSWZoK6La7ZxMtmZIp5r7l10_69poo00LSakpK9m1M4kEC7BOXquyk3xDS10jbHRCx8oVUpYkN4JF5qQXoZAuVm7QfdxM3x0A49E_4DCxkHfJyHwbk6ivb-G7g5glsg5lIXC46-bjoWBeYCMAFYpmPKMo-A22vKfLD-ai6U3zEsx71Ds50iicbm82eAMmzEuN8BwiLHPEzrNheyrRJmEemlBP3Vesej_dkPDHt8x0HkF6cTy-KmVti462cSf1grGgKN3Gv8NgoUtom7lKsjKsN2zbgrWcYLNNFTESKD41TWG1FcTpkZH8JCjYpUFiIQp7t6eAlypOvDgry5HVM0MyIKMUYH2xzQ5o4eDKVeQbkUO7h8hMe2iKijGDWiJtAGbi8jG-ShryMD-xC1FF-SvPf5Xy4s2zzMghIMhXgDGT_x2NPKZcr_sdSPg3NoUAPNyplVbxneo_ceSX0HiIx8bp8aLTSQlsnLAquZfpjh-cEzOQTfNJyqVlAwnCTRB3FYNoEJH2wRQ3Bz5WAk2MT1UVT2ziEGehiRl7S4=w1143-h680-no"/>
+                       <img class="img-responsive sppic imgcenter" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/_P4YpIvZcLi0Qwesp_tivuVV3njrQJ2eX47fzkmyxq-La8tEq4S-RIEwbyoD0NLT-lyMsOkLso9wZJZxbQi2pUQzHjMy9uu_lc4age4QnDhdHYLgiWz0uKoWilW5OKHwES-DsFer5VdaT_dVdKM63-7aSmeg43F4rQoQmEtVPdvDSniLSEZGvRQ_LK-eTXD9dKIAUrBdKCPVoBPWR0ExlB_wTjFAVHLif-FfUii4THMLUaD2NNf1_yrQ18y3bwwZXvyobUetizD1rl6rOpC-x3P291O5TadVKwsCpYyBSwgtrOWtgo4UmVPvXF-5E987WqQdyK45NSxh6Vj8scbC7NNcBn5IOJ5pnOjAD32FizaUchlpgXDV3uWUhWTbcYPVpVWQpYwnHNL73wUHaPb-hoGOtV3zP96MFZnguB0zFSBunPr88X8nXm9Lcujo7dut7QL_lauymAzVtl4cY1XX1JqPGoxF1FDT0MLKleDeQB0r-Fa64nf0Lb6Ej23S5IC3V1d39HCj_GfwH0FQaWXDyGelS5lWDI3KfQrV_gL59tz1_7qmg9WJXsZld-UNjjSLhRgX74Q5cAIE4V7WUgNEmB78iaVzz0420vGO33IjtHOnFCw-52xT9xrQznBMgVIr8HVtULysDiIUmcdPV_9YkAHXpopcJwc=w1127-h680-no"/>
+                </article>
+              </div> {% endcomment %}
+
+
+              <div class=" add-top-half">
+                <article class="services-item">
+                <i class="fas fa-forward fa-2x"></i>
+                  {% comment %} <i class="ion-social-buffer color"></i> {% endcomment %}
+                    <h4 class="font2 black">Next Steps </h4>
+                        
+                       <p class="font4">Currently in its Beta Phase, The Little Triangle is currently being reviewd and will be preparing for parent testing later in 2019 </p>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                 </article>
+              </div>
+              
+
+
+
+
+
+
+            </article>
+            
+            
+            <article class="col-md-12 text-left news-sidebar">
+                <h3 class="font2 dark">More Projects</h3>
+                <div class="liner color-bg"></div>
+                <ul class="font4 dark">
+                  <li><a href="post.html">Quizzer</a></li>
+                  <li><a href="post.html">CHANT</a></li>
+                  <li><a href="post.html">The Oak House</a></li>
+                  <li><a href="post.html">Itunes</a></li>
+                  <li><a href="post.html">Wayfinder</a></li>
+                </ul>
+                
+                <!-- <div class="post-tags">
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Django</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Python</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">HTML</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">CSS</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">PostgreSQL</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Heroku</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">jQuery</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">JavaScript</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">Sketch</a>
+                    <a href="news.html" class="btn btn-otto btn-otto-dark">minimal</a>
+                </div> -->
+            </article>
+          </div>
+        </div>
+    </section>
+
+
+
+
+  <!-- FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer class="mastfoot container-fluid white-bg">
+    <div class="row">
+          <article class="credits col-md-6">
+              <p class="font4 dark">Copyright &copy; 2015 <a target="_blank" href="http://wwww.designova.net">Designova</a>.<br/><a target="_blank" href="http://themeforest.net/user/designova/portfolio">Buy this template</a></p>
+          </article>
+          <ul class="foot-social col-md-6 text-right">
+            <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
+            <li><a href="#"><img alt="" title="" src="images/social/02.svg"/></a></li>
+            <li><a href="#"><img alt="" title="" src="images/social/03.svg"/></a></li>
+            <li><a href="#"><img alt="" title="" src="images/social/04.svg"/></a></li>
+          </ul>
+    </div>
+  </footer>
+
+
+  </section>
+  <!-- end : mastwrap -->
+
+
+
+
+
+
+</section>
+<!-- mastwrap-outer ends -->
+
+
+
+
+
+
+<!--share panel :starts -->
+<section class="share-panel white-bg fullheight">
+      <a href="#0" class="share-panel-close white">x</a>
+      <div class="share-panel-heading font3 dark">social share</div>
+      <div class="valign">
+          <ul>
+            <li><a href="#"><span class="ion-social-twitter dark"></span></a></li>
+            <li><a href="#"><span class="ion-social-facebook dark"></span></a></li>
+            <li><a href="#"><span class="ion-social-pinterest dark"></span></a></li>
+          </ul>
+      </div>
+</section> 
+<!-- share panel :ends -->
+
+
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+  
+  <script src= "{% static "javascripts/libs/common.js" %}" ></script>
+  <script src="{% static "javascripts/libs/bootstrap.min.js" %}"></script>
+  <script src="{% static "javascripts/custom/main.js" %}"></script>
+
+
+
+</body>
+</html>
+
