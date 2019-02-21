@@ -27,6 +27,18 @@ initMap();
 initContactForm();
 
 
+
+
+
+
+
+
+$('#menu li ').on('click', function(){
+    $('div').removeClass('not-visible');
+    
+});
+
+
 $('a.ajax-link').on('click', function() {
     $('#ajax-content').animate({
         opacity: 0

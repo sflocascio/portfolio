@@ -68,21 +68,26 @@
 
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="newpic">
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a>
+      <a class="#" href="{% url 'home' %}" ><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/nBkFUJP3AM0H-sb2eESd5G1Brh8LXElfxyIjaraGmRbSMzcs-IsgBx7akbuP6oFa8bWeUyTNetBkSbvsz-mMtY15kGdEbG59FBGEejwaw9VSsFG3XwJ8oTg5lk7B0p2JKkKZW_KwyCTgoArcp3bsWz-0G2kIjnCMXSF4TerXcONTRlv8anGysCT11EGUZygPIXv8t7e0TTcjthaE70A50x70SlS9LMb_B9sXpjvsGkrMZF9qr0BgC0xyP-Ngi5p1d9BpIp6dUi5mDkjF0y5RQ61lsEHYmJf1tBrTVpWiJIwDplo5jjLy6k9jNjeMZARf6c_76gdSX6h6lR82EhQXiuvYKAlC4Jzblm06h_Uraj31zgKUpy4wQbunRIvUavYYxMedurroJplANa-uSf78hEfdXS2xEZlorG34tNkWgKguNPsjOHj1fu2UbPGf2r_HO02DEhJrFkcwKtZbWaff1G3ZHJlSvHrQ8acT3hDh6TMOiSAClmx3PWbfV0P19RfzT73AzNBbhYF6qUchWjx622yj9G9onwQKfcGc5p1x9nWv_4Qq-UH0VhrVtTZVqSjexF9oU_QVlp_NpdHv_5iKSYSt5cem0RSBeKrWzcIdlUJ4JCESjk4tuydA9cqV7FR75lZyrJzHywJ4ONGusx2_MYe-8hn_JvI=s60-no"/></a>
+          {% comment %} <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a> {% endcomment %}
           <nav class="mastnav font2">
-            <ul class="works-filter">
+            <ul id="menu" class="works-filter">
               <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="#">About</a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href=  "#" >Projects</a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Design Process</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
+              {% comment %} <li class="#"><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0" > Resume </a></li> {% endcomment %}
+             
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li> {% endcomment %}
               {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
-               <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'elements' %}">Link</a></li> 
+               {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'elements' %}">Link</a></li>  {% endcomment %}
               
             </ul>
+            
+             {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0  " target="_blank"  > Resume </a></li> {% endcomment %}
             
 
 
@@ -106,10 +111,11 @@
   <section class="sticky-sidebar white-bg fullheight text-center">
       <div class="valign">
           <ul>
-            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
-            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
-            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
-            <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
+            {% comment %} <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="ion-ios-download-outline dark"></span></a></li> {% endcomment %}
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-email-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-download-outline dark"></span></a></li>
+            {% comment %} <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li> {% endcomment %}
           </ul>
       </div>
   </section>
@@ -161,14 +167,14 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom about spcolor2 spshadow">
+              <div class="works-item works-item-one-third zoom about spcolor2 ">
               
               <br>
               <br>
               <br>
               <br>
               <br>
-                      <img alt="" title="" class="img-responsive imgcenter" width="50%" src="static/images/photography/sam.png"/>
+                      <img alt="" title="" class="img-responsive imgcenter" width="50%" src="https://lh3.googleusercontent.com/_y3PYybV_4gnZ74KBe_M7xBj0xWXqS7nXcB1AYUtZjVew-gZ2ZctmOroOY_eXadGi2xThdJk4NtzbU907_-bFxSq_p0UK9MGLLO1tI6RBCMLmPrLcBJ2achLhCiPmcVXhitZI6xMbSZvRTqufNNkiL0nNMzZ8dWJikMEAy4FNkWUSNz1GGFaTvA_rsKhYMQNgaIEQxcZyBdOcXHynpALxjt3FhzNzB7KK3PHhgko4664oWgPrTScr-UDZ7wYCnWk3PgxvEnbaT53PgwbvoxRKRSBewEkVkDvqTF0qF2TLTaoR4rnMUKpRA3WaM4lYOqOcLHa7orFTWlvPhfu5f7oAT9KDd3TCQ3jWVQrVE34SS4Ut8TNDFK-YZoESvFDDieKAkADJzQrOQZ46r1tVwkgfxKIQ9hGX99Q3Po7IiK_aef3b1OneZUzhw2M-F8bOQZ_zRw9mejVHKxRDi3UgaeTSXEKC0-J6CKOWJABLv3OJpgdD54Vk67NjoRiwMO3ajauY1LyBNeK230qshWM305CBL9FFLOoqWDJsgM5eQpkcm2yZ5zZgkPuDvWXYnLwYh9_u1xWAqFC6b9zrn7w9rW5eThG0sv8bysFTPV7SvUJUpwa9bEU4w4ZKqIKq8fRc-Hv9vHfWIUmbaW2WZrJ9Bx233CI_wZV8tM=w903-h919-no"/>
                       {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/sam.png"> {% endcomment %}
                           {% comment %} <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
@@ -179,7 +185,7 @@
                       <h1 class="center"> Sam LoCascio </h1>
                       <br>
                      
-                      <p class="center sppad3 black"> Web Developer - Musician - Reocrding Eingineer - Nature Enthusiast - Kayak Owner </p>
+                      <p class="center sppad3 black"> Web Developer - Musician - Recording Enigineer - Nature Enthusiast - Kayak Owner </p>
                       <br>
                       <div class ="center">
                           <i class="fab fa-linkedin fa-2x "></i>&nbsp;&nbsp;
@@ -194,28 +200,32 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-two-third-spaced zoom about spcolor3 sppad1 spshadow ">
-              <div class="sppad2">
-              <h4 class="font2 dark"> About </h4>
-                <div class="liner color-bg"></div>
-                </div>
+              <div class="works-item works-item-two-third zoom about sppad1 spcolor5 ">
+              {% comment %} <div class="sppad2"> {% endcomment %}
+              {% comment %} <h4 class="font2 dark"> About </h4>
+                <div class="liner color-bg"></div> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+                 <img alt="" title="" class="img-responsive imgcenter" width="100%"  src="https://lh3.googleusercontent.com/c1ppzr2bHORLlYx9Oo_wQHvQbBkSiHSRCoHrTn93A-BLr_Sskhki-Is656KvQUgQZp1FcW-s7Vxwm6Zh1S6Ityrj9TjQGcT19Tgr4zH3dGyqSuXPBhwPAnH7GFwA6Ky37p-Ilmwb40cpT4-4dx72guwvxXaAcOT0sIg6KCag5U19ePZXJl1Clx0aW6EHOvVs6KkNzLyIe_2tSLKGWNIG7xZr6Xm5mwr1GJYzpSfFDvm-hqoZncCPdJjKvWr84BHLQt6otDGlwnesphL9GfbO1octUyCfNQ8Z6fQot0TDbFw1-AkiM5D3XfScGBCtT_0gK1w_dOWNIjkAoJp8flRjFzR01nuMFejl9Ky544n6yKiP9BgbUQWQ9YS28CE2q4dfDH9PIYTnB0Jc6MKUcl9DEk5WiVR8WiaCBOQjM2sPGkSDN99vPgTVxswoQ3Z_ENqZv1uHgM_sNxHMb_Tg9oT5cwqIaE-VmIp7scJjbllKa_B5zZu19NXTNCI4RtpUYhOjzkI3KPiNoDKcIlvqmfO_SM1PCMl39E4ynFOWurMRbtoSatGnMb_6XQxi-Kcwc__h8SBnI_vIxPhTyNhF2PIkfI5zxJ7Ohy6FvFGXIVUwM9U3aycRvb950xVuE9OhDcIKOOGTJv_00HrAE6Hr6YzqUlKZDIXHA10=w1013-h675-no"/>
 
               {% comment %} <h4 class="sppad"> About </h4> {% endcomment %}
-              <p class="sppad1 black"> I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. I thought that was really cool. It was this investigative process that led me to be intrigued with coding and fascinated by the things that can be accomplished with technology.  </p> 
+              {% comment %} <p class="sppad1 "> I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. I thought that was really cool. It was this investigative process that led me to be intrigued with coding and fascinated by the things that can be accomplished with technology.  </p> 
                 
-                <p class="sppad1 black"> I’m quite fond of the outdoors, recording music, fishing, ping pong, and (recently) cooking . I love to let my passions inspire my work whenever possible and have always loved work where I’ve able to help others.  I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019.   </p>      
+                <p class="sppad1 "> I’m quite fond of the outdoors, recording music, fishing, ping pong, and (recently) cooking . I love to let my passions inspire my work whenever possible and have always loved work where I’ve able to help others.  I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019.   </p>      
                     
-                    <p class="sppad1 black"> Feel free to contact me if you want to discuss a project or opportunity. </p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/02.jpg"/>
+                    <p class="sppad1 "> Feel free to contact me if you want to discuss a project or opportunity. </p> {% endcomment %}
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/02.jpg"/> {% endcomment %}
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/02.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                          <div class="works-item-inner img-responsive ">
+                            <h3 class="color font2">About</h3>
+                           
+                            <p><span class="dark font4"> I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. I thought that was really cool. It was this investigative process that led me to be intrigued with coding and fascinated by the things that can be accomplished with technology.</span></p>
+                            <p class="sppad1 "> I’m quite fond of the outdoors, recording music, fishing, ping pong, and (recently) cooking . I love to let my passions inspire my work whenever possible and have always loved work where I’ve able to help others.  I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019.   </p>   
+                           <p class="sppad1 "> Feel free to contact me if you want to discuss a project or opportunity. </p>
                           </div>
-                      </a> {% endcomment %}
+                      </a> 
 
                        
-                          <p class="center"> <i class="fas fa-envelope " ></i>  &nbsp; Get in Touch </p>
+                          {% comment %} <p class="center"> <i class="fas fa-envelope " ></i> <a href="sflocascio@gmail.com"> &nbsp; Get in Touch </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-file-download"></i> &nbsp; Download Resume </p>  {% endcomment %}
                           
                           
                    
@@ -229,32 +239,32 @@
 
 
                 <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom about  spcolor2 spshadow">
+              <div class="works-item works-item-one-third zoom about spcolor3 ">
               <div class="sppad">
               <h4 class="font2 dark"> UI / UX Design </h4>
-                {% comment %} <div class="liner color-bg"></div> {% endcomment %}
+                <div class="liner color-bg"></div>
                 </div>
               {% comment %} <h4 class="sppad"> UI / UX </h4> {% endcomment %}
               <p class="sppad black"> <i>“Something that looks great but is difficult to use is exemplary of great UI and poor UX. While Something very usable that looks terrible is exemplary of great UX and poor UI.” </i> </p>
                <p class="sppad black"> This is one of my favorite expressions of UI and UX. My goal and approach with UI and UX is to connect business goals with user needs through a process of testing and refinement that leads to a product that satisfies both sides of the relationship.   </p>
                  <p class="sppad black"> In other words, to make something that looks great AND is very usable.    </p> 
-                 <p class="center"> <i class="fas fa-arrow-left " ></i>  &nbsp; See Design Process </p>      
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/05.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/05.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+                 
+             
+             
+              {% comment %} <li class="#"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Design Process</a></li> {% endcomment %}
+              
+            
+                 {% comment %} <p class="center"> <i class="fas fa-arrow-left " ></i> <a> &nbsp; See Design Process </a></p>      {% endcomment %}
+                    
               </div>
               <!-- end : works-item -->
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom branding about spcolor5 spshadow ">
+              <div class="works-item works-item-one-third zoom branding about spcolor6">
               <div class="sppad">
               <h4 class="font2 dark"> Back-End Development </h4>
-                {% comment %} <div class="liner color-bg"></div> {% endcomment %}
+                <div class="liner color-bg"></div>
                 </div>
               {% comment %} <h4 class="sppad"> Back End Dev </h4> {% endcomment %}
               <p class="sppad black"> Special care is taken to ensure that the right tools are chosen so the project scales well as it grows. I bring an object oriented approach to my coding to assert the code base stays as concise as possible.  and write unit tests to test code and identify any edge cases in the development process, and databases are monitored to make sure no unnecessary overload is happening.   </p>
@@ -270,10 +280,10 @@
               <!-- end : works-item -->
 
           <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom about spcolor4 spshadow">
+              <div class="works-item works-item-one-third zoom about spcolor7">
               <div class="sppad">
               <h4 class="font2 dark"> Front-End Development </h4>
-                {% comment %} <div class="liner color-bg"></div> {% endcomment %}
+                <div class="liner color-bg"></div>
                 </div>
               {% comment %} <h4 class="sppad"> Front End Dev </h4> {% endcomment %}
               <p class="sppad black"> My core aim in front-end roles is to build efficient, interactive, and beautiful applications following DRY principles and W3 guidelines. In following with an agreed upon UI design, I approach projects with a mobile first mentality, making sure visual components are intentionally structured while bringing an emphasis on accessibility.  </p>
@@ -288,161 +298,48 @@
               </div>
               <!-- end : works-item -->
 
-              
-
-              
-
-
-
-            
-
-              
-
-
-
-
-
-
-
-
-
-
-
-{% comment %} 
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ">
-              <p>  UI Approach 1 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/07.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/07.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-              </div>
-              <!-- end : works-item -->
-
-
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom logos ">
-              <p>  UI Approach 2 </p>
-              
-              
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/08.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/08.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-              </div>
-              <!-- end : works-item -->
-
-
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ">
-              <p>  UI Approach 3 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/06.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/06.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-              </div>
-              <!-- end : works-item -->
-
-
-
-
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ">
-              <p>  UI Approach 4 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/09.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/09.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-              </div>
-              <!-- end : works-item -->
-
-
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced">
-              <p>  UI Approach 5 </p>
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/10.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-              </div>
-              <!-- end : works-item --> {% endcomment %}
-
-               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui ">
+               <div class="not-visible">
+              <div class="works-item works-item-one-third zoom ui spcolor8">
               <article class="text-left news-sidebar">
               <br>
-                <h2 class="font2 dark">  Design Process</h2>
+                <h2 class="font2 dark ">  Design Process</h2>
                 <div class="liner color-bg"></div>
             </article>
+            
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
+                      {% endcomment %}
+              </div>
               
-              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor9">
+              <article class="text-left news-sidebar not-visible">
+              <br>
+                <h2 class="font2 dark ">  Design Process</h2>
+                <div class="liner color-bg"></div>
+            </article>
+            
+              {% comment %} <p class="sppad not-visible">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p> {% endcomment %}
+                     
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui ">
-              <article class="text-left news-sidebar">
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br> 
-                      <br> 
-                      
-                      
-                
+              <div class="works-item works-item-one-third-spaced zoom ui   ">
+              <article class="text-left news-sidebar not-visible">
+              <br>
+                <h2 class="font2 dark ">  Design Process</h2>
+                <div class="liner color-bg"></div>
             </article>
-              
+            
+              {% comment %} <p class="sppad not-visible">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p> {% endcomment %}
+                     
               </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui ">
-              <article class="text-left news-sidebar">
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>    
-                      <br> 
-                      
-
-            </article>
               
               
-              </div>
+              
               <!-- end : works-item -->
              
               
@@ -451,151 +348,149 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-book "></i>&nbsp;&nbsp;Analysis</h3>
+                <h3 class="font2 dark">  <i class="fas fa-book "></i>&nbsp;&nbsp;1. Analysis</h3>
                 <div class="liner color-bg"></div>
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+              <p class="sppad">  Collaborate with stakeholders and investigate user goals and motivations to understand and define exact user needs.</p>
+                      
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-edit"></i>&nbsp;&nbsp;Card Sorting</h3>
+                <h3 class="font2 dark">  <i class="fas fa-edit"></i>&nbsp;&nbsp;2. Card Sorting</h3>
                 <div class="liner color-bg"></div>
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+              <p class="sppad"> Ideate solutions by creating wireframes and mockups. Gathering user and stakeholder feedback.</p>
+                   
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="far fa-object-group"></i>&nbsp;&nbsp; Visual Design </h3>
+                <h3 class="font2 dark">  <i class="far fa-object-group"></i>&nbsp;&nbsp;3.  Visual Design </h3>
                 <div class="liner color-bg"></div>
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+              <p class="sppad"> Design a high-res prototype of the interface that reflects research and feedback from Card Creation phase.</p>
+                      
               </div>
               <!-- end : works-item -->
 
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-code"></i> &nbsp;&nbsp;Front End Development </h3>
+                <h3 class="font2 dark">  <i class="fas fa-code"></i> &nbsp;&nbsp;4. Front End Development </h3>
                 <div class="liner color-bg"></div>
+                <br>
+                
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+              <p class="sppad">  Prototype the agreed design in code using HTML, CSS, Jquery, and JS.</p>
+              <br>
+                      
               </div>
               <!-- end : works-item -->
 
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark"> <i class="fas fa-users"></i>&nbsp;&nbsp;User Testing</h3>
+                <h3 class="font2 dark"> <i class="fas fa-users"></i>&nbsp;&nbsp;5. User Testing</h3>
                 <div class="liner color-bg"></div>
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+              <p class="sppad">  Perform research through series of usability and accessibility tests , evaluate design with multiple user scenarios.</p>
+                      
               </div>
               <!-- end : works-item -->
 
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor1">
+              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-redo-alt"></i> &nbsp;&nbsp;Iteration</h3>
+                <h3 class="font2 dark">  <i class="fas fa-redo-alt"></i> &nbsp;&nbsp;6. Iteration</h3>
                 <div class="liner color-bg"></div>
+                <br>
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a> {% endcomment %}
+              <p class="sppad"> Redo the entire process and use new insights to improve on the  product’s design and user experience.</p>
+                     <br> 
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
               <div class="works-item works-item-full-width zoom ui ">
+                <article class="text-left news-sidebar">
+                 <p class="sppad black"> <i>“Something that looks great but is difficult to use is exemplary of great UI and poor UX. While Something very usable that looks terrible is exemplary of great UX and poor UI.” </i> </p>
+               <p class="sppad black"> This is one of my favorite expressions of UI and UX. My goal and approach with UI and UX is to connect business goals with user needs through a process of testing and refinement that leads to a product that satisfies both sides of the relationship.   </p>
+                 <p class="sppad black"> In other words, to make something that looks great AND is very usable.    </p>
+
+                  <p class="sppad black"> <b>Tools:</b> Sketch io, Figma, Illustrator, Photoshop  </p>
+                 
+              </article>       
+                </div>
+
+              <div class="works-item works-item-full-width zoom ui ">
               <article class="text-left news-sidebar">
                 <ul class="works-filter">
                   <li class="trigger-sub-nav"><a  data-filter=".about"  href="#"> Back </a></li>
-                
-                {% comment %} <h4 class="font2 dark"> <a  data-filter=".about"  href="#"> <i class="fas fa-angle-left"></i> &nbsp;&nbsp;Back</a></h4> {% endcomment %}
                 </ul>
-                
             </article>
-              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p> {% endcomment %}
+             
                       
               </div>
+              
               <!-- end : works-item -->
 
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project ">
-              <article class="text-left news-sidebar">
+              <article class="text-left news-sidebar ">
               <br>
                 <h2 class="font2 dark">  Projects </h2>
                 <div class="liner color-bg"></div>
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p>
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p> {% endcomment %}
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+              
+
+              <!-- start : works-item -->
+             <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar not-visible">
+              <br>
+                <h2 class="font2 dark">  Projects </h2>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p> {% endcomment %}
                       {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
                           <div class="works-item-inner">
@@ -608,143 +503,117 @@
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project ">
-              <article class="text-left news-sidebar">
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                       
-                      
-                      
-                      
-                
+              <article class="text-left news-sidebar not-visible">
+              <br>
+                <h2 class="font2 dark">  Projects </h2>
+                <div class="liner color-bg"></div>
             </article>
               
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project ">
-              <article class="text-left news-sidebar">
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                           
-                      
-                      
-
-            </article>
-              
-              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p> {% endcomment %}
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
               </div>
               <!-- end : works-item -->
              
               
 
-
-
-
-
-
-
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+<!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/flashcard.png"/>
-                      <a   href="{% url 'quizzer' %} ">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-                      <h3>  Quizzer </h3>
-                      <p>  Full Stack Developer  </p>
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
-              
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/chant1.png"/>
-                      <a  href="{% url 'chant' %} ">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-                      <h3>  CHANT </h3>
-                      <p>  Full Stack Developer  </p>
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
-              
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/tlt.png"/>
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/MfWeXxY-fP0TVG12_aQ4XygmFn1NfFa_9Qck0_P8zftr-RLs5lOzETEU3S2o6dIReINSgcdLxuNBCPDgXC_7EPSnHc8m9mt21lyUv3vRF_dsFp6W-SV_mODKYoXS-l3LTdW2g_0i3Rzsi_eUcj3Lv4jNyytR5vn1StnAIQN4h8PVgyTDvlHKQCyf12y_ohNAwnmQHhwoJSVPf6zEK0z0Xkk_Kh06T7ngJdKXYG2iw9aXCZx8TOxmqsRSrOJOdeGVBbuzQQ8wJBllYLqtHfNldIE46Gtdt11YVh0C_cRqG2xdNcmuOdtyy8ocJq3HNGu_ivcDb97lYGtNK6d_DL6zUfSVeGjL5ZvV1DvmAaU27S6xLf_crgnzPp3qMKrJd0_tidl1ifKViZz4pYPofYNW0FO2INgLwDBF5jRip88PV_NBycGv1abAgppXMIkZo5x9U8vjsgXRDX4_tFlTDLAHOdh6Uhuy-e505PP00JAfcEOHcbTqdASMPzmE44SBBZMXxqaMzcHQh6dCRegOCkH67q_uQ5EvlheOQ7Xdf5vJQ2YlWSb4QrGvsiQTXMvQ2N0CoN-ISjPFQVbxCScMmjXMbfWi4SBMURafqWe2XPTNnsDtAF5yGRNb9tVf08ObX7x-3kWCfTMUO-raYrD-luvKPQMQV-BKyQY=w477-h372-no"/>
                       {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg"> {% endcomment %}
                           <a href="{% url 'post' %} "> <div class="works-item-inner"> 
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2 ">The Little Triangle</h3>
+                            <p><span class="dark font4">A web app built to offer parents in North Carolina’s Triangle Region a platform to discover, review, and gain valuable insights about the best activities, camps, and offerings in their area. </span></p>
                           </div>
                       </a>
-                      <h3>  The Little Triangle </h3>
-                      <p>  Full Stack Developer  </p>
+                      <h5 class="sppad3">  The Little Triangle </h5>
+                      {% comment %} <p>  Full Stack Developer  </p> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/itunes.png"/>
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/SFz480Jh96m-bC_q8lui6EbTX9q78LEyl6u0g6z2zZTNiqIv9Qzr1KlZ3rV-Hq_V4Nw8FLEPOamvZ7yh_-0_qSjhIx0JqKvVp-YBlM8ekIUx8dswkyEcbbS2Ocl2bywzJAHs2VaNe3VL0xklgYVYceRngeBpCoExBfILcpJxkX6X5tuxAoVCwLNIcGeDHfS9qag-KGaYHbndLR_GQYT7WkeDv1pHQ8b7zWLC3zhu1ypqI4BiJtTh0BuyfBUMLzCkH8oiQz0jaYxAkOxqK8v-kH1zXx1ACecHDdguWpjrkbZd5_n4NDvizw6OTz1_8hK0gY9jZ3xG1wqAH6PWEZi7DfC4vqe87LygyXh8LDhs6QXFiroZYuVX-SQ0Z8uelrCNmiM2W5cd37LTwA1iRG_j_RzlliTdeKg8tDBh_JknbLwPS3pjYem4APT5xF1ck720I99tPQ9-veRPI2fp8w86vcTNORzq-mNxNvNaRCTn6obFaazhkj60SPDFnEU1WZDpGuZ0fo6SQIUciVjZ9cEeeU_itbVQeTURQNk5dDIqSE6XFOqomDbpnUl-8TI4j7DXVcd6vDMfqiPysuH_0DwtniPPoHJlLwBkAGzWSvMYJz1C4Sl208rveJAajJajgoU_cCDBuJQH0y3Ih_-qaNYjWA9PJQjSCuA=w866-h675-no"/>
+                      <a   href="{% url 'quizzer' %} ">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">Quizzer</h3>
+                            <p><span class="dark font4">A modern and minimal flashcard based web app. </span></p>
+                          </div>
+                      </a>
+                      <h5 class="sppad3">  Quizzer </h5>
+                      {% comment %} <p>  Full Stack Developer  </p> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/cVuSrFAGuswkt2FcWiHmqiBW3_9oaOlWyjvqdAlDaTCOgvUv3ChVxEIpAflNJAllGQ0zqjftIyxFLZypUprhh4Eb1yVJVJyUBFjtGHKXHj9OCFwkp-L3JS6Y3ZrNOLGqyPWb_vxnwczrS29x5ieVcJGKNVhrRPf_4ujSUXtexifJC0GVnio3DFdQZbEtuzN-uafd2OBZUCHDL4wJgRVb4EzRrPBhULhu3xTkX7FVEiF_CWSDIFElz3v1gIQGHojcLFiZiAjkxDS_5bLVBjUVQJXQ3y9ZaAzeFlL0YCe1A-VeGxbsVM9H-kTqAUe23T0euqUE2DpXYQq8W3u3EUqugVkg4ywHyasVtuhI3roxOFDgVd0L3TR7ztVMGEakY5-XXRIJuSTBd4N0ydQkX8fEZO7JZKJm7illqxXsL4QnS2d6KMzViHNF4uGJtycCswAp80qoqoORKuujLJvDnVIs_ixy3_dv7kd9dHFnUJYaga08YWhUo9mDi177LfZ1IgF0K0lIGNgl326cdTH-zS1lZeYhnlh2D8M3rEeqbNqfO2LkfY6n1wskmrLEpQfRg7zbJ5gSaryAz7tSwrH3fWaYLXkSmKilQcrbLLYR6JFGNWdhAbS_EFhA6c3V3k-WbJEfSk_w9zkvbqi4T076um7CiaubOcs06H0=w866-h675-no"/>
+                      <a  href="{% url 'chant' %} ">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">CHANT</h3>
+                            <p><span class="dark font4">Built for connecting and engaging the creative community, CHANT is a mobile app set to launch in 2019</span></p>
+                          </div>
+                      </a>
+                      <h5 class="sppad3">  CHANT </h5>
+                      {% comment %} <p>  Full Stack Developer  </p> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/VouDcj3z-kZyG_-z3sb0zQnK91Bqko_4BRPoFEA5hwYfosFZrnh9XIdS3taUt4juqTfLTy3hhNbxoDj1Tuis-dbmpbIOSMoZG1Ksvh3rY3eiUIAAo2DmUy8CUALq72Pg5d9eEtajTsolG7ZIA8LyjRh235hcgljlJ0uPsFgHQr_NCrBrDRw79s5NMQ_zyjaaOjkOcXIH8fu_x9w97XAzi5fLE6-sIGcvRDwJtIp3KBM8_GbV0BfIQSGaIslwnk3wyyd7o4EmWDNboQvr1-w4oZDpzLj5XmlpQ-QQ0rvqj_TsdL-65d6ROJSdS_xJr4XCBE0OUMPUjgnkckuHeKeSYBld98IRVL2ADSCtNnr2ooyk7i5vkiDvea86fU6KSWuZlimwgoxpz5GVuabzi69ZZKSyrldn8eb6GGcZlqNz0cbq_GtKknicjztKNnh2m4NeHN-GzmRtm42p_qpbFY0wlGbtKXf00_voGgzMPE8_MRj3RNF8ovnmO-zJuq_FY9nuHthtqFhZxntXjyHqodz4cVEjtIUSbmdSsOVVM6h2qK_HjzqfqR9V2gPLYZ8H8ALOivQNGS1J0RkRDp3Kd2j6IHTdEtjjLsXVPHyIL2p1X1q0j3kojqpQpLkmoYeLThXv7PyIXRJGcLkM62c5MabUzdLnezti78c=w1179-h919-no"/>
                       <a href="{% url 'itunes' %} ">
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2">Song Findr</h3>
+                            <p><span class="dark font4">A front end web app for searching and sampling content via the itunes API</span></p>
                           </div>
                       </a>
-                      <h3>  Itunes Seacrh </h3>
-                      <p>  Front End Design </p>
+                      <h5 class="sppad3">  Song Findr </h5>
+                      {% comment %} <p>  Front End Development </p> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/way.png"/>
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/4w9I369kuxnG-CnC8JkM6zpNhEm48kdzLLhn09CsMbNKoWNlKMgQ6wpjCVP-GhY4MYaWGveV7mEgk_GGMrE4xEmUlSAZFy9coWVUzpL922MKt6aBFhqEfn7BwXZhF2NG9WKh_DElnyt68dnAe9TEIXGkYVnQ_QTJQZbqPPGKppR26GrP90u2J-2lv06uOpsLxZjGtKJ_NuJQ6F9ZXFwgnwb24WlZxc6_TtPhBSeldXQ54QyHHher0umdt2gGjVNJYvEvc6ExqjvG3xpNiiszXREPvAO3N1gEp4yWRD6rFJNx-Atj38W8YgyLTbvm1OYG8XGWsbI3R2T7aS4I-xJEH6y-5f5_al6M60YR5yn-je44Xjq3-FUOZ7hxjjpwz2KKpmQDDZ6xkSlwbqjrbFdywrR_5Y8HgFgf9inW964uBPIsTvYMlA79mVavRZ5syRzyNlbN2J9RJgXD1dZgwi9Ufwx6WfzI7n3mpUxlxXQdL-YZj-28ImmUN8CkurmCdsv3KNFsU20YXVCkG01JMYbNRD9Oyg-guaGFi06e1kOEk5eHc10ELl9Gzgs5eQxon2CEUrpfAgs2YnxlqEguCxGvThe6yrd1Inrj1NjpX303ER3sqVhAQl84zgcIcTn4t37smQmesom4m0PcG6qRRPTH9BQzGiKFRg4=w1179-h919-no"/>
                       <a href="{% url 'wayfinder' %} ">
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2">Wayfinder</h3>
+                            <p><span class="dark font4">An exploration in data visualization with 360,000 data points. </span></p>
                           </div>
                       </a>
-                      <h3>  Wayfinder </h3>
-                      <p>  Front End Design </p>
+                      <h5 class="sppad3">  Wayfinder </h5>
+                      {% comment %} <p>  Front End Design </p> {% endcomment %}
                       
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
-                      <img alt="" title="" class="img-responsive" src="static/images/photography/oak.jpg"/>
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/HSNvNYSUDWpKGb8QoMbWmkl3YpGtiBQN0hzJKe6QiaMHz2YiA49iAW5Rgn-UZ37DX4aRScy15rz_KOxlCC2bKdkEXj94cIgOZuMOTgv0MYlNRQp4enROyUb9evNaC7aY6P13QflCOWJms2Qx9O3YLRhdluaEi4YxNezX0m0lA4VbE6WbdkMltBFR5gdZfX3C3S2XcDk3YB4LCVx-8DA6uGJiSM1CLyNhm985h_qxYR9pitWC-qavNxKIcSu85wY_Lz9f6N1dsNQ0uXJl-B2RrSZZXT09CPQqCaGq7MEoALhJUJYhCdmJxL8Z1-iz5u3I5Qt-WmKjknNCQVGvu99tpEKN9_W5ld0yk5TWUVYxp77-fVgf5lWWtrsqtFRuefcVKwAD20Pv17xHOmfA_peGKmSaaHkPYurBdJ3fQLRD_cnm-CDAjIgIH-LDHFIWXMTn3S4uECOoZSTp9coa0AMNTRltqh4B8MSlxR6AAMUpJ2oL1v-KCIbukObFdjUu4KYqDJq_GyXVYmfu7rn8xYgtvEMVzf6ocPv9fBc0Mu-twfIl4E4wwWqXSAOaeKhlR2II0YEdz4uwDyQlUtaJvv8Izdq-sUo3Erfs-b5A-7aVm70bpScJVSwVdKZkBb_9RBvUeORo35U7S9rUXvuY1LvcpULHBu6VsIc=w1179-h919-no"/>
                       <a href="{% url 'oakhouse' %} ">
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2">The Oak House</h3>
+                            <p><span class="dark font4"> Coming to Durham soon, the oak house features whiskey, coffee, and craft beer.</span></p>
                           </div>
                       </a>
-                      <h3>  The Oak House  </h3>
-                      <p>  Front End Design </p>
+                      <h5 class="sppad3">  The Oak House  </h5>
+                     
+              </div>
               </div>
               <!-- end : works-item -->
 
@@ -758,6 +627,7 @@
 
 
 
+            </div>
             </div>
             <!-- end : works-container -->
 
@@ -897,12 +767,20 @@
 <!--share panel :starts -->
 <section class="share-panel white-bg fullheight">
       <a href="#0" class="share-panel-close white">x</a>
-      <div class="share-panel-heading font3 dark">social share</div>
+      {% comment %} <div class="share-panel-heading font3 dark"> Contact / Download Resume </div>
+      <div class="share-panel-heading font3 dark"> Contact / Download Resume </div> {% endcomment %}
+      <br>
+      <br>
+      <br>
+      <br>
+      
       <div class="valign">
+      <p> Contact / Download Resume </p>
           <ul>
-            <li><a href="#"><span class="ion-social-twitter dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-facebook dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-pinterest dark"></span></a></li>
+            {% comment %} <li><a href="#"><span class="ion-social-twitter dark"></span></a></li> {% endcomment %}
+            <li><a href="mailto:sflocascio@gmail.com"><span class="ion-ios-email-outline dark"></span></a></li>
+            
+            <li><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0 " target="_blank" ><span class="ion-ios-download-outline dark"></span></a></li>
           </ul>
       </div>
 </section> 

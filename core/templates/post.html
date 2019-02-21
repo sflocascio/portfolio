@@ -117,16 +117,16 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/nBkFUJP3AM0H-sb2eESd5G1Brh8LXElfxyIjaraGmRbSMzcs-IsgBx7akbuP6oFa8bWeUyTNetBkSbvsz-mMtY15kGdEbG59FBGEejwaw9VSsFG3XwJ8oTg5lk7B0p2JKkKZW_KwyCTgoArcp3bsWz-0G2kIjnCMXSF4TerXcONTRlv8anGysCT11EGUZygPIXv8t7e0TTcjthaE70A50x70SlS9LMb_B9sXpjvsGkrMZF9qr0BgC0xyP-Ngi5p1d9BpIp6dUi5mDkjF0y5RQ61lsEHYmJf1tBrTVpWiJIwDplo5jjLy6k9jNjeMZARf6c_76gdSX6h6lR82EhQXiuvYKAlC4Jzblm06h_Uraj31zgKUpy4wQbunRIvUavYYxMedurroJplANa-uSf78hEfdXS2xEZlorG34tNkWgKguNPsjOHj1fu2UbPGf2r_HO02DEhJrFkcwKtZbWaff1G3ZHJlSvHrQ8acT3hDh6TMOiSAClmx3PWbfV0P19RfzT73AzNBbhYF6qUchWjx622yj9G9onwQKfcGc5p1x9nWv_4Qq-UH0VhrVtTZVqSjexF9oU_QVlp_NpdHv_5iKSYSt5cem0RSBeKrWzcIdlUJ4JCESjk4tuydA9cqV7FR75lZyrJzHywJ4ONGusx2_MYe-8hn_JvI=s60-no"/></a>
+          <a class="#" href="{% url 'home' %}" ><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/nBkFUJP3AM0H-sb2eESd5G1Brh8LXElfxyIjaraGmRbSMzcs-IsgBx7akbuP6oFa8bWeUyTNetBkSbvsz-mMtY15kGdEbG59FBGEejwaw9VSsFG3XwJ8oTg5lk7B0p2JKkKZW_KwyCTgoArcp3bsWz-0G2kIjnCMXSF4TerXcONTRlv8anGysCT11EGUZygPIXv8t7e0TTcjthaE70A50x70SlS9LMb_B9sXpjvsGkrMZF9qr0BgC0xyP-Ngi5p1d9BpIp6dUi5mDkjF0y5RQ61lsEHYmJf1tBrTVpWiJIwDplo5jjLy6k9jNjeMZARf6c_76gdSX6h6lR82EhQXiuvYKAlC4Jzblm06h_Uraj31zgKUpy4wQbunRIvUavYYxMedurroJplANa-uSf78hEfdXS2xEZlorG34tNkWgKguNPsjOHj1fu2UbPGf2r_HO02DEhJrFkcwKtZbWaff1G3ZHJlSvHrQ8acT3hDh6TMOiSAClmx3PWbfV0P19RfzT73AzNBbhYF6qUchWjx622yj9G9onwQKfcGc5p1x9nWv_4Qq-UH0VhrVtTZVqSjexF9oU_QVlp_NpdHv_5iKSYSt5cem0RSBeKrWzcIdlUJ4JCESjk4tuydA9cqV7FR75lZyrJzHywJ4ONGusx2_MYe-8hn_JvI=s60-no"/></a>
           <nav class="mastnav font2">
 
 
           <ul >
-              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
+              <li class="trigger-sub-nav font2"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href= "{% url 'portfolio' %}">Projects</a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="{% url 'design' %}"> Design Process</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li> {% endcomment %}
               {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
               {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Link</a></li> {% endcomment %}
               
@@ -191,13 +191,14 @@
   <!-- sub navigation panel : ends --> {% endcomment %}
 
 
-  <section class="sticky-sidebar white-bg fullheight text-center">
+   <section class="sticky-sidebar white-bg fullheight text-center">
       <div class="valign">
           <ul>
-            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
-            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
-            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
-            <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
+            {% comment %} <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="ion-ios-download-outline dark"></span></a></li> {% endcomment %}
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-email-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-download-outline dark"></span></a></li>
+            {% comment %} <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li> {% endcomment %}
           </ul>
       </div>
   </section>
@@ -405,9 +406,9 @@
                        <img class="sppic" alt="" title="" width="100%" src="https://lh3.googleusercontent.com/NhB6iNq9GnaVS0JOmQ9ZizkDP4s4yFDOq-5IJh9XWVnRoNo0fF-QdsHxSIC7PZPPKOtnxHaQn3Ewohgwr27H_O-KTzHeoA4sfRSiK81dEVMPN4mbWhC7VCBiY4ZJ8w7bMAqx47WsqozGuh1oT1rUGLbruLn9810n5whVdASQIlkiMG6WcrNvsrwcvT1DhPImE6YChZrOVlAsyqE0Ouxt1IQEEcZ7jSZDvQHoKcdHci4cGOAiW4clUYvknf6Zq0FdY_LnS66RPgnfJDtRcu1G3kml9dvvKB1_8sHg6Wa4qA_CDucRV0OKiMaqNSI_MfgxCGr2s4dk2fJx89jsEoY4NwrT3yqev8DTvw7GCAHHSdvKJXvOqKLoAeNCwPgQB1Pqf2SJX8Kp0bSIhryC_onTcqNZQ4XjOuebqGt5NuD5bJtWk57HbJyAjCzqKi-HZdhZT7XuYHH1Hfry0CTci1cFtOPsmCq-oRQup9X6E85WJbxDbkz9rJu_4jXj5QibeT60YaMnx_plqaL9Lg1c8xkA3n020ysJYXstCFDUeu2jmIuk8pAdM7iWfKtPBR1KfC77LyKeBZn2pcw6_V08WNXULr34xMGOsb8x2rMrdlZbLw0DE5ydtSiAIl4sn19rmaMj0ScCMa0RBScdsHvWqu9nNJJzfcY6_dc=w900-h700-no"/>
                             <br>
                             <p class="font4 black"> <b> Cards for the win </b> - Images and icons included in detail cards give users a snapshot of the event or business before clicking </p>
-                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="33%" src="https://lh3.googleusercontent.com/C2kK8Kh_yM9esT2rCYVQDfE2jbNrpWDWHVKP_-bqCydVOGvAxMM0u7dYgb3kvApoJ0VRZrtFy02WXs9G4xVnWMDq-oVXaW_IasUhavBQehlFphd-BjVMxl4zbBQ-YO1c8yoSks7hglmb5TAh7kVzJjq2f1ME6fOfxs1t5r74PHWf0r1eGM8iZk7mAUldV8eamrVsJwvJfEbL7itS3tt11yOUdkJu305HerzDPuuTvBYx26CORJY88rnA6tlBXoR6vb-aUJrR87CJ-sOKRG2UsNDEjUMU_7i3PimUrybQf_Gd5P-9MQmTVF5hVTUkqQNDR6bu2PG_p1zyZJQMn7uk7quLuFVwKmNSrEoyC4gaAbeA0svPLjQd83tHXAvFgiSr-1uX_2vWRZPxvK0jTAAGVctT7w-s6-SbgcB2YU4XoLJfXzXVkn_HuLoq5ZgMjyeUG3vaceh6u_COWVfLuViIXjBl9WBPOaZdXO4FrwqomrLgBOIRqx_2nHTX5OPByIXy0nXWTBvpbd76m9OgtxO5R5YiTtG1fsIsagFhlDXllyQ9w0753o7S38y9cXW3xVPEbFl8HYlWDkQzAuB4n0GWKTjCnigrdRs5SzQm-QKIBp25v5xDTbRvZMoHlksjDEV8HJYjt2SRDyQkz-bDkaIad3JLzB6Q4h4=w357-h463-no"/>
-                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="33%" src="https://lh3.googleusercontent.com/w3l6y0xAtuf1csbAFa6yoYiQMuTFhgpr1QUlGWoUFsGXfD2_-KKQtcYQfGmg2oKPQNk8FHB3wDnS4Ly7aqDjJ3sIl305jm0Z2-Qrla8Hoc5hixug3gI5gpynmjAjv512V0GVYKRVtHozrUUWZoh3m7eQUM0PAArdGcBoqfIzP7l7qokY7m1KYKS9Oh_aXlnu9a3ly7w81VSA97MwOBq090CBH1xy9MnfweAn3QtUhEcsvyueh0VpoXy4wSrsv7nyFxGEupn3oPh6jMYo_MJd6kqfQKNyHbBXhOo23pbFPk5baObViz0yI8C0CAlJMWwJDV1zdtFuZ7DhNIzOKerT-amBrLkzVkNkYhD42PlK3YIBxbTu10LhFC6pTNAunPuAlvYCza62kJkIYcGgmwrrkgllnHB8SxhcVVKpDLuOiUqTcYyCTY-7bRbbvoWRqCNB0f3ODipIB5Wtu7-GUToC7Yaxzh0cIvvYGaq0HEzzN6ieXOe5AjR0YdhyPkApI_AO8-Xqiy0a-YOPBo70ZqLgia64jU53Kq4KXOae7c7T4fkCoKDVGUab4H0CSc7R1zlwyPOyCE7i1yGS7iAyl6mJAZLXaK_bj96zjhkDdoNLCgaIb-NOBJi5WXADmz2Yxwkb6c30KnpDSrWlPZ9YnaTHQiDny08Kkxs=w356-h464-no"/>
-                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="33%" src="https://lh3.googleusercontent.com/qSbvF7al764YeS4dbcQ7YSWKMMTQEv0gdQYxsjgSrTsErvH6_n0_SubIKphk1fDFP8t7BaWRVupU1kA85EjlZLGqZLmaJTal8C4xYwtq6z5oZOC8gpUms9EUI9JTxo8HgEzcc5Mx6wgnW7LRPAmDQOVsC-yBoEgrXYugBbtNdCSBMz1HlZ7PbTb2Oj5hSaqfHjK4vD2dRxJd6zPuQB3twBoJVOh4KY4PCTihd1MiLpi9zq8o55Jg6_5qDKEHuIG5PLY3-xJmcEWdsXM2PXunbZ0ZoqeA-zXNNpMQFall4efa8Dzt8E_ITGR75GeJQvT2MiARYUs4AvSk9YPZ0IhUgfvmAbg9DzHWNjZ9HoH8tFOrBcUUfD0hiEOpxpPVghoYkxZuXSqje_1q6vo81M19PmVvghn_s8CK0171w0QiJ813i1psLqfy5cjh3NotRlIDH24uM-5oVjdcoaFkbvxpPYLpCjZ4eOzkSN9WjXysb4icy-w-M9VS_6xzMt4eqdmkTOk5qmu-LQiWaWej9qWCVoTNmLRlm127F0IILtUZccUFW2AnudW4ANxixAZADQtOk06KPeopOf5JaR24zPdOnjUmO5qQM3ViI963JDpAGFagtIy5D7dyHWMkX7vYkOoT8pZMaQN2xwL7Ru39FmWsqbx8NnOKbfQ=w357-h490-no"/>
+                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="30%" src="https://lh3.googleusercontent.com/C2kK8Kh_yM9esT2rCYVQDfE2jbNrpWDWHVKP_-bqCydVOGvAxMM0u7dYgb3kvApoJ0VRZrtFy02WXs9G4xVnWMDq-oVXaW_IasUhavBQehlFphd-BjVMxl4zbBQ-YO1c8yoSks7hglmb5TAh7kVzJjq2f1ME6fOfxs1t5r74PHWf0r1eGM8iZk7mAUldV8eamrVsJwvJfEbL7itS3tt11yOUdkJu305HerzDPuuTvBYx26CORJY88rnA6tlBXoR6vb-aUJrR87CJ-sOKRG2UsNDEjUMU_7i3PimUrybQf_Gd5P-9MQmTVF5hVTUkqQNDR6bu2PG_p1zyZJQMn7uk7quLuFVwKmNSrEoyC4gaAbeA0svPLjQd83tHXAvFgiSr-1uX_2vWRZPxvK0jTAAGVctT7w-s6-SbgcB2YU4XoLJfXzXVkn_HuLoq5ZgMjyeUG3vaceh6u_COWVfLuViIXjBl9WBPOaZdXO4FrwqomrLgBOIRqx_2nHTX5OPByIXy0nXWTBvpbd76m9OgtxO5R5YiTtG1fsIsagFhlDXllyQ9w0753o7S38y9cXW3xVPEbFl8HYlWDkQzAuB4n0GWKTjCnigrdRs5SzQm-QKIBp25v5xDTbRvZMoHlksjDEV8HJYjt2SRDyQkz-bDkaIad3JLzB6Q4h4=w357-h463-no"/>
+                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="30%" src="https://lh3.googleusercontent.com/w3l6y0xAtuf1csbAFa6yoYiQMuTFhgpr1QUlGWoUFsGXfD2_-KKQtcYQfGmg2oKPQNk8FHB3wDnS4Ly7aqDjJ3sIl305jm0Z2-Qrla8Hoc5hixug3gI5gpynmjAjv512V0GVYKRVtHozrUUWZoh3m7eQUM0PAArdGcBoqfIzP7l7qokY7m1KYKS9Oh_aXlnu9a3ly7w81VSA97MwOBq090CBH1xy9MnfweAn3QtUhEcsvyueh0VpoXy4wSrsv7nyFxGEupn3oPh6jMYo_MJd6kqfQKNyHbBXhOo23pbFPk5baObViz0yI8C0CAlJMWwJDV1zdtFuZ7DhNIzOKerT-amBrLkzVkNkYhD42PlK3YIBxbTu10LhFC6pTNAunPuAlvYCza62kJkIYcGgmwrrkgllnHB8SxhcVVKpDLuOiUqTcYyCTY-7bRbbvoWRqCNB0f3ODipIB5Wtu7-GUToC7Yaxzh0cIvvYGaq0HEzzN6ieXOe5AjR0YdhyPkApI_AO8-Xqiy0a-YOPBo70ZqLgia64jU53Kq4KXOae7c7T4fkCoKDVGUab4H0CSc7R1zlwyPOyCE7i1yGS7iAyl6mJAZLXaK_bj96zjhkDdoNLCgaIb-NOBJi5WXADmz2Yxwkb6c30KnpDSrWlPZ9YnaTHQiDny08Kkxs=w356-h464-no"/>
+                                      <img class="img-responsive sppic imgcenter" alt="" title="" width="30%" src="https://lh3.googleusercontent.com/qSbvF7al764YeS4dbcQ7YSWKMMTQEv0gdQYxsjgSrTsErvH6_n0_SubIKphk1fDFP8t7BaWRVupU1kA85EjlZLGqZLmaJTal8C4xYwtq6z5oZOC8gpUms9EUI9JTxo8HgEzcc5Mx6wgnW7LRPAmDQOVsC-yBoEgrXYugBbtNdCSBMz1HlZ7PbTb2Oj5hSaqfHjK4vD2dRxJd6zPuQB3twBoJVOh4KY4PCTihd1MiLpi9zq8o55Jg6_5qDKEHuIG5PLY3-xJmcEWdsXM2PXunbZ0ZoqeA-zXNNpMQFall4efa8Dzt8E_ITGR75GeJQvT2MiARYUs4AvSk9YPZ0IhUgfvmAbg9DzHWNjZ9HoH8tFOrBcUUfD0hiEOpxpPVghoYkxZuXSqje_1q6vo81M19PmVvghn_s8CK0171w0QiJ813i1psLqfy5cjh3NotRlIDH24uM-5oVjdcoaFkbvxpPYLpCjZ4eOzkSN9WjXysb4icy-w-M9VS_6xzMt4eqdmkTOk5qmu-LQiWaWej9qWCVoTNmLRlm127F0IILtUZccUFW2AnudW4ANxixAZADQtOk06KPeopOf5JaR24zPdOnjUmO5qQM3ViI963JDpAGFagtIy5D7dyHWMkX7vYkOoT8pZMaQN2xwL7Ru39FmWsqbx8NnOKbfQ=w357-h490-no"/>
                             <br>
                             <p class="font4 black"> <b> Reviews and Ratings </b> - A key feature of the site, rankings and reviews give users a way to share insights about businesses and events they attended </p>
                        <img class="sppic" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/NJgoETd1MdVXN7MVRy-ax4c3oJS3nYlMN7ULy0si0UsfCxAf7UlZlIU4IZZgwh3zaJ6rJ1ImJPoVv-5fzC9ezCh1cbSb-AC7U8vrhbI_NvT2YUxm71hKWfrfIU0Ztk7eBQNxdTCQwb8CLECzs3gLFXA3LvGZw6jv3ia2j9lQe40FeXzU6xCNKzsA7e3glL1y12QdBBH6QUZmzyb8nBpe_i9A_zQLBoVv43qWZvfAMWjBTB2Q5PsgFPeND11_5uX60srk4ZaNQmZdRUfnxy7mspfAXseV0hs2iviv2Z3O9j5GjxASXlDrHOq2rbFYp_e_FnZ7STKN4CCxfBMya2uSKpDwyxNFiY1L7kkq7mpCcm9-8KdDAU4F4ydq2UzbkOb1tr4AM7pck3IvS6WLu-f6RV7dEb4-umUa0N0a3HMlKpHOEJke8Tt7uWTKpk9WKKLMP82LZT4k8jzqzhbo_HCDECAVgSEb9u0UreKcr_V66aKo9YnDGOxl4H4aaE9Otssh84AFTfyd-WUuY46Dn5TC717icj8i_k3X7YgWkKTswC3Iy76mKYFfimQ6-hLOufD1QlJSYtXOnnJcTN2OrE5ZHYsmMFg1VPcI3HxgCh5aWBxsZ05azdytFguIzNGQ0WVpC6nmUNFBTrjM1vtE9elM4yyKRcMiwTQ=w597-h264-no"/>
@@ -541,12 +542,20 @@
 <!--share panel :starts -->
 <section class="share-panel white-bg fullheight">
       <a href="#0" class="share-panel-close white">x</a>
-      <div class="share-panel-heading font3 dark">social share</div>
+      {% comment %} <div class="share-panel-heading font3 dark"> Contact / Download Resume </div>
+      <div class="share-panel-heading font3 dark"> Contact / Download Resume </div> {% endcomment %}
+      <br>
+      <br>
+      <br>
+      <br>
+      
       <div class="valign">
+      <p> Contact / Download Resume </p>
           <ul>
-            <li><a href="#"><span class="ion-social-twitter dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-facebook dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-pinterest dark"></span></a></li>
+            {% comment %} <li><a href="#"><span class="ion-social-twitter dark"></span></a></li> {% endcomment %}
+            <li><a href="mailto:sflocascio@gmail.com"><span class="ion-ios-email-outline dark"></span></a></li>
+            
+            <li><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0 " target="_blank" ><span class="ion-ios-download-outline dark"></span></a></li>
           </ul>
       </div>
 </section> 

@@ -21,7 +21,20 @@
 /* 1. Common
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+
+/* NEW */
+
+
+
+
 /* Sams Classes  */
+
+
+
+.not-visible {
+  visibility: hidden;
+}
 
 .spcolor1 {
   background-color: rgb(211, 230, 214);
@@ -122,6 +135,8 @@
 
 html, body{
   overflow-x: hidden;
+  
+  
 }
 p{
   font-size: 14px;
@@ -133,7 +148,7 @@ h1,h2,h3,h4,h5,h6{
   margin-top: 0;
   margin-bottom: 0;
 }
-a{
+/* a{
   text-decoration:none;
 }
 a:hover{
@@ -141,7 +156,7 @@ a:hover{
 }
 a:focus { 
       outline: none; 
-}
+} */
 @media (min-width: 1024px) and (max-width: 5000px) {
   .container{
     max-width: 1000px;
@@ -242,15 +257,19 @@ a:focus {
 
 /*Preloader*/
 html.preloader-running, body.preloader-running{ 
+  
   overflow: hidden; 
+  
 }
 html.preloader-running .sticky-sidebar{
   display: block;
 }
 body.preloader-running{
+  
     overflow: hidden;
 }
 body.preloader-running #ajax-content{
+  
   opacity: 0;
 }
 

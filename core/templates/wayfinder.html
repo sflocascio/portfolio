@@ -144,16 +144,16 @@
           <br>
           <br>
 
-          <h3 class="font2 dark"> The Quest </h3>
+          <h3 class="font2 dark"> Challenge </h3>
                 <div class="liner color-bg"></div>
 
-                  <p class="font4 black">Three questions nearly all parents ask themselves when they are about to register a child for a brand new class or program:  
+                  <p class="font4 black">Given a set of 360,000 specific 4 digit elevation points, how does one make visual sense of it? Changes in elevation create topographical landscapes so it seemed the best way to attempt to render such data was by creating an image to represent the data set. 
                     <br>
                     <br>
-                  Is it safe? Is it worth the money? Is it worth the time? 
+                  The approach was to write a Python script that could take each data point and convert it into a specific value on the color scale (0-255)  based on its relationship to the maximum and minimum elevation. When rendered, the result should be a textured topographical looking image in which each pixel represents a single data point. 
                     <br>
-                    <br>
-                  The concept for the little Triangle was envisioned by such a parent, looking for a place to discover quality events and activities for her child, while getting valuable insights and feedback from other parents in her area
+                   
+                 
                   </p>
 
               <div class=" add-top-half">
@@ -161,13 +161,20 @@
                 <i class="fas fa-search fa-2x"></i>
                 
                   {% comment %} <i class="ion-social-buffer color"></i> {% endcomment %}
-                    <h4 class="font2 black">Discovery</h4>
-                        {% comment %} <ul class="font4"> {% endcomment %}
-                              <p class="font4 black"> <b>Polling</b> - After reaching out to popular parenting forums and groups in the region we received overwhelming positive feedback, confirming a need for the concept my team envisioned</p>
+                    <h4 class="font2 black">The Process</h4>
+                    <ul class="font4">
+                              <li><b> Clean Data</b>- Take away commas, spaces, and any other characters in the data so it can be used </li>
                               <br>
-                              <p class="font4 black"> <b>Competitive Analysis</b> - A quick comparison of current offerings in our area helped us define opportunities and features that our concept would capitalize on </p>
-                        {% comment %} </ul>  {% endcomment %}
-                       {% comment %} <p class="font4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, massa congue laoreet commodo.</p> {% endcomment %}
+                              <li> <b> Tools</b>- Pillow is an excellent tool for python for imaging, this is what I used to take each data point and turn it into a single pixel in a picture  </li>
+                              <br>
+                              <li> <b> Height and Depth </b> - Identify max and min data points </li>
+                              <br>
+                              <li><b> Colorize </b> - With my max and min numbers defined I could go about turn numbers into color codes using this formula - y - min_height / max_height - min_height * 255 </li>
+                              <br>
+                              <li> <b> Render </b> With every data point set to a color code, Loop through each value and apply color formula , and plot as a single pixel. </li>
+                              
+                        </ul>
+                       
                 </article>
               </div>
 
@@ -175,39 +182,46 @@
 
               <div class=" add-top-half">
                 <article class="services-item">
-                <i class="fas fa-pen-fancy fa-2x"></i>
+                {% comment %} <i class="fas fa-pen-fancy fa-2x"></i> {% endcomment %}
                   {% comment %} <i class="ion-social-buffer color"></i> {% endcomment %}
-                    <h4 class="font2 black">Design Theory </h4>
+                    <h4 class="font2 black">The Result </h4>
                         <!-- <ul class="font4">
                               <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
                               <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt,</li>
                         </ul>  -->
                        
-                       <p class="font4 "> Two distinct branding fonts were chosen to deliver a clear message within the site while allowing it to maintain its youthful roots. From the beginning I wanted the website be be bright and colorful, reflecting the content inside it. Inspired by the aesthetic of crayola crayons, I chose a color palette that incorporated primary colors, many of which were the color codes from Crayolas original eight pack. Icons deliver a consistent voice throughout the site and add a much needed visual element that we found was lacking from other sites  </p>
+                       <p class="font4 "> In less than a second I am able to render image into 360,000 pixels (or rather a 600x600 image). Sure, enough this data set looks like a landscape, (yay). It took me a couple tries to get it correctly, but you can see the darkest shades represent the lowest elevations and the brightest representing the highest.   </p>
+                       <br>
                        {% comment %} <img class="img-responsive sppic imgcenter" alt="" title="" width="49%" src="https://lh3.googleusercontent.com/KgDx1baQ_jbao3L6a0YX73hLkJeBStojgECgNBg8eaQj3enaPLHPxweouz0yuyz9bi_VvOEJVAW-viUCZ-Pu0ed1LGYTRSROv_eXesG2ZBDM7_ZtMYgoneyhCy5jbSWZoK6La7ZxMtmZIp5r7l10_69poo00LSakpK9m1M4kEC7BOXquyk3xDS10jbHRCx8oVUpYkN4JF5qQXoZAuVm7QfdxM3x0A49E_4DCxkHfJyHwbk6ivb-G7g5glsg5lIXC46-bjoWBeYCMAFYpmPKMo-A22vKfLD-ai6U3zEsx71Ds50iicbm82eAMmzEuN8BwiLHPEzrNheyrRJmEemlBP3Vesej_dkPDHt8x0HkF6cTy-KmVti462cSf1grGgKN3Gv8NgoUtom7lKsjKsN2zbgrWcYLNNFTESKD41TWG1FcTpkZH8JCjYpUFiIQp7t6eAlypOvDgry5HVM0MyIKMUYH2xzQ5o4eDKVeQbkUO7h8hMe2iKijGDWiJtAGbi8jG-ShryMD-xC1FF-SvPf5Xy4s2zzMghIMhXgDGT_x2NPKZcr_sdSPg3NoUAPNyplVbxneo_ceSX0HiIx8bp8aLTSQlsnLAquZfpjh-cEzOQTfNJyqVlAwnCTRB3FYNoEJH2wRQ3Bz5WAk2MT1UVT2ziEGehiRl7S4=w1143-h680-no"/> {% endcomment %}
                        <img class="img-responsive sppic imgcenter spshadow" alt="" title="" width="80%" src="https://lh3.googleusercontent.com/FaN439_pcrNLbfuJoIheMdA3XFzF_2NXrW15neq35aWfbyI80iEQkv2nbmMZ843pPYJhUsvgOuLYzRj2bXj3FO4j_bJqL0QsTeeWgehwoV-rJ8BbDx2up4cXM1BibALTZEjMzefHn5-ibMagGzMfCyd6mDczqktR9Aga-PBnKLmM3d7GkV7Odz6z6IkPJVH6poTO1BVFJgS2AJyZaek3lMa7D1xDhrvXTBD_jC3SWxj9CZOnKaE0TAOkNY48PjmS5QwUc1tlGBHtFP3UCEgOkMNUP0vNG5yFI4RPzMAnysc3ThEvPV5PSN0Obs9aHDkkWP1Fs6p-P8CRaohrvuzPQkl7-4hRVDyUvvciBoPaTb5GDxJpifDAQpr0c_M_M7K65QxGEIs5PeBKMKuj1bYEDhn30H9NlTs2m9xvqMqc8gYIOSxSDz_aTAhBxX67hHlF6zr0OeiVw4T2IDJ_iQZyMSWmGXq2QGIP-niY6veMIaoSCFdXxOMUjqHOLXElXYb7roMuAMWpvdoXD5z2CMEA5sx9McViGGQlSe3Za-C-gnVj-pe-EiJdya60KR5rUTKPVmpoXqMX7TCIR2MX97JgRJTI-PSYOVZr6h2c0lzwuxK4SdZ5zgOyyy8eKBT_YD8Fo_32rRLFeymFZuR6o-L3BlND77rRmik=s600-no"/>
-                       
-                       
-
-                                 
-                      
+  
                 </article>
               </div>
 
 
               <div class=" add-top-half">
                 <article class="services-item">
-                <i class="fas fa-forward fa-2x"></i>
+                {% comment %} <i class="fas fa-forward fa-2x"></i> {% endcomment %}
                   {% comment %} <i class="ion-social-buffer color"></i> {% endcomment %}
-                    <h4 class="font2 black">Next Steps </h4>
+                    {% comment %} <h4 class="font2 black">Next Steps </h4> {% endcomment %}
                         
-                       <p class="font4">Currently in its Beta Phase, The Little Triangle is currently being reviewd and will be preparing for parent testing later in 2019 </p>
+                       <p class="font4">Representing numbers as color pixels is just one way to represent large data sets. I’m looking forward to playing more with this data set and experimenting with other ways to visualize and represent it.  </p>
+                       <br>
+                       <br>
+                       <p class="font4 black"> <i class="fab fa-github  "></i><b> See this project on Github </b> </p>
                        <br>
                        <br>
                        <br>
                        <br>
                        <br>
                        <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+
                  </article>
               </div>
               
@@ -231,18 +245,6 @@
                   <li><a href="post.html">Wayfinder</a></li>
                 </ul>
                 
-                <!-- <div class="post-tags">
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">Django</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">Python</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">HTML</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">CSS</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">PostgreSQL</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">Heroku</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">jQuery</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">JavaScript</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">Sketch</a>
-                    <a href="news.html" class="btn btn-otto btn-otto-dark">minimal</a>
-                </div> -->
             </article>
           </div>
         </div>
