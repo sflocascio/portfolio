@@ -6,7 +6,6 @@ from django.shortcuts import render
 def index (request):
     return render(request, 'index07.html')
 
-
 def elements (request):
     return render(request, 'elements.html')
 
@@ -15,6 +14,9 @@ def portfolio (request):
 
 def design (request):
     return render(request, 'design.html')
+
+def works (request):
+    return render(request, 'index08.html')
 
 # Six Portfolio Detail Pages Below 
 

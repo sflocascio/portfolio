@@ -23,6 +23,7 @@ urlpatterns = [
     path ('post/', views.post, name='post'),
     path ('elements/', views.elements, name='elements'),
     path ('portfolio/', views.portfolio, name='portfolio'),
+    path ('works/', views.works, name='works'),
 
     path ('itunes/', views.itunes, name='itunes'),
     path ('oakhouse/', views.oakhouse, name='oakhouse'),

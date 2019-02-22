@@ -60,6 +60,27 @@
   <div id="preloader"> 
     <div id="status"></div> 
   </div>
+   <nav class="mobile-nav">
+            {% comment %} <nav class="mastnav font2"> {% endcomment %}
+            <ul id="menu" class="slimmenu ">
+              <li class="trigger-sub-nav font2"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href= "{% url 'portfolio' %}">Projects</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="{% url 'design' %}"> Design Process</a></li>
+               <li><a href="mailto:sflocascio@gmail.com"> &nbsp; Contact </a></li>
+               <li>
+                  <a class="sub-collapser" href="">More</a>
+                  <ul>
+                      
+                      <li><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"> Linkedin </span></a></li>
+                      <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"> Github </span></a></li>
+                      <li><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"> Facebook </span></a></li>
+                      
+                      <li><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0 " target="_blank" ><span class="ion-ios-download-outline dark"> Download Resume </span></a></li>
+                  </ul>
+              </li> 
+              
+            </ul>
+            </nav>
 
   
 <!-- mobile only navigation : starts -->

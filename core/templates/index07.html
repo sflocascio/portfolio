@@ -62,8 +62,125 @@
   </div>
 
 
+  <!-- mobile only navigation : starts -->
+<nav class="mobile-nav">
+            {% comment %} <nav class="mastnav font2"> {% endcomment %}
+            <ul id="menu" class="slimmenu ">
+              <li class="trigger-sub-nav font2"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href= "{% url 'portfolio' %}">Projects</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="{% url 'design' %}"> Design Process</a></li>
+               <li><a href="mailto:sflocascio@gmail.com"> &nbsp; Contact </a></li>
+               <li>
+                  <a class="sub-collapser" href="">More</a>
+                  <ul>
+                      
+                      <li><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"> Linkedin </span></a></li>
+                      <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"> Github </span></a></li>
+                      <li><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"> Facebook </span></a></li>
+                      
+                      <li><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0 " target="_blank" ><span class="ion-ios-download-outline dark"> Download Resume </span></a></li>
+                  </ul>
+              </li> 
+              
+            </ul>
+
+          <!-- Body of Nav area Starts Here  -->
+            <div class="row add-top">
+            <div class="# ">
+              <center> <img alt="picture of sam locascio" title="picture of sam locascio" class="img-responsive imgcenter" width="40%" src="https://lh3.googleusercontent.com/CYkrIDquGW_L_pYr7ouEHZ1yodBjDCag_MP0hcjYT2XPdM8d7yRgcRHBKEMZ8mSbeSk_m69x2u8Bn9FS-EevuEUT8u2LrB9X7iz13XeMNmBAYVcE55PJM95iKtxdfTnzquHh0bM1wVFZiwxO-ws38vcAoD8RSOO5Jj0oVoolc2zPLZCl_k2Flligcm_MQbMlTlY-KI-k7yftgSU3ZWljQbxal3QRJ8R0e7zIiDqsicwtz6T_16Tt6HHa7ioRSeE-4zOBsq9YqtmbmZMNCiV7-VixIFQ71n9sRZNVhXO5jt9uUxQUYdpDB9u7Vj606cIL12jw-_m2E-5RqBLj32u3sPSDvb8pkV7A-HN62m9lZELK1jvO0JFGKYBgbSRAMht-qRCZPGG1-bxqpzdGM6AwTDDTQh9P46KBplkksKUQ7xbZ-0sXoAkrEjRQH5eOEOg6H9cxJB1VjhxN4CXgt2644SSqKrkccN5ij-weoYA8eRUk3evO8VBA0rB7FxKP6zQKgrZtTJOljlE32vIsNDxZ6mA4mFvgUjnHL9leWJ9eeMu_OjaOwyYpyEH5qOs6iRtvgGmvoJslNvdAaptGliKo6oSedgktnCZEU8Opzz-vQKlO-G7Dk4jomqipYZ41X7pa3iRJu669aQVSotOhtcD8hR_vbvQKWPI=w444-h477-no"/>  </center>
+                      <br>
+                      </a>
+                      
+                      <h3 class="center sppad2 ">S a m  &nbsp;&nbsp;L o C a s c i o</h3>
+                     
+                      <p class="center sppad2 black"> Web Developer - Musician - Recording Engineer - Nature Enthusiast - Kayak Owner</p>
+                     
+                      <br>
+              </div>
+
+            <article class="text-center col-md-12">
+            
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title font2">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <img alt="About" title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/k6nrD0yVTmv9kFHhg3Xx9eaSBUjXHH4wyJU3VXf67bQlOXKZcn_JYLONIkKGv1G65tpkwGV2mmkttI8LdvlaECwoShc2P0Gz2RwTauqZFtC1NUdCe2SCgSSfn-ZRbDD-U6Oy45wcVmdg_PMAbBhnImz3mRv1KKc81M_xQoISFDnGxhoNdPjHDyCvWTJ6MrlEgQpciPO0wIj4Ln4ON6sTaSYdhvHvWwRo4seQPLBZoxVKTcyIOj6GPlMqh0TcYDNpP1ykrUf-4RmaL2U2T4zXtVYdIarA4ne83li80FlC3lMTepLFFx_aKp80Hkj_Nq4GcADQSpxI8dgjqWexq5GbyHM5KHv57CH-zFXchJ2kNvjbpL4PPYLn5tE5Ttwe5ZfDn3kv4B5X7b9fUEhnAxPusYfUp-ieoBBwMjGmzF_qKt5d8E1QnOb-DMDTTTpFpEgIdVrj6Gzo0aAl6yjeXLAe0oq5yDfOhEmgSL6JYahJL3plkPIoD9yfQwg1GSfWFabsgIeEwuCCrdO7ieeBt2Rj1ZVgC6wr53m6b-c3q4uFEEXNqilIfzCStbUZuKrIMnXvoD9ieQb-6v_1sTbxvCLA3jJx6CEvswofsqEiGAkySaE4p4zwzszFhKgMQSJ-E4_EwYSK0bS5hl1-RXykxN7HfKbGyGtpgNE=w1240-h200-no"/>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. It was this investigative process that led me to be intrigued by coding and technology. I love the outdoors, recording music, fishing, playing ping pong, and discovering new things. I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019. <br> <br>Feel free to contact me if you want to discuss a project or opportunity.  
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title font2">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <img alt="Front End " title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/mcmVgZVXP8ryVNzMvhhh5mHzIAP6FWMo2czNrWpXHH3tgIcucfFJ0bIwsvGLGmvVwpf9EXY0E3SPyu4A1X8_MgjX9z_ZZnxKzQ4-3gwC7Z0Wk_cJEfEC4VXKOTN5snOGD4mDnssMcbhARQdid6rZ5_EthQVpzJd_PnRq3CN4zHtmR6DgNRJIOXpY_axKg5Z1NSvUyedeU-xj1lvrHAtYTGoJFJiPYv8wrimzd6Mk_ydoRm8P7bwE96pDuvC9rocU3KgzuqomL5nCzSHi6KwhEhpfB2zZb0L0VA7T1Z-e0hbTVzkQydPSLNa-qgwSPkndOdk2bSC46273SvIBPf20aNEXMHou91-h7p-M_9kgZGH0vXLST3jNmaBHlA0QJbqVi80QSemuk2oiUylU2qgE4XAChNGymI3wM7e4pWAid7-u7iS5d0eZnQMBBylCw2B5r_4zWciZGJbQjinnHip0235dYzhrqoj_LFqneBqYoHu_YclVo0nQe0OxVcY2c60FVwc8rYrnmmvWns7p3w5iR5xAqE8dQ9w5n3TUACEuQDMS4n_t6MASRkJlY8PWjpy9rNyD9Gc7dvFYXqP1I6bdPHsnNQJP0XN3ZJEP0al0T1RbozGqTZe7V-YC1_RyalRDLPXLTm1i8GW_xnQoQMj9LAhtpJGhmg0=w1240-h200-no"/>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        My core aim in Front-End roles is to build efficient, interactive, and beautiful applications following DRY principles and W3 guidelines. In following with an agreed upon UI design, I approach projects with a mobile first mentality, making sure visual components are intentionally structured while bringing an emphasis on accessibility.
+          <br><br> <b>Tools:</b>  HTML5 , CSS3, javaScript, jQuery, VueJS, Bootstrap, Bulma
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title font2">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <img alt=" UI / UX " title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/ZT4F2n-LwwIb6S3mqn2lNpoVt4mAGK12QpKWbv_aEfpIC7MzWr6Rf9PN8REm4OD79hymS9saCTcXxyj4G1SCJ8lHfGV2b3ac638GK5SSFG1ghg_dlTgi5snGV3W0iHU2W8cHnMd29WNzs6BGkUIXP0wbns41Vi0ZwVKoSzO8gLHapx53BOBgsvrDBr-Sq6BHoR1DrmxawEWohuZDDZGfUv6uPITZNuXv0kBs9ZlSRsBe7flJ8Jrgsp7mGR7uN3gl-DEpvV1Uw_DX3UHLhm0Loul5lLUWz2JpRo-PVriRoC9QUUDAC7d9JpNYlPBb3HwspBv6cV_T8WExo74h37461NT8u4upOVVVDZ900850eWuX2EEVeLQYqK6O5cu1qd74TKMQDeMPwdAZHW3MkGQu4Ny4rcDXxbyg8JgQU78aHw1icTOZPqJOSkJ1-O3oU5y9qYE65_WFl48Q2TO4z8unYdIB6DMsyXO2WcU8WmuuVi5nhuSKQ1ERM9vdiLXrU-9ROt_Lq5Jk9mvXhZhPan-yYR7h4muOENqBFH5_G4fH9RCGvRXkDKw2wtuBkgZ6SfofHQ-xM_q9HFj6THidbtBKQpwTVQbenl-xqyvay5GpLLl5Rp7E6jJQxxnwWpp5-vc-M4xW4XrWNDuMEhbGL2ERypqXP6Sjq54=w1240-h200-no"/>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        My goal and approach with UI and UX is to connect business goals with user needs through a process of testing and refinement that leads to a product that satisfies both sides of the relationship.
+        <br><br><b>Tools:</b>  Sketch io, Figma, Illustrator, Photoshop
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title font2">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <img alt="Back End" title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/ABJ8LieN2N_86nVgcGnOvdb5PuScbOLj6R766biYfkyW0NCAskqwiHqh3KQ4t2J2Bd_DjU9tXNB5x4iRyQt1EM_PHX_e_WTjj2pfmtg_4aEbxSqWn56YL2m9KvLbSrjud8m5QbpqsDKDLQyiQGMqYm9aloxcJa7J8ARN-jN2NawMa-UQ5IiDfB080ZqLggVRA5ebfvaA1jq72mVR9UHkU7v8G85fVTg19cF0OzbgRZrgSPCItmUrcgyrvghqh9uKRQPT79wXBWQVERoOCJBALyGdDzP2qGk4yAuEN0izLoKQFSsuTDz1lATq6_7E92aq4Y6pWzHdoxjytQ495ygrGwgXdbLKLPhTua4U3U7VtXqTgGcFCVasLT7OGO796Jtqr0goICyrbHOyEgB_pvjbbzqbDYYlr82Rzc5VMnAv8NXCNCwoZK-5XDDbMkMgtJVusXf48o_Qfo36JYfL2iIR13Bp0z0kt9HsmFvqU3szgc-dl9I5XZ_iatl9RBhMdNGQOB1VyecNQFkOpF_3ngq3TZiSbkaJ5kk9mO-ijupQ0SbDyUJid-8ZzUPHyHeblfxMmqlj-FFRbN45aHgu71UavQBN_71Zet_oIz6HKF6h-6eB94n2zKNc3Z0uDd4p4oLmehrkEA-0K4l4LtJdsle_W8CIqF4zvFg=w1240-h200-no"/>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        Special care is taken to ensure that the right tools are chosen so each project scales well as it grows. I bring an object oriented approach to my coding to assert the code base stays as concise as possible.
+        <br><br><b>Tools:</b> Python, Django, Amazon Webservices S3, PostgreSQL, Heroku, Django REST API
+      </div>
+    </div>
+  </div>
+</div>
+            </article>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <ul class="foot-social col-md-6 text-right">
+            <li><h2><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"></span></a></h2></li>
+            <li><h2> <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"></span></a></h2></li>
+            <li><h2><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"></span></a></h2></li>
+          </ul>
+<!-- Body of Nav Area Ends Here -->
+</nav>
+
+<!-- mobile only navigation : ends -->
 
 
+
+
+  
   <a class="onscreen-trigger" href="#"><img alt="" title="" src="images/next.svg"/></a>
 
   <!-- Header
@@ -72,7 +189,7 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-      <a class="#" href="{% url 'home' %}" ><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/i_oM_TXIDC_6ajgLjLHLpgXpdq9IMnBiIY4eaduMJrD1QCVtjg-C2LCeoJSbuDZ580leaIJYLP5rLXy_M28Q3gTROc6X71WmqzNOP_bK1tNiFXOy_boD0REnf2W7U7gUl1W2MfcUaKcTkcN429vtfyv48sTZrwzcFcaXuYqIwBdihHc19Lv_eAWfSjy2GsylWt3ZIq3Yw9O1Mox7lnZ4btyY6mURmtpMKr8GfCMRCTf8Os8UIhVmmAeKOKQXX1AgQOeZb6rn-cinETjwwp234oIZa9NegdLPE1OIXDEPs--nPexrlg7XyqdSJtURvIepOVohu5v-kh1alAF2O2BZtEuMHnGGmTs9lrgrDOLRY0muGl7PzWrgeSEtyPeHHPvoWGxDkUezvdLAtodee61FI6_ixqxhUJstQr_y7EPaaznjHWQybvO4t3arBTstEFg8tC3bmQOsKrBMiJullJoX4ubGPd8fq9o-TFACf0Tn-WE4cNmw7J03K__FAD46tBjbP_aU4VfP-aA83mlBzGlv8OfUPzDTJ_kZJhSgbdwXNcksFso340dFlN2bLUZ6-HG08IiMN53xITYenwgEfKuTLhKyZyfz3UFKvWLku5oYi5U7CbA_bxoNwvo7I6s8IzReuNpKvweAqnZuw6jSZuWaKF6CpuC5obk=s60-no"/></a>
+      <a class="#" href="{% url 'home' %}" ><img alt="logo" title="logo" class="logo" src="https://lh3.googleusercontent.com/i_oM_TXIDC_6ajgLjLHLpgXpdq9IMnBiIY4eaduMJrD1QCVtjg-C2LCeoJSbuDZ580leaIJYLP5rLXy_M28Q3gTROc6X71WmqzNOP_bK1tNiFXOy_boD0REnf2W7U7gUl1W2MfcUaKcTkcN429vtfyv48sTZrwzcFcaXuYqIwBdihHc19Lv_eAWfSjy2GsylWt3ZIq3Yw9O1Mox7lnZ4btyY6mURmtpMKr8GfCMRCTf8Os8UIhVmmAeKOKQXX1AgQOeZb6rn-cinETjwwp234oIZa9NegdLPE1OIXDEPs--nPexrlg7XyqdSJtURvIepOVohu5v-kh1alAF2O2BZtEuMHnGGmTs9lrgrDOLRY0muGl7PzWrgeSEtyPeHHPvoWGxDkUezvdLAtodee61FI6_ixqxhUJstQr_y7EPaaznjHWQybvO4t3arBTstEFg8tC3bmQOsKrBMiJullJoX4ubGPd8fq9o-TFACf0Tn-WE4cNmw7J03K__FAD46tBjbP_aU4VfP-aA83mlBzGlv8OfUPzDTJ_kZJhSgbdwXNcksFso340dFlN2bLUZ6-HG08IiMN53xITYenwgEfKuTLhKyZyfz3UFKvWLku5oYi5U7CbA_bxoNwvo7I6s8IzReuNpKvweAqnZuw6jSZuWaKF6CpuC5obk=s60-no"/></a>
           {% comment %} <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a> {% endcomment %}
           <nav class="mastnav font2">
             <ul id="menu" class="works-filter">
@@ -83,20 +200,16 @@
              
               {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li> {% endcomment %}
               {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
-               {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'elements' %}">Link</a></li>  {% endcomment %}
+               {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'works' %}">Link</a></li>  {% endcomment %}
               
             </ul>
             
              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0  " target="_blank"  > Resume </a></li> {% endcomment %}
-            
-
-
           </nav>
       </div>
     </div>
 
-          
-          
+ 
     <div class="sticky-icons">
         <ul>
             <li><a class="fullscreen-toggle" href="#"><img alt="" title="" src="static/images/prev.svg"/></a></li>
@@ -129,7 +242,7 @@
 
 
 
-<section class="mastwrap-outer cd-main-content">
+<section class="masthead mastwrap-outer cd-main-content">
   
 
   <!-- MASTER CONTENT
@@ -176,7 +289,7 @@
               <br>
               <br>
               
-                      <img alt="picture of sam locascio" title="picture of sam locascio" class="img-responsive imgcenter" width="40%" src="https://lh3.googleusercontent.com/CYkrIDquGW_L_pYr7ouEHZ1yodBjDCag_MP0hcjYT2XPdM8d7yRgcRHBKEMZ8mSbeSk_m69x2u8Bn9FS-EevuEUT8u2LrB9X7iz13XeMNmBAYVcE55PJM95iKtxdfTnzquHh0bM1wVFZiwxO-ws38vcAoD8RSOO5Jj0oVoolc2zPLZCl_k2Flligcm_MQbMlTlY-KI-k7yftgSU3ZWljQbxal3QRJ8R0e7zIiDqsicwtz6T_16Tt6HHa7ioRSeE-4zOBsq9YqtmbmZMNCiV7-VixIFQ71n9sRZNVhXO5jt9uUxQUYdpDB9u7Vj606cIL12jw-_m2E-5RqBLj32u3sPSDvb8pkV7A-HN62m9lZELK1jvO0JFGKYBgbSRAMht-qRCZPGG1-bxqpzdGM6AwTDDTQh9P46KBplkksKUQ7xbZ-0sXoAkrEjRQH5eOEOg6H9cxJB1VjhxN4CXgt2644SSqKrkccN5ij-weoYA8eRUk3evO8VBA0rB7FxKP6zQKgrZtTJOljlE32vIsNDxZ6mA4mFvgUjnHL9leWJ9eeMu_OjaOwyYpyEH5qOs6iRtvgGmvoJslNvdAaptGliKo6oSedgktnCZEU8Opzz-vQKlO-G7Dk4jomqipYZ41X7pa3iRJu669aQVSotOhtcD8hR_vbvQKWPI=w444-h477-no"/>
+                      <center><img alt="picture of sam locascio" title="picture of sam locascio" class="img-responsive imgcenter" width="40%" src="https://lh3.googleusercontent.com/CYkrIDquGW_L_pYr7ouEHZ1yodBjDCag_MP0hcjYT2XPdM8d7yRgcRHBKEMZ8mSbeSk_m69x2u8Bn9FS-EevuEUT8u2LrB9X7iz13XeMNmBAYVcE55PJM95iKtxdfTnzquHh0bM1wVFZiwxO-ws38vcAoD8RSOO5Jj0oVoolc2zPLZCl_k2Flligcm_MQbMlTlY-KI-k7yftgSU3ZWljQbxal3QRJ8R0e7zIiDqsicwtz6T_16Tt6HHa7ioRSeE-4zOBsq9YqtmbmZMNCiV7-VixIFQ71n9sRZNVhXO5jt9uUxQUYdpDB9u7Vj606cIL12jw-_m2E-5RqBLj32u3sPSDvb8pkV7A-HN62m9lZELK1jvO0JFGKYBgbSRAMht-qRCZPGG1-bxqpzdGM6AwTDDTQh9P46KBplkksKUQ7xbZ-0sXoAkrEjRQH5eOEOg6H9cxJB1VjhxN4CXgt2644SSqKrkccN5ij-weoYA8eRUk3evO8VBA0rB7FxKP6zQKgrZtTJOljlE32vIsNDxZ6mA4mFvgUjnHL9leWJ9eeMu_OjaOwyYpyEH5qOs6iRtvgGmvoJslNvdAaptGliKo6oSedgktnCZEU8Opzz-vQKlO-G7Dk4jomqipYZ41X7pa3iRJu669aQVSotOhtcD8hR_vbvQKWPI=w444-h477-no"/></center>
                       {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/sam.png"> {% endcomment %}
                           {% comment %} <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
@@ -217,7 +330,7 @@
                 <br>
                 <br>
                 
-                 <img alt="About image with sound waves" title="About image with sound waves" class="img-responsive imgcenter" width="30%"  src="https://lh3.googleusercontent.com/3IKZQXEoUb6tHT30v8lggNTQ4EXGkKQ5XT4Gp5ACtmN52xOfOl93xa5YKGoxsJWMHUA49VSuUt6uI4yzRN2ADnP3gRl-goa7D2fcAAJy2CyH_uaUQSqwHvf_IPltv8NHzjnupgcwxJUHVEUokCpAsh2bTnJ2EJejInvqR8tGnwnGs3Bvqi0NuLsDutqI37t6J5cGMy1WKLvtmmO6API71RDRGJxfE8A_GFzKZjiuXNZ9AP9H1FmkJz2fGGn4w5tBDDYDvoueSyaZ6U7nQhj_OsWvRemRVWGOzbnnJs_-7XmXZnz9HV9IsO_WIrsa09ZqyyxjjHSv_XlrViQ0jTIgLIixnyfkURGVX-Ydo80D5Kc9nD6uxJoVq7_861A7nHZ0NfE_07iOHHhl53oLncLcMe2Z52okQ_-d7YGd9r4_1mrmvmUgl7FQmV-utHRDA0A7PVLOE41VUcE74M7n1GfIIeOhS03Jq375OSZ_nkC9Z5WmAjoBOHrBS96--DzAE7ipVpL61XBzYVD1xMyuuPiYv36XDNEZ_IMLVANiBT6SJ_LD7kKbpSM8EBaT4i3an6k1_x0Kd2ZhC5KakPYUrMq3wMXm83Ms0hNSIg5hK6NU5GrFDitW--A3oqNpK4_UC1xrCWK1LkN2iZKd2ha5yQ-0R6Sy2nVt8ZY=w983-h397-no"/>
+                 <center><img alt="About image with sound waves" title="About image with sound waves" class="img-responsive imgcenter" width="30%"  src="https://lh3.googleusercontent.com/3IKZQXEoUb6tHT30v8lggNTQ4EXGkKQ5XT4Gp5ACtmN52xOfOl93xa5YKGoxsJWMHUA49VSuUt6uI4yzRN2ADnP3gRl-goa7D2fcAAJy2CyH_uaUQSqwHvf_IPltv8NHzjnupgcwxJUHVEUokCpAsh2bTnJ2EJejInvqR8tGnwnGs3Bvqi0NuLsDutqI37t6J5cGMy1WKLvtmmO6API71RDRGJxfE8A_GFzKZjiuXNZ9AP9H1FmkJz2fGGn4w5tBDDYDvoueSyaZ6U7nQhj_OsWvRemRVWGOzbnnJs_-7XmXZnz9HV9IsO_WIrsa09ZqyyxjjHSv_XlrViQ0jTIgLIixnyfkURGVX-Ydo80D5Kc9nD6uxJoVq7_861A7nHZ0NfE_07iOHHhl53oLncLcMe2Z52okQ_-d7YGd9r4_1mrmvmUgl7FQmV-utHRDA0A7PVLOE41VUcE74M7n1GfIIeOhS03Jq375OSZ_nkC9Z5WmAjoBOHrBS96--DzAE7ipVpL61XBzYVD1xMyuuPiYv36XDNEZ_IMLVANiBT6SJ_LD7kKbpSM8EBaT4i3an6k1_x0Kd2ZhC5KakPYUrMq3wMXm83Ms0hNSIg5hK6NU5GrFDitW--A3oqNpK4_UC1xrCWK1LkN2iZKd2ha5yQ-0R6Sy2nVt8ZY=w983-h397-no"/></center>
                 
                 <br>
                 <br>
@@ -266,7 +379,7 @@
               <br>
               <br>
 
-               <img alt="" title="" class="img-responsive imgcenter" width="50%"  src="https://lh3.googleusercontent.com/WG7IM2m8DLC5Lxzhdjbw-1kwv7647MrHZU6m4IYGPGZYIsta1TgjLIihFO1r3viQtxdivxjLaDVCtRcVeoee2yc2DDVfZrI-uMkKHMEGZsRrmG16T6CO4fd_WH-XMsqhkalPUoKE2tauwdF4sXt8RNhobSDMT-Sx2HSHZnxd0sPdKTnSl5w0thCfjMgk5NyfGNsNhfcKsBybdbn6mQGeb5KGkvZn2aENaA8yJe3AxSDFwpVS-u_1mHOx27pQQJUL30mi4vERh4S025QgekL-4ZHnnxHXldktrGz10K8da0Vr0SCz0xHI7GsZbTdFFsk2cXa4x3yZ_gg4yXbbsu6m3uI9bjejLEs5KK7m03ilI1ESj8OWDBOmUIV8e6xETnVVL1sUmk4oApNZO9AGyvkDNGj1srARzLvDmbysF_BqUL0VtZwolcuZr2cGXREh9yh5rAqnxRobs7K2GoZEWjmn5S276sgDzjtA5o40ClO0k-AWUOO69Tu9_qtTxNwyZJ7qcWyepBZ1mKZqRA-e0fuI8zF4CqiCj-AJazQwVZkWF1RkmDlpMpAJFEnG-6NvdMiy7FqzTT5si54wFGdARVfgq5JwIBu-YxTcdlRAXTbZgk1es_yQw5shuWqJOGBx4fzPmP7JRaJ9FqCLr5c3Hjt6VbaWvi1brtE=w836-h752-no"/>
+               <center><img alt="UI / UX Image" title="UI / UX Image" class="img-responsive imgcenter" width="50%"  src="https://lh3.googleusercontent.com/WG7IM2m8DLC5Lxzhdjbw-1kwv7647MrHZU6m4IYGPGZYIsta1TgjLIihFO1r3viQtxdivxjLaDVCtRcVeoee2yc2DDVfZrI-uMkKHMEGZsRrmG16T6CO4fd_WH-XMsqhkalPUoKE2tauwdF4sXt8RNhobSDMT-Sx2HSHZnxd0sPdKTnSl5w0thCfjMgk5NyfGNsNhfcKsBybdbn6mQGeb5KGkvZn2aENaA8yJe3AxSDFwpVS-u_1mHOx27pQQJUL30mi4vERh4S025QgekL-4ZHnnxHXldktrGz10K8da0Vr0SCz0xHI7GsZbTdFFsk2cXa4x3yZ_gg4yXbbsu6m3uI9bjejLEs5KK7m03ilI1ESj8OWDBOmUIV8e6xETnVVL1sUmk4oApNZO9AGyvkDNGj1srARzLvDmbysF_BqUL0VtZwolcuZr2cGXREh9yh5rAqnxRobs7K2GoZEWjmn5S276sgDzjtA5o40ClO0k-AWUOO69Tu9_qtTxNwyZJ7qcWyepBZ1mKZqRA-e0fuI8zF4CqiCj-AJazQwVZkWF1RkmDlpMpAJFEnG-6NvdMiy7FqzTT5si54wFGdARVfgq5JwIBu-YxTcdlRAXTbZgk1es_yQw5shuWqJOGBx4fzPmP7JRaJ9FqCLr5c3Hjt6VbaWvi1brtE=w836-h752-no"/></center>
               <br>
               <br>
               <br>
@@ -314,7 +427,7 @@
               <br>
               
              
-              <img alt="" title="" class="img-responsive imgcenter" width="80%"  src="https://lh3.googleusercontent.com/l_c9-Y3J4M6Y0hQ6hIrOJ4iKBXZl07Cp6AQQSLzE0UKGeaIyllOXFOk-J3pI6YdQUGjSBEy1lp0j7ex3jWY7E0hYw5zssFpynZy6vxZP6m0zWJB59QZzYtdlNWO3_xnIUR5VUqUyU2qEGgJa4kNYDNiyQM4DkACu_7CaG-0Prtcx09CXM3fvqDGXGoWsanMin3lgmjS5XNeQUU1hUzlW1FLSzZHMwAsLmxxW4R2N8XhWdyCZ62xFkAaUOfQXNKZKiYpM-OKTlCIBgFYkDCIwYquS0_LvTXqCQeUb9LoCvhXM1bdLjbhKIhUKr6RCtfSHSYwyuJA8ArgwatlGCSc95q6eseetDdeL1eLKgvfWvbUHuooLC3PJ3fbnu-TeYe1iuFmVEaB1Izo9O0VfGyijVy9wzRtHuokjRnBUkSOVKTbH4K6h-oVtQWMCI0w_ib1f-qXZEDPU_yOPEx0UAYa8GDKFfSyFfSl5nXcu_kqtNGaHRkVlXWRprk63SS9UxzCQqhOLPoSy4Ah2NKgJwair14q4RFd9lQgQ_fWEx-TuGVst-VuH8G5genB_DVDXmyRj-46CumC1AKu8JlpHyytUtKlum6dGtbeKk1gNaMlCOPmnVOpGEl1ToroIDukw__PccBFKJLpkyNW8qbtyXPPgwLsBf125I0o=w800-h700-no"/>
+              <center><img alt="Back End Development Image" title="Back End Development Image" class="img-responsive imgcenter" width="80%"  src="https://lh3.googleusercontent.com/l_c9-Y3J4M6Y0hQ6hIrOJ4iKBXZl07Cp6AQQSLzE0UKGeaIyllOXFOk-J3pI6YdQUGjSBEy1lp0j7ex3jWY7E0hYw5zssFpynZy6vxZP6m0zWJB59QZzYtdlNWO3_xnIUR5VUqUyU2qEGgJa4kNYDNiyQM4DkACu_7CaG-0Prtcx09CXM3fvqDGXGoWsanMin3lgmjS5XNeQUU1hUzlW1FLSzZHMwAsLmxxW4R2N8XhWdyCZ62xFkAaUOfQXNKZKiYpM-OKTlCIBgFYkDCIwYquS0_LvTXqCQeUb9LoCvhXM1bdLjbhKIhUKr6RCtfSHSYwyuJA8ArgwatlGCSc95q6eseetDdeL1eLKgvfWvbUHuooLC3PJ3fbnu-TeYe1iuFmVEaB1Izo9O0VfGyijVy9wzRtHuokjRnBUkSOVKTbH4K6h-oVtQWMCI0w_ib1f-qXZEDPU_yOPEx0UAYa8GDKFfSyFfSl5nXcu_kqtNGaHRkVlXWRprk63SS9UxzCQqhOLPoSy4Ah2NKgJwair14q4RFd9lQgQ_fWEx-TuGVst-VuH8G5genB_DVDXmyRj-46CumC1AKu8JlpHyytUtKlum6dGtbeKk1gNaMlCOPmnVOpGEl1ToroIDukw__PccBFKJLpkyNW8qbtyXPPgwLsBf125I0o=w800-h700-no"/></center>
               <br>
               <br>
               <br>
@@ -345,7 +458,7 @@
               <br>
               <br>
               
-              <img alt="" title="" class="img-responsive imgcenter" width="60%"  src="https://lh3.googleusercontent.com/OWFEnaZYgIdxmYxrTPg-LOlSfr0nDfEwbSbLQ1WOr067VGquEy4GI0XOKPixn5VS9Btp08-WxAURE5nmXjpO25b4i3qPODpvT_GJVkhbi5h3Ht8y7SnyCYbQFjIC18ueiUHY_paAC3rY0HTRWdKZBIM-YwMeEdRQuwdUCm_mVGBlHWSYVzsBgTEqtj6lfXi6XVxMUEXJOr0UHrV9pLEbFstyIVTUuilT1ekO5ZQDLviosrGPgLt29t3bVLawMJi_1a0JAdrPRPBxNUzXFLDiFURIMSUWvJm7_3PxapultmeXKAHqHgXd65ongcQoXH_ZY_7mPH5DzjBV_XH2cMUdh7b7M73e_ZYUQw2wb5kqgHtRFwEnzc_nPzDs9kD-iRXHRYRaFhllX1_DlLc4cL0z6EtIe3R3rLl_PdVGw1bbFfgdqlPxW-ibO9UGTIbLUlqgVQ_VHfwotsI7AzMDeyJmkKWpx3XHFsx4RtuyOtR0ElBteIpxFZCO3_4Fqanryh1d6azxyJ-i_MElSyLyu94rEoj272aFlFXBJbsuk4-hKt8lAufSdb9fjuMMJXH_wrGCZf-3tzclUkrlsJVLNBc5cgaX9UemE3kDb5Wclu3oclzt9InKTT6XqIvxV6kWdroS2y0ALPZWTfxeqTfDtWGrzECoinaLJHQ=s752-no"/>
+              <center><img alt="Front End Development Image" title="Front End Development Image" class="img-responsive imgcenter" width="60%"  src="https://lh3.googleusercontent.com/OWFEnaZYgIdxmYxrTPg-LOlSfr0nDfEwbSbLQ1WOr067VGquEy4GI0XOKPixn5VS9Btp08-WxAURE5nmXjpO25b4i3qPODpvT_GJVkhbi5h3Ht8y7SnyCYbQFjIC18ueiUHY_paAC3rY0HTRWdKZBIM-YwMeEdRQuwdUCm_mVGBlHWSYVzsBgTEqtj6lfXi6XVxMUEXJOr0UHrV9pLEbFstyIVTUuilT1ekO5ZQDLviosrGPgLt29t3bVLawMJi_1a0JAdrPRPBxNUzXFLDiFURIMSUWvJm7_3PxapultmeXKAHqHgXd65ongcQoXH_ZY_7mPH5DzjBV_XH2cMUdh7b7M73e_ZYUQw2wb5kqgHtRFwEnzc_nPzDs9kD-iRXHRYRaFhllX1_DlLc4cL0z6EtIe3R3rLl_PdVGw1bbFfgdqlPxW-ibO9UGTIbLUlqgVQ_VHfwotsI7AzMDeyJmkKWpx3XHFsx4RtuyOtR0ElBteIpxFZCO3_4Fqanryh1d6azxyJ-i_MElSyLyu94rEoj272aFlFXBJbsuk4-hKt8lAufSdb9fjuMMJXH_wrGCZf-3tzclUkrlsJVLNBc5cgaX9UemE3kDb5Wclu3oclzt9InKTT6XqIvxV6kWdroS2y0ALPZWTfxeqTfDtWGrzECoinaLJHQ=s752-no"/></center>
               <br>
               <br>
               <br>
@@ -529,7 +642,7 @@
                 <br>
                  <p class="sppad black"> <i>“Something that looks great but is difficult to use is exemplary of great UI and poor UX. While Something very usable that looks terrible is exemplary of great UX and poor UI.” </i> </p>
                <p class="sppad black"> This is one of my favorite expressions of UI and UX. My goal and approach with UI and UX is to connect business goals with user needs through a process of testing and refinement that leads to a product that satisfies both sides of the relationship.   </p>
-                 <p class="sppad black"> In other words, my ultimate goal is to make something that looks great <i> and </i> is very usable.    </p>
+                 <p class="sppad black"> In other words, my ultimate goal is to make something that looks great <i> and </i> is very usable (and have fun doing it!).    </p>
 
                   <p class="sppad black"> <b>Tools:</b> Sketch io, Figma, Illustrator, Photoshop  </p>
                  
@@ -736,11 +849,9 @@
   <footer class="mastfoot container-fluid white-bg">
     <div class="row">
           <article class="credits col-md-6">
-              <!-- <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > </a></p> -->
           </article>
           <ul class="foot-social col-md-6 text-right">
             <li><h2><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"></span></a></h2></li>
-            
             <li><h2> <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"></span></a></h2></li>
             <li><h2><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"></span></a></h2></li>
           </ul>
