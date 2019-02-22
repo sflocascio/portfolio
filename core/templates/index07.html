@@ -72,7 +72,7 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-      <a class="#" href="{% url 'home' %}" ><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/nBkFUJP3AM0H-sb2eESd5G1Brh8LXElfxyIjaraGmRbSMzcs-IsgBx7akbuP6oFa8bWeUyTNetBkSbvsz-mMtY15kGdEbG59FBGEejwaw9VSsFG3XwJ8oTg5lk7B0p2JKkKZW_KwyCTgoArcp3bsWz-0G2kIjnCMXSF4TerXcONTRlv8anGysCT11EGUZygPIXv8t7e0TTcjthaE70A50x70SlS9LMb_B9sXpjvsGkrMZF9qr0BgC0xyP-Ngi5p1d9BpIp6dUi5mDkjF0y5RQ61lsEHYmJf1tBrTVpWiJIwDplo5jjLy6k9jNjeMZARf6c_76gdSX6h6lR82EhQXiuvYKAlC4Jzblm06h_Uraj31zgKUpy4wQbunRIvUavYYxMedurroJplANa-uSf78hEfdXS2xEZlorG34tNkWgKguNPsjOHj1fu2UbPGf2r_HO02DEhJrFkcwKtZbWaff1G3ZHJlSvHrQ8acT3hDh6TMOiSAClmx3PWbfV0P19RfzT73AzNBbhYF6qUchWjx622yj9G9onwQKfcGc5p1x9nWv_4Qq-UH0VhrVtTZVqSjexF9oU_QVlp_NpdHv_5iKSYSt5cem0RSBeKrWzcIdlUJ4JCESjk4tuydA9cqV7FR75lZyrJzHywJ4ONGusx2_MYe-8hn_JvI=s60-no"/></a>
+      <a class="#" href="{% url 'home' %}" ><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/i_oM_TXIDC_6ajgLjLHLpgXpdq9IMnBiIY4eaduMJrD1QCVtjg-C2LCeoJSbuDZ580leaIJYLP5rLXy_M28Q3gTROc6X71WmqzNOP_bK1tNiFXOy_boD0REnf2W7U7gUl1W2MfcUaKcTkcN429vtfyv48sTZrwzcFcaXuYqIwBdihHc19Lv_eAWfSjy2GsylWt3ZIq3Yw9O1Mox7lnZ4btyY6mURmtpMKr8GfCMRCTf8Os8UIhVmmAeKOKQXX1AgQOeZb6rn-cinETjwwp234oIZa9NegdLPE1OIXDEPs--nPexrlg7XyqdSJtURvIepOVohu5v-kh1alAF2O2BZtEuMHnGGmTs9lrgrDOLRY0muGl7PzWrgeSEtyPeHHPvoWGxDkUezvdLAtodee61FI6_ixqxhUJstQr_y7EPaaznjHWQybvO4t3arBTstEFg8tC3bmQOsKrBMiJullJoX4ubGPd8fq9o-TFACf0Tn-WE4cNmw7J03K__FAD46tBjbP_aU4VfP-aA83mlBzGlv8OfUPzDTJ_kZJhSgbdwXNcksFso340dFlN2bLUZ6-HG08IiMN53xITYenwgEfKuTLhKyZyfz3UFKvWLku5oYi5U7CbA_bxoNwvo7I6s8IzReuNpKvweAqnZuw6jSZuWaKF6CpuC5obk=s60-no"/></a>
           {% comment %} <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a> {% endcomment %}
           <nav class="mastnav font2">
             <ul id="menu" class="works-filter">
@@ -114,7 +114,9 @@
             {% comment %} <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
             <li><a href="#0" class="cd-btn"><span class="ion-ios-download-outline dark"></span></a></li> {% endcomment %}
             <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-email-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-world-outline dark"></span></a></li>
             <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-download-outline dark"></span></a></li>
+            
             {% comment %} <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li> {% endcomment %}
           </ul>
       </div>
@@ -152,15 +154,15 @@
 </section>
 <!-- works filter panel :ends -->
 
-    <section class="sub-wrap about white-bg">
+    {% comment %} <section class="sub-wrap about white-bg">
         <div class="container-fluid">
           <div class="row">
             <article class="col-md-12 text-left caption add-top-quarter">
-                {% comment %} <h6 class="font2 dark">Sam LoCascio</h6> {% endcomment %}
+                <h6 class="font2 dark">Sam LoCascio</h6>
             </article>
           </div>
         </div>
-    </section>
+    </section> {% endcomment %}
 
 
           <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
@@ -173,8 +175,8 @@
               <br>
               <br>
               <br>
-              <br>
-                      <img alt="" title="" class="img-responsive imgcenter" width="50%" src="https://lh3.googleusercontent.com/_y3PYybV_4gnZ74KBe_M7xBj0xWXqS7nXcB1AYUtZjVew-gZ2ZctmOroOY_eXadGi2xThdJk4NtzbU907_-bFxSq_p0UK9MGLLO1tI6RBCMLmPrLcBJ2achLhCiPmcVXhitZI6xMbSZvRTqufNNkiL0nNMzZ8dWJikMEAy4FNkWUSNz1GGFaTvA_rsKhYMQNgaIEQxcZyBdOcXHynpALxjt3FhzNzB7KK3PHhgko4664oWgPrTScr-UDZ7wYCnWk3PgxvEnbaT53PgwbvoxRKRSBewEkVkDvqTF0qF2TLTaoR4rnMUKpRA3WaM4lYOqOcLHa7orFTWlvPhfu5f7oAT9KDd3TCQ3jWVQrVE34SS4Ut8TNDFK-YZoESvFDDieKAkADJzQrOQZ46r1tVwkgfxKIQ9hGX99Q3Po7IiK_aef3b1OneZUzhw2M-F8bOQZ_zRw9mejVHKxRDi3UgaeTSXEKC0-J6CKOWJABLv3OJpgdD54Vk67NjoRiwMO3ajauY1LyBNeK230qshWM305CBL9FFLOoqWDJsgM5eQpkcm2yZ5zZgkPuDvWXYnLwYh9_u1xWAqFC6b9zrn7w9rW5eThG0sv8bysFTPV7SvUJUpwa9bEU4w4ZKqIKq8fRc-Hv9vHfWIUmbaW2WZrJ9Bx233CI_wZV8tM=w903-h919-no"/>
+              
+                      <img alt="picture of sam locascio" title="picture of sam locascio" class="img-responsive imgcenter" width="40%" src="https://lh3.googleusercontent.com/CYkrIDquGW_L_pYr7ouEHZ1yodBjDCag_MP0hcjYT2XPdM8d7yRgcRHBKEMZ8mSbeSk_m69x2u8Bn9FS-EevuEUT8u2LrB9X7iz13XeMNmBAYVcE55PJM95iKtxdfTnzquHh0bM1wVFZiwxO-ws38vcAoD8RSOO5Jj0oVoolc2zPLZCl_k2Flligcm_MQbMlTlY-KI-k7yftgSU3ZWljQbxal3QRJ8R0e7zIiDqsicwtz6T_16Tt6HHa7ioRSeE-4zOBsq9YqtmbmZMNCiV7-VixIFQ71n9sRZNVhXO5jt9uUxQUYdpDB9u7Vj606cIL12jw-_m2E-5RqBLj32u3sPSDvb8pkV7A-HN62m9lZELK1jvO0JFGKYBgbSRAMht-qRCZPGG1-bxqpzdGM6AwTDDTQh9P46KBplkksKUQ7xbZ-0sXoAkrEjRQH5eOEOg6H9cxJB1VjhxN4CXgt2644SSqKrkccN5ij-weoYA8eRUk3evO8VBA0rB7FxKP6zQKgrZtTJOljlE32vIsNDxZ6mA4mFvgUjnHL9leWJ9eeMu_OjaOwyYpyEH5qOs6iRtvgGmvoJslNvdAaptGliKo6oSedgktnCZEU8Opzz-vQKlO-G7Dk4jomqipYZ41X7pa3iRJu669aQVSotOhtcD8hR_vbvQKWPI=w444-h477-no"/>
                       {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/sam.png"> {% endcomment %}
                           {% comment %} <div class="works-item-inner">
                             <h3 class="color font2">12/03/2015</h3>
@@ -182,15 +184,18 @@
                           </div> {% endcomment %}
                       </a>
                       <br>
-                      <h1 class="center"> Sam LoCascio </h1>
+                      <h3 class="center">S a m  &nbsp;&nbsp;L o C a s c i o</h3>
                       <br>
                      
-                      <p class="center sppad3 black"> Web Developer - Musician - Recording Enigineer - Nature Enthusiast - Kayak Owner </p>
+                      <p class="center sppad3 black"> Web Developer - Musician - Recording Engineer - Nature Enthusiast - Kayak Owner</p>
                       <br>
-                      <div class ="center">
-                          <i class="fab fa-linkedin fa-2x "></i>&nbsp;&nbsp;
+                      <div class ="center ">
+                          {% comment %} <i class="fab fa-linkedin fa-2x "></i>&nbsp;&nbsp;
                           <i class="fab fa-github fa-2x "></i>&nbsp;&nbsp;
-                          <i class="fab fa-facebook-square fa-2x "></i>
+                          <i class="ion-ios-email-outline dark"></i> {% endcomment %}
+                          {% comment %} <h1 class="sppic"><span class="ion-social-linkedin-outline"></span></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <h1 class="sppic"><span class="ion-social-github-outline"></span></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <h1 class="sppic"><span class="ion-social-facebook-outline"></span></h1> {% endcomment %}
                      </div>
                       <br>
                       
@@ -200,13 +205,28 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-two-third zoom about sppad1 spcolor5 ">
+              <div class="works-item works-item-two-third zoom about sppad1 spcolor3 ">
               {% comment %} <div class="sppad2"> {% endcomment %}
               {% comment %} <h4 class="font2 dark"> About </h4>
                 <div class="liner color-bg"></div> {% endcomment %}
                 {% comment %} </div> {% endcomment %}
-                 <img alt="" title="" class="img-responsive imgcenter" width="100%"  src="https://lh3.googleusercontent.com/c1ppzr2bHORLlYx9Oo_wQHvQbBkSiHSRCoHrTn93A-BLr_Sskhki-Is656KvQUgQZp1FcW-s7Vxwm6Zh1S6Ityrj9TjQGcT19Tgr4zH3dGyqSuXPBhwPAnH7GFwA6Ky37p-Ilmwb40cpT4-4dx72guwvxXaAcOT0sIg6KCag5U19ePZXJl1Clx0aW6EHOvVs6KkNzLyIe_2tSLKGWNIG7xZr6Xm5mwr1GJYzpSfFDvm-hqoZncCPdJjKvWr84BHLQt6otDGlwnesphL9GfbO1octUyCfNQ8Z6fQot0TDbFw1-AkiM5D3XfScGBCtT_0gK1w_dOWNIjkAoJp8flRjFzR01nuMFejl9Ky544n6yKiP9BgbUQWQ9YS28CE2q4dfDH9PIYTnB0Jc6MKUcl9DEk5WiVR8WiaCBOQjM2sPGkSDN99vPgTVxswoQ3Z_ENqZv1uHgM_sNxHMb_Tg9oT5cwqIaE-VmIp7scJjbllKa_B5zZu19NXTNCI4RtpUYhOjzkI3KPiNoDKcIlvqmfO_SM1PCMl39E4ynFOWurMRbtoSatGnMb_6XQxi-Kcwc__h8SBnI_vIxPhTyNhF2PIkfI5zxJ7Ohy6FvFGXIVUwM9U3aycRvb950xVuE9OhDcIKOOGTJv_00HrAE6Hr6YzqUlKZDIXHA10=w1013-h675-no"/>
-
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                 <img alt="About image with sound waves" title="About image with sound waves" class="img-responsive imgcenter" width="30%"  src="https://lh3.googleusercontent.com/3IKZQXEoUb6tHT30v8lggNTQ4EXGkKQ5XT4Gp5ACtmN52xOfOl93xa5YKGoxsJWMHUA49VSuUt6uI4yzRN2ADnP3gRl-goa7D2fcAAJy2CyH_uaUQSqwHvf_IPltv8NHzjnupgcwxJUHVEUokCpAsh2bTnJ2EJejInvqR8tGnwnGs3Bvqi0NuLsDutqI37t6J5cGMy1WKLvtmmO6API71RDRGJxfE8A_GFzKZjiuXNZ9AP9H1FmkJz2fGGn4w5tBDDYDvoueSyaZ6U7nQhj_OsWvRemRVWGOzbnnJs_-7XmXZnz9HV9IsO_WIrsa09ZqyyxjjHSv_XlrViQ0jTIgLIixnyfkURGVX-Ydo80D5Kc9nD6uxJoVq7_861A7nHZ0NfE_07iOHHhl53oLncLcMe2Z52okQ_-d7YGd9r4_1mrmvmUgl7FQmV-utHRDA0A7PVLOE41VUcE74M7n1GfIIeOhS03Jq375OSZ_nkC9Z5WmAjoBOHrBS96--DzAE7ipVpL61XBzYVD1xMyuuPiYv36XDNEZ_IMLVANiBT6SJ_LD7kKbpSM8EBaT4i3an6k1_x0Kd2ZhC5KakPYUrMq3wMXm83Ms0hNSIg5hK6NU5GrFDitW--A3oqNpK4_UC1xrCWK1LkN2iZKd2ha5yQ-0R6Sy2nVt8ZY=w983-h397-no"/>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+              
               {% comment %} <h4 class="sppad"> About </h4> {% endcomment %}
               {% comment %} <p class="sppad1 "> I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. I thought that was really cool. It was this investigative process that led me to be intrigued with coding and fascinated by the things that can be accomplished with technology.  </p> 
                 
@@ -214,13 +234,13 @@
                     
                     <p class="sppad1 "> Feel free to contact me if you want to discuss a project or opportunity. </p> {% endcomment %}
                       {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/02.jpg"/> {% endcomment %}
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/02.jpg">
+                      <a>
                           <div class="works-item-inner img-responsive ">
                             <h3 class="color font2">About</h3>
                            
-                            <p><span class="dark font4"> I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. I thought that was really cool. It was this investigative process that led me to be intrigued with coding and fascinated by the things that can be accomplished with technology.</span></p>
-                            <p class="sppad1 "> I’m quite fond of the outdoors, recording music, fishing, ping pong, and (recently) cooking . I love to let my passions inspire my work whenever possible and have always loved work where I’ve able to help others.  I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019.   </p>   
-                           <p class="sppad1 "> Feel free to contact me if you want to discuss a project or opportunity. </p>
+                            <p><span class="dark font4"> I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. It was this investigative process that led me to be intrigued by coding and technology. I love the outdoors, recording music, fishing, playing ping pong, and discovering new things. I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019.  </span></p>
+                           <br>
+                           <p class="dark font4"> Feel free to contact me if you want to discuss a project or opportunity. </p>
                           </div>
                       </a> 
 
@@ -239,21 +259,48 @@
 
 
                 <!-- start : works-item -->
-              <div class="works-item works-item-one-third zoom about spcolor3 ">
-              <div class="sppad">
+              <div class="works-item works-item-one-third zoom about spcolor6">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+               <img alt="" title="" class="img-responsive imgcenter" width="50%"  src="https://lh3.googleusercontent.com/WG7IM2m8DLC5Lxzhdjbw-1kwv7647MrHZU6m4IYGPGZYIsta1TgjLIihFO1r3viQtxdivxjLaDVCtRcVeoee2yc2DDVfZrI-uMkKHMEGZsRrmG16T6CO4fd_WH-XMsqhkalPUoKE2tauwdF4sXt8RNhobSDMT-Sx2HSHZnxd0sPdKTnSl5w0thCfjMgk5NyfGNsNhfcKsBybdbn6mQGeb5KGkvZn2aENaA8yJe3AxSDFwpVS-u_1mHOx27pQQJUL30mi4vERh4S025QgekL-4ZHnnxHXldktrGz10K8da0Vr0SCz0xHI7GsZbTdFFsk2cXa4x3yZ_gg4yXbbsu6m3uI9bjejLEs5KK7m03ilI1ESj8OWDBOmUIV8e6xETnVVL1sUmk4oApNZO9AGyvkDNGj1srARzLvDmbysF_BqUL0VtZwolcuZr2cGXREh9yh5rAqnxRobs7K2GoZEWjmn5S276sgDzjtA5o40ClO0k-AWUOO69Tu9_qtTxNwyZJ7qcWyepBZ1mKZqRA-e0fuI8zF4CqiCj-AJazQwVZkWF1RkmDlpMpAJFEnG-6NvdMiy7FqzTT5si54wFGdARVfgq5JwIBu-YxTcdlRAXTbZgk1es_yQw5shuWqJOGBx4fzPmP7JRaJ9FqCLr5c3Hjt6VbaWvi1brtE=w836-h752-no"/>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              {% comment %} <div class="sppad">
               <h4 class="font2 dark"> UI / UX Design </h4>
                 <div class="liner color-bg"></div>
-                </div>
+                </div> {% endcomment %}
               {% comment %} <h4 class="sppad"> UI / UX </h4> {% endcomment %}
-              <p class="sppad black"> <i>“Something that looks great but is difficult to use is exemplary of great UI and poor UX. While Something very usable that looks terrible is exemplary of great UX and poor UI.” </i> </p>
+              {% comment %} <p class="sppad black"> <i>“Something that looks great but is difficult to use is exemplary of great UI and poor UX. While Something very usable that looks terrible is exemplary of great UX and poor UI.” </i> </p>
                <p class="sppad black"> This is one of my favorite expressions of UI and UX. My goal and approach with UI and UX is to connect business goals with user needs through a process of testing and refinement that leads to a product that satisfies both sides of the relationship.   </p>
-                 <p class="sppad black"> In other words, to make something that looks great AND is very usable.    </p> 
+                 <p class="sppad black"> In other words, to make something that looks great AND is very usable.    </p>  {% endcomment %}
                  
-             
-             
+                 
+                  <a>
+                  
+                          <div class="works-item-inner img-responsive ">
+                            <h3 class="color font2">UI / UX </h3>
+                           
+                            <p><span class="dark font4"> My goal and approach with UI and UX is to connect business goals with user needs through a process of testing and refinement that leads to a product that satisfies both sides of the relationship.</span></p>
+                             <br>
+                             <p><span class="dark font4"></span><b>Tools: </b>Sketch io, Figma, Illustrator, Photoshop </p>
+                             {% comment %} <p><span class="dark font4"> <b>Click Here </b> to see my design process</span></p> {% endcomment %}
+                        </div>
+                      </a> 
+
               {% comment %} <li class="#"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Design Process</a></li> {% endcomment %}
-              
-            
+
                  {% comment %} <p class="center"> <i class="fas fa-arrow-left " ></i> <a> &nbsp; See Design Process </a></p>      {% endcomment %}
                     
               </div>
@@ -261,50 +308,84 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third zoom branding about spcolor6">
-              <div class="sppad">
+              <div class="works-item works-item-one-third zoom branding about spcolor5">
+               <br>
+              <br>
+              <br>
+              
+             
+              <img alt="" title="" class="img-responsive imgcenter" width="80%"  src="https://lh3.googleusercontent.com/l_c9-Y3J4M6Y0hQ6hIrOJ4iKBXZl07Cp6AQQSLzE0UKGeaIyllOXFOk-J3pI6YdQUGjSBEy1lp0j7ex3jWY7E0hYw5zssFpynZy6vxZP6m0zWJB59QZzYtdlNWO3_xnIUR5VUqUyU2qEGgJa4kNYDNiyQM4DkACu_7CaG-0Prtcx09CXM3fvqDGXGoWsanMin3lgmjS5XNeQUU1hUzlW1FLSzZHMwAsLmxxW4R2N8XhWdyCZ62xFkAaUOfQXNKZKiYpM-OKTlCIBgFYkDCIwYquS0_LvTXqCQeUb9LoCvhXM1bdLjbhKIhUKr6RCtfSHSYwyuJA8ArgwatlGCSc95q6eseetDdeL1eLKgvfWvbUHuooLC3PJ3fbnu-TeYe1iuFmVEaB1Izo9O0VfGyijVy9wzRtHuokjRnBUkSOVKTbH4K6h-oVtQWMCI0w_ib1f-qXZEDPU_yOPEx0UAYa8GDKFfSyFfSl5nXcu_kqtNGaHRkVlXWRprk63SS9UxzCQqhOLPoSy4Ah2NKgJwair14q4RFd9lQgQ_fWEx-TuGVst-VuH8G5genB_DVDXmyRj-46CumC1AKu8JlpHyytUtKlum6dGtbeKk1gNaMlCOPmnVOpGEl1ToroIDukw__PccBFKJLpkyNW8qbtyXPPgwLsBf125I0o=w800-h700-no"/>
+              <br>
+              <br>
+              <br>
+              
+              
+              {% comment %} <div class="sppad">
               <h4 class="font2 dark"> Back-End Development </h4>
                 <div class="liner color-bg"></div>
-                </div>
+                </div> {% endcomment %}
               {% comment %} <h4 class="sppad"> Back End Dev </h4> {% endcomment %}
-              <p class="sppad black"> Special care is taken to ensure that the right tools are chosen so the project scales well as it grows. I bring an object oriented approach to my coding to assert the code base stays as concise as possible.  and write unit tests to test code and identify any edge cases in the development process, and databases are monitored to make sure no unnecessary overload is happening.   </p>
-               <p class="sppad black"> <b>Tools: </b>Python, Django, Amazon S3, PostgreSQL, Heroku, Django REST Api’s </p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/03.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/03.jpg">
+              {% comment %} <p class="sppad black"> Special care is taken to ensure that the right tools are chosen so the project scales well as it grows. I bring an object oriented approach to my coding to assert the code base stays as concise as possible.  and write unit tests to test code and identify any edge cases in the development process, and databases are monitored to make sure no unnecessary overload is happening.   </p>
+               <p class="sppad black"> <b>Tools: </b>Python, Django, Amazon S3, PostgreSQL, Heroku, Django REST Api’s </p> {% endcomment %}
+                      
+                      <a  >
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2"> Back-End Development</h3>
+                            <p><span class="dark font4">Special care is taken to ensure that the right tools are chosen so each project scales well as it grows. I bring an object oriented approach to my coding to assert the code base stays as concise as possible.  </span></p>
+                             <br>
+                             <p><span class="dark font4"></span><b>Tools: </b>Python, Django, Amazon Webservices S3, PostgreSQL, Heroku, Django REST API</p>
                           </div>
-                      </a> {% endcomment %}
+                      </a> 
               </div>
               <!-- end : works-item -->
 
           <!-- start : works-item -->
-              <div class="works-item works-item-one-third zoom about spcolor7">
-              <div class="sppad">
+              <div class="works-item works-item-one-third zoom about spcolor4">
+              <br>
+              <br>
+              <br>
+              
+              <img alt="" title="" class="img-responsive imgcenter" width="60%"  src="https://lh3.googleusercontent.com/OWFEnaZYgIdxmYxrTPg-LOlSfr0nDfEwbSbLQ1WOr067VGquEy4GI0XOKPixn5VS9Btp08-WxAURE5nmXjpO25b4i3qPODpvT_GJVkhbi5h3Ht8y7SnyCYbQFjIC18ueiUHY_paAC3rY0HTRWdKZBIM-YwMeEdRQuwdUCm_mVGBlHWSYVzsBgTEqtj6lfXi6XVxMUEXJOr0UHrV9pLEbFstyIVTUuilT1ekO5ZQDLviosrGPgLt29t3bVLawMJi_1a0JAdrPRPBxNUzXFLDiFURIMSUWvJm7_3PxapultmeXKAHqHgXd65ongcQoXH_ZY_7mPH5DzjBV_XH2cMUdh7b7M73e_ZYUQw2wb5kqgHtRFwEnzc_nPzDs9kD-iRXHRYRaFhllX1_DlLc4cL0z6EtIe3R3rLl_PdVGw1bbFfgdqlPxW-ibO9UGTIbLUlqgVQ_VHfwotsI7AzMDeyJmkKWpx3XHFsx4RtuyOtR0ElBteIpxFZCO3_4Fqanryh1d6azxyJ-i_MElSyLyu94rEoj272aFlFXBJbsuk4-hKt8lAufSdb9fjuMMJXH_wrGCZf-3tzclUkrlsJVLNBc5cgaX9UemE3kDb5Wclu3oclzt9InKTT6XqIvxV6kWdroS2y0ALPZWTfxeqTfDtWGrzECoinaLJHQ=s752-no"/>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              {% comment %} <div class="sppad">
               <h4 class="font2 dark"> Front-End Development </h4>
                 <div class="liner color-bg"></div>
-                </div>
+                </div> {% endcomment %}
               {% comment %} <h4 class="sppad"> Front End Dev </h4> {% endcomment %}
-              <p class="sppad black"> My core aim in front-end roles is to build efficient, interactive, and beautiful applications following DRY principles and W3 guidelines. In following with an agreed upon UI design, I approach projects with a mobile first mentality, making sure visual components are intentionally structured while bringing an emphasis on accessibility.  </p>
-              <p class="sppad black"> <b>Tools: </b>HTML5 , CSS3. javaScript, jQuery, VueJS, Bootstrap, Bulma </p>
-                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/04.jpg"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/04.jpg">
+              {% comment %} <p class="sppad black"> My core aim in front-end roles is to build efficient, interactive, and beautiful applications following DRY principles and W3 guidelines. In following with an agreed upon UI design, I approach projects with a mobile first mentality, making sure visual components are intentionally structured while bringing an emphasis on accessibility.  </p>
+              <p class="sppad black"> <b>Tools: </b>HTML5 , CSS3. javaScript, jQuery, VueJS, Bootstrap, Bulma </p> {% endcomment %}
+                       {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/04.jpg"/> {% endcomment %}
+                      <a >
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2">Front-End Development</h3>
+                            <p><span class="dark font4">My core aim in Front-End roles is to build efficient, interactive, and beautiful applications following DRY principles and W3 guidelines. In following with an agreed upon UI design, I approach projects with a mobile first mentality, making sure visual components are intentionally structured while bringing an emphasis on accessibility.</span></p>
+                          <br>
+                          <p><span class="dark font4"></span><b>Tools: </b>HTML5 , CSS3, javaScript, jQuery, VueJS, Bootstrap, Bulma</p>
                           </div>
-                      </a> {% endcomment %}
+                      </a> 
               </div>
               <!-- end : works-item -->
 
                <!-- start : works-item -->
+               <br>
+               <br>
                <div class="not-visible">
-              <div class="works-item works-item-one-third zoom ui spcolor8">
+              <div class="works-item works-item-one-third zoom ui ">
               <article class="text-left news-sidebar">
               <br>
                 <h2 class="font2 dark ">  Design Process</h2>
                 <div class="liner color-bg"></div>
+                <br>
+              <br>
+              <br>
             </article>
             
               {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p>
@@ -314,11 +395,14 @@
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor9">
+              <div class="works-item works-item-one-third zoom ui ">
               <article class="text-left news-sidebar not-visible">
               <br>
                 <h2 class="font2 dark ">  Design Process</h2>
                 <div class="liner color-bg"></div>
+                 <br>
+              <br>
+              <br>
             </article>
             
               {% comment %} <p class="sppad not-visible">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p> {% endcomment %}
@@ -327,11 +411,14 @@
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui   ">
+              <div class="works-item works-item-one-third zoom ui   ">
               <article class="text-left news-sidebar not-visible">
               <br>
                 <h2 class="font2 dark ">  Design Process</h2>
                 <div class="liner color-bg"></div>
+                 <br>
+              <br>
+              <br>
             </article>
             
               {% comment %} <p class="sppad not-visible">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations  to understand exact user needs.</p> {% endcomment %}
@@ -348,10 +435,11 @@
 
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
+              
+              <div class="works-item works-item-one-third zoom ui spcolor2 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-book "></i>&nbsp;&nbsp;1. Analysis</h3>
+                <h3 class="font2 dark">  <i class="fas fa-book fa-3x"></i>&nbsp;&nbsp;1. Analysis</h3>
                 <div class="liner color-bg"></div>
             </article>
               
@@ -362,10 +450,10 @@
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
+              <div class="works-item works-item-one-third zoom ui spcolor3 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-edit"></i>&nbsp;&nbsp;2. Card Sorting</h3>
+                <h3 class="font2 dark">  <i class="fas fa-edit fa-3x"></i>&nbsp;&nbsp;2. Card Sorting</h3>
                 <div class="liner color-bg"></div>
             </article>
               
@@ -376,10 +464,10 @@
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
+              <div class="works-item works-item-one-third zoom ui spcolor5 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="far fa-object-group"></i>&nbsp;&nbsp;3.  Visual Design </h3>
+                <h3 class="font2 dark">  <i class="far fa-object-group fa-3x"></i>&nbsp;&nbsp;3.  Visual Design </h3>
                 <div class="liner color-bg"></div>
             </article>
               
@@ -390,27 +478,27 @@
               <!-- end : works-item -->
 
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
+              <div class="works-item works-item-one-third zoom ui spcolor5 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-code"></i> &nbsp;&nbsp;4. Front End Development </h3>
+                <h3 class="font2 dark">  <i class="fas fa-code fa-3x"></i> &nbsp;&nbsp;4. Front End Development </h3>
                 <div class="liner color-bg"></div>
                 <br>
                 
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  Prototype the agreed design in code using HTML, CSS, Jquery, and JS.</p>
+              <p class="sppad">  Prototype the agreed design in code using HTML, CSS, Jquery, and JavaScript</p>
               <br>
                       
               </div>
               <!-- end : works-item -->
 
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
+              <div class="works-item works-item-one-third zoom ui spcolor8 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark"> <i class="fas fa-users"></i>&nbsp;&nbsp;5. User Testing</h3>
+                <h3 class="font2 dark"> <i class="fas fa-users fa-3x "></i>&nbsp;&nbsp;5. User Testing</h3>
                 <div class="liner color-bg"></div>
             </article>
               
@@ -421,10 +509,10 @@
               <!-- end : works-item -->
 
                <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom ui spcolor8 spshadow">
+              <div class="works-item works-item-one-third zoom ui spcolor3 spshadow">
               <article class="text-left news-sidebar">
               <br>
-                <h3 class="font2 dark">  <i class="fas fa-redo-alt"></i> &nbsp;&nbsp;6. Iteration</h3>
+                <h3 class="font2 dark">  <i class="fas fa-redo-alt  fa-3x"></i> &nbsp;&nbsp;6. Iteration</h3>
                 <div class="liner color-bg"></div>
                 <br>
             </article>
@@ -438,9 +526,10 @@
               <!-- start : works-item -->
               <div class="works-item works-item-full-width zoom ui ">
                 <article class="text-left news-sidebar">
+                <br>
                  <p class="sppad black"> <i>“Something that looks great but is difficult to use is exemplary of great UI and poor UX. While Something very usable that looks terrible is exemplary of great UX and poor UI.” </i> </p>
                <p class="sppad black"> This is one of my favorite expressions of UI and UX. My goal and approach with UI and UX is to connect business goals with user needs through a process of testing and refinement that leads to a product that satisfies both sides of the relationship.   </p>
-                 <p class="sppad black"> In other words, to make something that looks great AND is very usable.    </p>
+                 <p class="sppad black"> In other words, my ultimate goal is to make something that looks great <i> and </i> is very usable.    </p>
 
                   <p class="sppad black"> <b>Tools:</b> Sketch io, Figma, Illustrator, Photoshop  </p>
                  
@@ -601,8 +690,16 @@
               </div>
               <!-- end : works-item -->
 
+
+
+
+
+
+
+              
+
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project spshadow">
+              <!-- <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
                       <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/HSNvNYSUDWpKGb8QoMbWmkl3YpGtiBQN0hzJKe6QiaMHz2YiA49iAW5Rgn-UZ37DX4aRScy15rz_KOxlCC2bKdkEXj94cIgOZuMOTgv0MYlNRQp4enROyUb9evNaC7aY6P13QflCOWJms2Qx9O3YLRhdluaEi4YxNezX0m0lA4VbE6WbdkMltBFR5gdZfX3C3S2XcDk3YB4LCVx-8DA6uGJiSM1CLyNhm985h_qxYR9pitWC-qavNxKIcSu85wY_Lz9f6N1dsNQ0uXJl-B2RrSZZXT09CPQqCaGq7MEoALhJUJYhCdmJxL8Z1-iz5u3I5Qt-WmKjknNCQVGvu99tpEKN9_W5ld0yk5TWUVYxp77-fVgf5lWWtrsqtFRuefcVKwAD20Pv17xHOmfA_peGKmSaaHkPYurBdJ3fQLRD_cnm-CDAjIgIH-LDHFIWXMTn3S4uECOoZSTp9coa0AMNTRltqh4B8MSlxR6AAMUpJ2oL1v-KCIbukObFdjUu4KYqDJq_GyXVYmfu7rn8xYgtvEMVzf6ocPv9fBc0Mu-twfIl4E4wwWqXSAOaeKhlR2II0YEdz4uwDyQlUtaJvv8Izdq-sUo3Erfs-b5A-7aVm70bpScJVSwVdKZkBb_9RBvUeORo35U7S9rUXvuY1LvcpULHBu6VsIc=w1179-h919-no"/>
                       <a href="{% url 'oakhouse' %} ">
@@ -613,8 +710,8 @@
                       </a>
                       <h5 class="sppad3">  The Oak House  </h5>
                      
-              </div>
-              </div>
+              </div> -->
+              <!-- </div> -->
               <!-- end : works-item -->
 
 
@@ -639,13 +736,13 @@
   <footer class="mastfoot container-fluid white-bg">
     <div class="row">
           <article class="credits col-md-6">
-              <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > sloc design </a></p>
+              <!-- <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > </a></p> -->
           </article>
           <ul class="foot-social col-md-6 text-right">
-            <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/02.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/03.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/04.svg"/></a></li>
+            <li><h2><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"></span></a></h2></li>
+            
+            <li><h2> <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"></span></a></h2></li>
+            <li><h2><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"></span></a></h2></li>
           </ul>
     </div>
   </footer>
@@ -781,6 +878,14 @@
             <li><a href="mailto:sflocascio@gmail.com"><span class="ion-ios-email-outline dark"></span></a></li>
             
             <li><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0 " target="_blank" ><span class="ion-ios-download-outline dark"></span></a></li>
+          </ul>
+          <br>
+          <p> Social  </p>
+          <ul>
+            {% comment %} <li><a href="#"><span class="ion-social-twitter dark"></span></a></li> {% endcomment %}
+            <li><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"></span></a></li>
+            <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"></span></a></li>
+          <li><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"></span></a></li>
           </ul>
       </div>
 </section> 

@@ -61,32 +61,33 @@
     <div id="status"></div> 
   </div>
 
-  
+
 
 
   <a class="onscreen-trigger" href="#"><img alt="" title="" src="images/next.svg"/></a>
 
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="newpic">
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a>
+      <a class="#" href="{% url 'home' %}" ><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/i_oM_TXIDC_6ajgLjLHLpgXpdq9IMnBiIY4eaduMJrD1QCVtjg-C2LCeoJSbuDZ580leaIJYLP5rLXy_M28Q3gTROc6X71WmqzNOP_bK1tNiFXOy_boD0REnf2W7U7gUl1W2MfcUaKcTkcN429vtfyv48sTZrwzcFcaXuYqIwBdihHc19Lv_eAWfSjy2GsylWt3ZIq3Yw9O1Mox7lnZ4btyY6mURmtpMKr8GfCMRCTf8Os8UIhVmmAeKOKQXX1AgQOeZb6rn-cinETjwwp234oIZa9NegdLPE1OIXDEPs--nPexrlg7XyqdSJtURvIepOVohu5v-kh1alAF2O2BZtEuMHnGGmTs9lrgrDOLRY0muGl7PzWrgeSEtyPeHHPvoWGxDkUezvdLAtodee61FI6_ixqxhUJstQr_y7EPaaznjHWQybvO4t3arBTstEFg8tC3bmQOsKrBMiJullJoX4ubGPd8fq9o-TFACf0Tn-WE4cNmw7J03K__FAD46tBjbP_aU4VfP-aA83mlBzGlv8OfUPzDTJ_kZJhSgbdwXNcksFso340dFlN2bLUZ6-HG08IiMN53xITYenwgEfKuTLhKyZyfz3UFKvWLku5oYi5U7CbA_bxoNwvo7I6s8IzReuNpKvweAqnZuw6jSZuWaKF6CpuC5obk=s60-no"/></a>
+          {% comment %} <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="static/images/logo.png"/></a> {% endcomment %}
           <nav class="mastnav font2">
-            <ul class="#">
-              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href=" {% url 'home'%} ">About</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href=  "#" >Projects</a></li>
+
+
+          <ul >
+              <li class="trigger-sub-nav font2"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href= "{% url 'portfolio' %}">Projects</a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="{% url 'design' %}"> Design Process</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
-              
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li> {% endcomment %}
               {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
-               <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'elements' %}">Link</a></li> 
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Link</a></li> {% endcomment %}
               
             </ul>
             
-
-
           </nav>
       </div>
     </div>
@@ -101,15 +102,19 @@
   </header>
 
 
+  
 
 
   <section class="sticky-sidebar white-bg fullheight text-center">
       <div class="valign">
           <ul>
-            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
-            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
-            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
-            <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
+            {% comment %} <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="ion-ios-download-outline dark"></span></a></li> {% endcomment %}
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-email-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-world-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-download-outline dark"></span></a></li>
+            
+            {% comment %} <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li> {% endcomment %}
           </ul>
       </div>
   </section>
@@ -146,38 +151,75 @@
 </section>
 <!-- works filter panel :ends -->
 
-    <section class="sub-wrap about white-bg">
+    {% comment %} <section class="sub-wrap about white-bg">
         <div class="container-fluid">
           <div class="row">
             <article class="col-md-12 text-left caption add-top-quarter">
-                {% comment %} <h6 class="font2 dark">Sam LoCascio</h6> {% endcomment %}
+                <h6 class="font2 dark">Sam LoCascio</h6>
             </article>
           </div>
         </div>
-    </section>
+    </section> {% endcomment %}
 
 
           <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
 
 
+              
+
+
+
+            
+
+
+               
+
+            
+
+             
+              
+
 
 
 
              
 
+               
 
              
+
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project ">
-              <article class="text-left news-sidebar">
+              <article class="text-left news-sidebar ">
               <br>
                 <h2 class="font2 dark">  Projects </h2>
                 <div class="liner color-bg"></div>
             </article>
               
               {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
-              <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p>
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p> {% endcomment %}
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+              
+
+              <!-- start : works-item -->
+             <div class="works-item works-item-one-third-spaced zoom project ">
+              <article class="text-left news-sidebar not-visible">
+              <br>
+                <h2 class="font2 dark">  Projects </h2>
+                <div class="liner color-bg"></div>
+            </article>
+              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p> {% endcomment %}
                       {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
                       <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
                           <div class="works-item-inner">
@@ -190,144 +232,126 @@
 
               <!-- start : works-item -->
               <div class="works-item works-item-one-third-spaced zoom project ">
-              <article class="text-left news-sidebar">
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                       
-                      
-                      
-                      
-                
+              <article class="text-left news-sidebar not-visible">
+              <br>
+                <h2 class="font2 dark">  Projects </h2>
+                <div class="liner color-bg"></div>
             </article>
               
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project ">
-              <article class="text-left news-sidebar">
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                           
-                      
-                      
-
-            </article>
-              
-              
+              {% comment %} <a  title="Store"><i style="color:#1C76D0;" class="fas fa-search fa-2x"></i> <b> Business Directory </b></a> {% endcomment %}
+              {% comment %} <p class="sppad">  UI Approach 6.1 . Collaborate with stakeholders, investiagte  user goals and motivations. </p> {% endcomment %}
+                      {% comment %} <img alt="" title="" class="img-responsive" src="static/images/photography/11.jpg"/>
+                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/11.jpg">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">12/03/2015</h3>
+                            <p><span class="dark font4">Caption</span></p>
+                          </div>
+                      </a> {% endcomment %}
               </div>
               <!-- end : works-item -->
              
               
 
-
-
-
-
-
-
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+<!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
-                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/WeuyQF-oWPFe73VyN8ESimwUKFTXVm1S4BWKeNxk_CiEVf_XJ_i9sQdkxlTEPhSiFKufHQARzngq7Xj53G6p13LfOzjuC9Rh_HYE9CN_OlCsbE1dhUZ7i13dDBfljWeIHUYNYGKB-Wv9P7k7NGEBM6iFpjhkraBVqB9SZWOherybzKry-kypcwc5WI6IFaCW7u7QIf_a2GGg_L2cRQb9jICMfGCpVEhl1mOh6hhNWSK8arsZcdtxc6z9GXqx_Rmxinz37qrvKPhkVK-IOwjO4aQn0jJFCGnkjBTAmnXMEXAaGHFwVdibFUxba533HRkfDcHlKVTosFVTJQ-2RnQNaX2FbZta4-h-ATmCrGBX-1NEuA71K8--F6WE3WC5QLXP0bSnleRA4_exuG_S8Ekdx2WR71S7EvNwgyu3Irn9UqlaGREPC1JRKn_ObmF4vudoKSX-CcQYxAN-dnyzwEVxl7KJcw-JaDdEypnHAwugC-etAHhs0Y8ctPnR88LgG2Rsap3tdVwJdscWrYJ7slzsQHsngZ8B5sZcX46I1uatEK8PjUF_6QP-FQwBf8fBd2Ianc8B_rxnpLedlLyamP2tp72Nl-zMZMEaXxlWhZAEpybmnvP36itoi2UJJlEYQUb0FStMeb-rJ1awl2r_Y0uMH6kCJWfJ5rQ=w802-h422-no"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-                      <h3>  Quizzer </h3>
-                      <p>  Full Stack Developer  </p>
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
-              
-                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/pDK6_6BC1RGpQFZgZ7-2a1dVtnw8BZOjRBVjJGTnJh3Rewi6BjBJMkHV4uwkVVhsUtAI0gAxJfxjbwycNwZr563vy5MA_k7hHaiBsv9LAVd_NECBA-GUnAM5xqpJTbIIdGwbaU0KU8mlqvocOdG1gO1qyl_L0DtszIXlIJSZAKddmJkLG3fd08QxlkC5vcGm8uvWPqwQ_DMIfD8FUktpnvvF2cLwdzc_K_eqCBGyeZSU6Fs_t84jVi10kCzJ5wWxFI2UIyYx2HSFHImsOljJRZfDaArGDpmxxQefQXbFh_uLK_BLI94ad_YNmYCgVVgXRGICxJOdO425pljeTAiaaajhMf3PB6uwLeU8XShaRadJDtfEPHItYWcyMDTyqlCenhmEPrtNYzmYAIZkEf5OZdF6oaH0R_HIgiE5e9q-hqzDmhitOCMA7MCE6_FUl8TztiWSRNIncXYbGata1wd8okMQfrXXiXNvkblK8bTcr3z5Irz7Z3ZbPw-Tea_wFhHyTMDqNi6Wgw0rR3XWz1meEIX9pNe4M4XGPtqqmD-dmhbL4XW_GV1SWfS43Y-dmOreZvD0W31wFatJisTQfPzFNZTU9fRQlKbWItffxZqtjLO1ewHS0ydZNU9CzRzNHMY22odFh2u-01-SaXgcH96dKL_Ay4hG6ls=w1065-h770-no"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
-                          <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
-                          </div>
-                      </a>
-                      <h3>  CHANT </h3>
-                      <p>  Full Stack Developer  </p>
-              </div>
-              <!-- end : works-item -->
-
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
-              
-                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/GDtlL0D1vbUImo5QdRnT4E7Qk0CtCOfkRLQCRc8eXw-S7xV1zfPhWaF6GiGKiMcvLvXTp16Izf9GnyWCHkGSxiNwkixYHoA12qPqEusAS8k_71PcKG2TfXq4v-jPmF9usmOwMQseUheLQVxlzxWWjxAD__reJhfUtFcfp3yjrAEc1wqhPT4XgsehotMSDbu4n5HPYMmq8ya2WoMF8pYk9oMhXkt9i8mhZK2Kt9nIJdEMVMuRgBiBhhtwsDZWXfpAVCijYRBvHK-Zk7dhwRVfWeCFU6CNWERDatnF7uvL9q0_kVH0oFJNxXZpN0l7WbvqBHLS8rqkpdYH4H-ffBm2xzV7WvKB4QTeyYZU_A4tQLaB9MfpVEzGswR2inzCjov1fYQG6uBJWHD1Mnum-aohVb2SNQGpGpHp4eUiPrrRvVjbCKIWLAZIkYrjC-P1alaXxvtc0tJ23RJeESNlbUYu1trOpKRdyw-8wJvXRiGm8XxLs9y1T8uesSHOvlm9yFEIcSrIjCQL-OlVSVQS1PP3XoVRI3iusiQls-_qp2SUHTqANcOkw1oKutg7RQgptTV394SiCv4QlcA61g9OVyK2ntxL2imYbpmJ1CrdIF3hct6aqMM07Rac6zj2_H7r2ZP336Y-wnxlcvv_1H2fu061vPzJDWAQFgE=w1018-h770-no"/>
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/MfWeXxY-fP0TVG12_aQ4XygmFn1NfFa_9Qck0_P8zftr-RLs5lOzETEU3S2o6dIReINSgcdLxuNBCPDgXC_7EPSnHc8m9mt21lyUv3vRF_dsFp6W-SV_mODKYoXS-l3LTdW2g_0i3Rzsi_eUcj3Lv4jNyytR5vn1StnAIQN4h8PVgyTDvlHKQCyf12y_ohNAwnmQHhwoJSVPf6zEK0z0Xkk_Kh06T7ngJdKXYG2iw9aXCZx8TOxmqsRSrOJOdeGVBbuzQQ8wJBllYLqtHfNldIE46Gtdt11YVh0C_cRqG2xdNcmuOdtyy8ocJq3HNGu_ivcDb97lYGtNK6d_DL6zUfSVeGjL5ZvV1DvmAaU27S6xLf_crgnzPp3qMKrJd0_tidl1ifKViZz4pYPofYNW0FO2INgLwDBF5jRip88PV_NBycGv1abAgppXMIkZo5x9U8vjsgXRDX4_tFlTDLAHOdh6Uhuy-e505PP00JAfcEOHcbTqdASMPzmE44SBBZMXxqaMzcHQh6dCRegOCkH67q_uQ5EvlheOQ7Xdf5vJQ2YlWSb4QrGvsiQTXMvQ2N0CoN-ISjPFQVbxCScMmjXMbfWi4SBMURafqWe2XPTNnsDtAF5yGRNb9tVf08ObX7x-3kWCfTMUO-raYrD-luvKPQMQV-BKyQY=w477-h372-no"/>
                       {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg"> {% endcomment %}
                           <a href="{% url 'post' %} "> <div class="works-item-inner"> 
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2 ">The Little Triangle</h3>
+                            <p><span class="dark font4">A web app built to offer parents in North Carolina’s Triangle Region a platform to discover, review, and gain valuable insights about the best activities, camps, and offerings in their area. </span></p>
                           </div>
                       </a>
-                      <h3>  The Little Triangle </h3>
-                      <p>  Full Stack Developer  </p>
+                      <h5 class="sppad3">  The Little Triangle </h5>
+                      {% comment %} <p>  Full Stack Developer  </p> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
-                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/sWIgs0QNDFcbvQ4i51lg1h7QfEh5JrraW4DPTfCAA1YxrJIYU1JFyCgQbPWFgw12g4R8T_EE8zySgtth_RXEQ_ZcxlUvjdL4NZHzBP9oxIKgttcbUPjAkMu_am77eH0Mcsz7FeN8NMhNDKk6opbzA96sRhn6te8J0chkBpvzzbtWn7Jy7pn3IYX8boIAq-cPWiAB1yptjvYgFw6oM93kN0NfSUgOajk_PoYoYG6LWvYyq6c77dBDPboD1J9V9U6wRWhHEEmHdBh_RvlsT78bC6lRbVnsI-cE10ICPG2Y4xwRfbeSoEgP9nf7vHiHHOhq-E4Iv58Pp3Cj9_M7FYUNSvfic4Ctge5jJC3x8tpa3_Ou2q_Ne5FSDi018jwoLg_NwGOzryK_0QtKHU8EKqrST0EQOWRP3ZVb_Y5uDfvmmhv0TuJLoo3l9p0Sn3RvIKpbO7DPTfvh-lQytFzKl3HOGmbL6vufku0N5P0powuq--qqKxOO_UPBi_VLqK9ixGPzuaw-Eo5Ada6BzsucuELTX8W6eu_pLUMcWaLrlJaRMg5fJQ3mUeloKrh63GLyIpHJwOS4uUb5yN5Ayl40GX3Lt2HuCW7clwjeMnUXOV5VI1jowNBcvfH0i33p90hXlNfKcUyftqOPkuXP19arJ-OYk04-4W0jvs0=w963-h770-no"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/SFz480Jh96m-bC_q8lui6EbTX9q78LEyl6u0g6z2zZTNiqIv9Qzr1KlZ3rV-Hq_V4Nw8FLEPOamvZ7yh_-0_qSjhIx0JqKvVp-YBlM8ekIUx8dswkyEcbbS2Ocl2bywzJAHs2VaNe3VL0xklgYVYceRngeBpCoExBfILcpJxkX6X5tuxAoVCwLNIcGeDHfS9qag-KGaYHbndLR_GQYT7WkeDv1pHQ8b7zWLC3zhu1ypqI4BiJtTh0BuyfBUMLzCkH8oiQz0jaYxAkOxqK8v-kH1zXx1ACecHDdguWpjrkbZd5_n4NDvizw6OTz1_8hK0gY9jZ3xG1wqAH6PWEZi7DfC4vqe87LygyXh8LDhs6QXFiroZYuVX-SQ0Z8uelrCNmiM2W5cd37LTwA1iRG_j_RzlliTdeKg8tDBh_JknbLwPS3pjYem4APT5xF1ck720I99tPQ9-veRPI2fp8w86vcTNORzq-mNxNvNaRCTn6obFaazhkj60SPDFnEU1WZDpGuZ0fo6SQIUciVjZ9cEeeU_itbVQeTURQNk5dDIqSE6XFOqomDbpnUl-8TI4j7DXVcd6vDMfqiPysuH_0DwtniPPoHJlLwBkAGzWSvMYJz1C4Sl208rveJAajJajgoU_cCDBuJQH0y3Ih_-qaNYjWA9PJQjSCuA=w866-h675-no"/>
+                      <a   href="{% url 'quizzer' %} ">
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2">Quizzer</h3>
+                            <p><span class="dark font4">A modern and minimal flashcard based web app. </span></p>
                           </div>
                       </a>
-                      <h3>  Itunes Seacrh </h3>
-                      <p>  Front End Design </p>
+                      <h5 class="sppad3">  Quizzer </h5>
+                      {% comment %} <p>  Full Stack Developer  </p> {% endcomment %}
               </div>
               <!-- end : works-item -->
 
               <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
               
-                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/fbgpFhE2l9NqFrm1P5am9WSPE1SzqATBXEBqwLmOKPtS6MbCdqB3ax2Kg75dzTm5vropNKwyhcoezOUg9rQoBFKbnmO56hA1i2gO4p0wR794nPvAUNKNzGJQ1pXGIxrsUq3hyMTp61CcszLCNJYYWbT1YNi0hJzdGgbsWQTUUB3Z9MpPB_ZBzDXLmAjGNqR7wmmD2q53oSds5IggFn2ONAPjYfUcQQ6pLwlJIyOYXqjXdLUwqHQC6RLyVKsRx86k22fvT6KwEhoXGzNxARQ1PLAfTqbEN6UTTZjdHvmfsNDSovr6tUTO7Np7mQKjTKfXIfQjh_S7Frucm9pNS4Yh8iPUujZJqaJkXQgtnLsRGUU4665d8CVkPOobWOQn3rThgXzo2vEj_HaEADLsnko-IRpfEVdONiVBDJixSGVTFScW6jV9n2ASZLXEGFJo7LU-Km6XZlN2mtAL3qYOkNfzsfeHG722l-VU-dqeVxCJ0mrcVKHnZ_u3S5AsAGB0cyQqkDliF6QDJ5gFB174kiDrqCKEPb95wRe2ICg88cyjtHAH8PHJmFtyTrhwWk2GZm1epIEj8dS53wNBxId3ZZSgcr9MGuGUAttAhK46O3OXAM0CxkWsNePNwJ4pB7pMu6qauQE8BWLQHESjqcb1skCRJ6Hkij327kY=s344-no"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/oak.jpg">
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/cVuSrFAGuswkt2FcWiHmqiBW3_9oaOlWyjvqdAlDaTCOgvUv3ChVxEIpAflNJAllGQ0zqjftIyxFLZypUprhh4Eb1yVJVJyUBFjtGHKXHj9OCFwkp-L3JS6Y3ZrNOLGqyPWb_vxnwczrS29x5ieVcJGKNVhrRPf_4ujSUXtexifJC0GVnio3DFdQZbEtuzN-uafd2OBZUCHDL4wJgRVb4EzRrPBhULhu3xTkX7FVEiF_CWSDIFElz3v1gIQGHojcLFiZiAjkxDS_5bLVBjUVQJXQ3y9ZaAzeFlL0YCe1A-VeGxbsVM9H-kTqAUe23T0euqUE2DpXYQq8W3u3EUqugVkg4ywHyasVtuhI3roxOFDgVd0L3TR7ztVMGEakY5-XXRIJuSTBd4N0ydQkX8fEZO7JZKJm7illqxXsL4QnS2d6KMzViHNF4uGJtycCswAp80qoqoORKuujLJvDnVIs_ixy3_dv7kd9dHFnUJYaga08YWhUo9mDi177LfZ1IgF0K0lIGNgl326cdTH-zS1lZeYhnlh2D8M3rEeqbNqfO2LkfY6n1wskmrLEpQfRg7zbJ5gSaryAz7tSwrH3fWaYLXkSmKilQcrbLLYR6JFGNWdhAbS_EFhA6c3V3k-WbJEfSk_w9zkvbqi4T076um7CiaubOcs06H0=w866-h675-no"/>
+                      <a  href="{% url 'chant' %} ">
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2">CHANT</h3>
+                            <p><span class="dark font4">Built for connecting and engaging the creative community, CHANT is a mobile app set to launch in 2019</span></p>
                           </div>
                       </a>
-                      <h3>  Wayfinder </h3>
-                      <p>  Front End Design </p>
+                      <h5 class="sppad3">  CHANT </h5>
+                      {% comment %} <p>  Full Stack Developer  </p> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/VouDcj3z-kZyG_-z3sb0zQnK91Bqko_4BRPoFEA5hwYfosFZrnh9XIdS3taUt4juqTfLTy3hhNbxoDj1Tuis-dbmpbIOSMoZG1Ksvh3rY3eiUIAAo2DmUy8CUALq72Pg5d9eEtajTsolG7ZIA8LyjRh235hcgljlJ0uPsFgHQr_NCrBrDRw79s5NMQ_zyjaaOjkOcXIH8fu_x9w97XAzi5fLE6-sIGcvRDwJtIp3KBM8_GbV0BfIQSGaIslwnk3wyyd7o4EmWDNboQvr1-w4oZDpzLj5XmlpQ-QQ0rvqj_TsdL-65d6ROJSdS_xJr4XCBE0OUMPUjgnkckuHeKeSYBld98IRVL2ADSCtNnr2ooyk7i5vkiDvea86fU6KSWuZlimwgoxpz5GVuabzi69ZZKSyrldn8eb6GGcZlqNz0cbq_GtKknicjztKNnh2m4NeHN-GzmRtm42p_qpbFY0wlGbtKXf00_voGgzMPE8_MRj3RNF8ovnmO-zJuq_FY9nuHthtqFhZxntXjyHqodz4cVEjtIUSbmdSsOVVM6h2qK_HjzqfqR9V2gPLYZ8H8ALOivQNGS1J0RkRDp3Kd2j6IHTdEtjjLsXVPHyIL2p1X1q0j3kojqpQpLkmoYeLThXv7PyIXRJGcLkM62c5MabUzdLnezti78c=w1179-h919-no"/>
+                      <a href="{% url 'itunes' %} ">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">Song Findr</h3>
+                            <p><span class="dark font4">A front end web app for searching and sampling content via the itunes API</span></p>
+                          </div>
+                      </a>
+                      <h5 class="sppad3">  Song Findr </h5>
+                      {% comment %} <p>  Front End Development </p> {% endcomment %}
+              </div>
+              <!-- end : works-item -->
+
+              <!-- start : works-item -->
+              <div class="works-item works-item-one-third-spaced zoom project spshadow">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/4w9I369kuxnG-CnC8JkM6zpNhEm48kdzLLhn09CsMbNKoWNlKMgQ6wpjCVP-GhY4MYaWGveV7mEgk_GGMrE4xEmUlSAZFy9coWVUzpL922MKt6aBFhqEfn7BwXZhF2NG9WKh_DElnyt68dnAe9TEIXGkYVnQ_QTJQZbqPPGKppR26GrP90u2J-2lv06uOpsLxZjGtKJ_NuJQ6F9ZXFwgnwb24WlZxc6_TtPhBSeldXQ54QyHHher0umdt2gGjVNJYvEvc6ExqjvG3xpNiiszXREPvAO3N1gEp4yWRD6rFJNx-Atj38W8YgyLTbvm1OYG8XGWsbI3R2T7aS4I-xJEH6y-5f5_al6M60YR5yn-je44Xjq3-FUOZ7hxjjpwz2KKpmQDDZ6xkSlwbqjrbFdywrR_5Y8HgFgf9inW964uBPIsTvYMlA79mVavRZ5syRzyNlbN2J9RJgXD1dZgwi9Ufwx6WfzI7n3mpUxlxXQdL-YZj-28ImmUN8CkurmCdsv3KNFsU20YXVCkG01JMYbNRD9Oyg-guaGFi06e1kOEk5eHc10ELl9Gzgs5eQxon2CEUrpfAgs2YnxlqEguCxGvThe6yrd1Inrj1NjpX303ER3sqVhAQl84zgcIcTn4t37smQmesom4m0PcG6qRRPTH9BQzGiKFRg4=w1179-h919-no"/>
+                      <a href="{% url 'wayfinder' %} ">
+                          <div class="works-item-inner">
+                            <h3 class="color font2">Wayfinder</h3>
+                            <p><span class="dark font4">An exploration in data visualization with 360,000 data points. </span></p>
+                          </div>
+                      </a>
+                      <h5 class="sppad3">  Wayfinder </h5>
+                      {% comment %} <p>  Front End Design </p> {% endcomment %}
                       
               </div>
               <!-- end : works-item -->
 
-              <!-- start : works-item -->
-              <div class="works-item works-item-one-third-spaced zoom project">
+
+
+
+
+
+
               
-                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/9_ojWpv1B1y9QchLW1JUrHx0wcR8JzTS6mR_5ylRRgYOK3bU69q_ijA-uXTn0HUlofZfmEAF5nrRk_Y7cZ0TG25KYWGrfCcCOYAgOm1kJ5iL8j2A1OONab_tKwu-fmrWmlDO4rssqRjQ8-sFptUGr3AofBw0dd-Vy2JlOIv6q2zA1Nud_n_AWc_6JJJhcsmL7pK7wSuh4B7FsztmLmwenN4VFttgfuUMLXBWcnNzVHQE1hKNiifCTshmB0hN1ruyUtHiaKfIuPrfiAkLgqF7GMFF9f2fjwiR8DnSHG9y_-6lVGSpVWQHafhn7Irm7yTi-v01emSg026XU105FshANUf6YNGd8Ol7P84Pnm3c7U39288ys9XpobwNrnOog28IS8RYfTp7BBI6slD7sE0avPwomnTzL8WuYpvvbt6F8J8CXy4KOaag7SYK9GUw_VrnEvD57Z4vZlLr-5eA270HtQYB7CdtH6l3hVjlNjKUFH1LG5diaeWL6YiXs8HBieaoHa8yl5SzDS-e6yO2e-AMshqGTNpqm__SD3JdgdjAlIrWeHLhm-LZEtlkJV6EGqxnE-wSbtcQMgoYXA81BQ-zMDKVLX-m2F5tFvwT-AGrU10OPkADuSkDPl98wRTe7pJuSXgaeYTzVHnEgoi4d3G8NQvEBE399vs=s750-no"/>
-                      <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/10.jpg">
+
+              <!-- start : works-item -->
+              <!-- <div class="works-item works-item-one-third-spaced zoom project spshadow">
+              
+                      <img alt="" title="" class="img-responsive" src="https://lh3.googleusercontent.com/HSNvNYSUDWpKGb8QoMbWmkl3YpGtiBQN0hzJKe6QiaMHz2YiA49iAW5Rgn-UZ37DX4aRScy15rz_KOxlCC2bKdkEXj94cIgOZuMOTgv0MYlNRQp4enROyUb9evNaC7aY6P13QflCOWJms2Qx9O3YLRhdluaEi4YxNezX0m0lA4VbE6WbdkMltBFR5gdZfX3C3S2XcDk3YB4LCVx-8DA6uGJiSM1CLyNhm985h_qxYR9pitWC-qavNxKIcSu85wY_Lz9f6N1dsNQ0uXJl-B2RrSZZXT09CPQqCaGq7MEoALhJUJYhCdmJxL8Z1-iz5u3I5Qt-WmKjknNCQVGvu99tpEKN9_W5ld0yk5TWUVYxp77-fVgf5lWWtrsqtFRuefcVKwAD20Pv17xHOmfA_peGKmSaaHkPYurBdJ3fQLRD_cnm-CDAjIgIH-LDHFIWXMTn3S4uECOoZSTp9coa0AMNTRltqh4B8MSlxR6AAMUpJ2oL1v-KCIbukObFdjUu4KYqDJq_GyXVYmfu7rn8xYgtvEMVzf6ocPv9fBc0Mu-twfIl4E4wwWqXSAOaeKhlR2II0YEdz4uwDyQlUtaJvv8Izdq-sUo3Erfs-b5A-7aVm70bpScJVSwVdKZkBb_9RBvUeORo35U7S9rUXvuY1LvcpULHBu6VsIc=w1179-h919-no"/>
+                      <a href="{% url 'oakhouse' %} ">
                           <div class="works-item-inner">
-                            <h3 class="color font2">12/03/2015</h3>
-                            <p><span class="dark font4">Caption</span></p>
+                            <h3 class="color font2">The Oak House</h3>
+                            <p><span class="dark font4"> Coming to Durham soon, the oak house features whiskey, coffee, and craft beer.</span></p>
                           </div>
                       </a>
-                      <h3>  The Oak House  </h3>
-                      <p>  Front End Design </p>
-              </div>
+                      <h5 class="sppad3">  The Oak House  </h5>
+                     
+              </div> -->
+              <!-- </div> -->
               <!-- end : works-item -->
 
 
@@ -341,6 +365,7 @@
 
 
             </div>
+            </div>
             <!-- end : works-container -->
 
 
@@ -351,7 +376,7 @@
   <footer class="mastfoot container-fluid white-bg">
     <div class="row">
           <article class="credits col-md-6">
-              <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > sloc design </a></p>
+              <!-- <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > </a></p> -->
           </article>
           <ul class="foot-social col-md-6 text-right">
             <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
@@ -479,15 +504,31 @@
 <!--share panel :starts -->
 <section class="share-panel white-bg fullheight">
       <a href="#0" class="share-panel-close white">x</a>
-      <div class="share-panel-heading font3 dark">social share</div>
+      {% comment %} <div class="share-panel-heading font3 dark"> Contact / Download Resume </div>
+      <div class="share-panel-heading font3 dark"> Contact / Download Resume </div> {% endcomment %}
+      <br>
+      <br>
+      <br>
+      <br>
+      
       <div class="valign">
+      <p> Contact / Download Resume </p>
           <ul>
-            <li><a href="#"><span class="ion-social-twitter dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-facebook dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-pinterest dark"></span></a></li>
+            {% comment %} <li><a href="#"><span class="ion-social-twitter dark"></span></a></li> {% endcomment %}
+            <li><a href="mailto:sflocascio@gmail.com"><span class="ion-ios-email-outline dark"></span></a></li>
+            
+            <li><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0 " target="_blank" ><span class="ion-ios-download-outline dark"></span></a></li>
+          </ul>
+          <br>
+          <p> Social  </p>
+          <ul>
+            {% comment %} <li><a href="#"><span class="ion-social-twitter dark"></span></a></li> {% endcomment %}
+            <li><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"></span></a></li>
+            <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"></span></a></li>
+          <li><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"></span></a></li>
           </ul>
       </div>
-</section> 
+</section>
 <!-- share panel :ends -->
 
 

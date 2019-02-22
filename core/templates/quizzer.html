@@ -117,16 +117,16 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-          <a class="ajax-link" href="index.html"><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/nBkFUJP3AM0H-sb2eESd5G1Brh8LXElfxyIjaraGmRbSMzcs-IsgBx7akbuP6oFa8bWeUyTNetBkSbvsz-mMtY15kGdEbG59FBGEejwaw9VSsFG3XwJ8oTg5lk7B0p2JKkKZW_KwyCTgoArcp3bsWz-0G2kIjnCMXSF4TerXcONTRlv8anGysCT11EGUZygPIXv8t7e0TTcjthaE70A50x70SlS9LMb_B9sXpjvsGkrMZF9qr0BgC0xyP-Ngi5p1d9BpIp6dUi5mDkjF0y5RQ61lsEHYmJf1tBrTVpWiJIwDplo5jjLy6k9jNjeMZARf6c_76gdSX6h6lR82EhQXiuvYKAlC4Jzblm06h_Uraj31zgKUpy4wQbunRIvUavYYxMedurroJplANa-uSf78hEfdXS2xEZlorG34tNkWgKguNPsjOHj1fu2UbPGf2r_HO02DEhJrFkcwKtZbWaff1G3ZHJlSvHrQ8acT3hDh6TMOiSAClmx3PWbfV0P19RfzT73AzNBbhYF6qUchWjx622yj9G9onwQKfcGc5p1x9nWv_4Qq-UH0VhrVtTZVqSjexF9oU_QVlp_NpdHv_5iKSYSt5cem0RSBeKrWzcIdlUJ4JCESjk4tuydA9cqV7FR75lZyrJzHywJ4ONGusx2_MYe-8hn_JvI=s60-no"/></a>
+          <a class="#" href="{% url 'home' %}" ><img alt="" title="" class="logo" src="https://lh3.googleusercontent.com/i_oM_TXIDC_6ajgLjLHLpgXpdq9IMnBiIY4eaduMJrD1QCVtjg-C2LCeoJSbuDZ580leaIJYLP5rLXy_M28Q3gTROc6X71WmqzNOP_bK1tNiFXOy_boD0REnf2W7U7gUl1W2MfcUaKcTkcN429vtfyv48sTZrwzcFcaXuYqIwBdihHc19Lv_eAWfSjy2GsylWt3ZIq3Yw9O1Mox7lnZ4btyY6mURmtpMKr8GfCMRCTf8Os8UIhVmmAeKOKQXX1AgQOeZb6rn-cinETjwwp234oIZa9NegdLPE1OIXDEPs--nPexrlg7XyqdSJtURvIepOVohu5v-kh1alAF2O2BZtEuMHnGGmTs9lrgrDOLRY0muGl7PzWrgeSEtyPeHHPvoWGxDkUezvdLAtodee61FI6_ixqxhUJstQr_y7EPaaznjHWQybvO4t3arBTstEFg8tC3bmQOsKrBMiJullJoX4ubGPd8fq9o-TFACf0Tn-WE4cNmw7J03K__FAD46tBjbP_aU4VfP-aA83mlBzGlv8OfUPzDTJ_kZJhSgbdwXNcksFso340dFlN2bLUZ6-HG08IiMN53xITYenwgEfKuTLhKyZyfz3UFKvWLku5oYi5U7CbA_bxoNwvo7I6s8IzReuNpKvweAqnZuw6jSZuWaKF6CpuC5obk=s60-no"/></a>
           <nav class="mastnav font2">
 
 
           <ul >
-              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
+              <li class="trigger-sub-nav font2"><a data-sub-nav-target="intro" data-filter=".about" class="main-nav-link" href="{% url 'home' %}">About</a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="works" data-filter=".project" class="main-nav-link" href= "{% url 'portfolio' %}">Projects</a></li>
               <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="{% url 'design' %}"> Design Process</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li>
+              {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#"> Resume </a></li>
+              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" data-filter=".ui" class="main-nav-link" href="#">  Contact </a></li> {% endcomment %}
               {% comment %} <li><a class="ajax-link" href="project01.html">Resume</a></li> {% endcomment %}
               {% comment %} <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href=  "{% url 'post' %}">Link</a></li> {% endcomment %}
               
@@ -191,16 +191,20 @@
   <!-- sub navigation panel : ends --> {% endcomment %}
 
 
-  <section class="sticky-sidebar white-bg fullheight text-center">
+ <section class="sticky-sidebar white-bg fullheight text-center">
       <div class="valign">
           <ul>
-            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
-            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
-            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
-            <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
+            {% comment %} <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="ion-ios-download-outline dark"></span></a></li> {% endcomment %}
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-email-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-world-outline dark"></span></a></li>
+            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-download-outline dark"></span></a></li>
+            
+            {% comment %} <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li> {% endcomment %}
           </ul>
       </div>
   </section>
+
 
 
 <!-- dummy overlay for whole page when sidebar is active -->
@@ -223,10 +227,10 @@
             <article class="col-md-12 text-left news-post">
                 <h1 class="font2 dark"> Quizzer </h1>
                 <div class="liner color-bg"></div>
-                <h5 class="font4 black"> A modern and minimal flashcard based web app.  </h5>
+                <h5 class="font4 black"> A modern and minimal flashcard based web app using Python, Django, and javaScript  </h5>
                 
 
-<img class="img-responsive sppic imgcenter spshadow" alt="" title="" width="100%" src="https://lh3.googleusercontent.com/f7BaQDM9vM20AFSe6MH4HKcKJhro1vuQtjZM_uxZ4PolkY7njUqMxu8v9lMJRctSIk_tTvuzYo85fmMlFsfBddUGP6yw1IDddo05jHqFf5SOmplJSW4v92yHMzCNSO94B0p95PKsZ6R6w4KRZq-KDLNMaaow7fRgCiAh33UaIVnca4G2I07Vb99vWQBayV5Sz9VIEDsku5_tjixXHYgOGi5lNGVFs_mpPWTh9EQLLQgoi1cKcPol9PkWw73_1Betkq3-BP45eSvBUjFfmtEb8iQMfLSlWaODbzuDPrErZyVqDsg3rlsxvcZ39Smbe3q29pKO5L8JteLc60NwP5WVHsn3rohtvZirH5iTV0A_Jjt9vo1u9jvlokdEqNbZUdg1HozPAZKEku6WaEz6V5i8a0ffKGTGLV1ONP9fYGuni4xwzXqpVLKNe3LogqgXIzp7vnFOHFa8_pl9YNmsDXAqzHE8KGpCai9WH3afJIwXT2OUDOHxoZNuOA91NGxvKPTv4XIAJc0n6HCUe5nbNXpL625dRqnqpBTriyl92O33sCTd-oem6eWP17q0w7-gR1Mv79F_t29jp4tJO8Mugt9Y6FkHC6bUhQzCrnIi8HF6LcjoQvUYyJfQo6HMHC2wWjCmRKuowX_lNd8_ooMEfUBKhgaTTiuwN5Q=w1291-h680-no"/>
+<img class="img-responsive sppic imgcenter spshadow" alt="" title="" width="100%" src="https://lh3.googleusercontent.com/HsKYNg9hJb7o08q8Mm-6taSC2JdX0W0OPOOP4WgQPapITFDr0A93Yir9Sso7L18E7xTCONqga6D2XIRzcqVposykbZ66jFhjYhKEy2xDDjeE87Cpm1XMD7NUfHOn6ITXmqhMANmbNLhWKhPgwEa_z_EAFn8FLfwMeyH5AgvA5J-5bIqdgdiVXL2vpeMz-m3DJueBs0JNBKoa6bhHjoykwDe3wNd4qmTYTnj0y7Rlemdf66vbl1NHqBftfk0Cq4KUERq97VJQ5tlOxkVH_txyo6UKDWmFCfOln7qkcTgamB32z3h-SJqm1ZAQK9OfkkoU0JxQ0NKrSFG1of5f1QcCVaecc7kLGxc04dQcFq7rvRU0Z1rg1ISVAxKSi64RfzlB2AgEIfZ5O3TbgK3ifQEq_beNhkOaVNGHKThriF76DQ2cY4hu3ebLhWbqhorI50m9fs0JxD3VNTzkq6YEHpvNTLex28wljM5MpO4Cpyn-jonnvdrbW1UCheSoFH9YVaZxsDnkz9aY9iF6Zor5hG3I8ILbAtHP24hvMhOo7p1jl3C_u0-9ogeRfl4T-Wuearee9Rsuwb0TDLPjsmvEINY5e_EMvqeI4Wr8WT06yVIqx6pZo2rSb8vAnBmks2f3dRaZhUkJDszQuRdKpvIeI13Ehu8kn_uejYE=w1540-h697-no"/>
 
 
                 
@@ -237,7 +241,7 @@
           <h3 class="font2 dark"> Overview </h3>
                 <div class="liner color-bg"></div>
 
-                  <p class="font4 black">Simple and to the point, Quizzer gives you a place to create and store personal quizzes for quick studying, and (scientifically) better retention. Built in Django and deployed with Heroku.    </p>
+                  <p class="font4 black">Simple and to the point, Quizzer gives you a place to create and store personal quizzes for quick studying, and (scientifically) better retention.     </p>
                 <br>
 
 
@@ -250,11 +254,11 @@
                   {% comment %} <i class="ion-social-buffer color"></i> {% endcomment %}
                     <h4 class="font2 black">Components</h4>
                         {% comment %} <ul class="font4"> {% endcomment %}
-                              <p class="font4 black"> <b>Home Page</b> - Create a new quiz, see current quizzes, edit, sort, share or delete. It’s all accessed here. </p>
+                              <p class="font4 black"> <b>Home Page</b> - Create a new quiz, see current quizzes, edit, sort, share or delete. It’s all accessed here </p>
                               <br>
                               <p class="font4 black"> <b>Quiz Detail</b> - Add as many cards as you need to the quiz </p>
                               <br>
-                              <p class="font4 black"> <b>Quiz Page </b> - Mobile friendly design with a click to flip feature using javaScript. </p>
+                              <p class="font4 black"> <b>Quiz Page </b> - Mobile friendly design with a click to flip feature using javaScript </p>
                         {% comment %} </ul>  {% endcomment %}
                        {% comment %} <p class="font4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, massa congue laoreet commodo.</p> {% endcomment %}
                 </article>
@@ -266,16 +270,13 @@
               <br>
 
 
-              <p class="font4 black"> <i class="fab fa-github  "></i><b> See this project on Github </b> </p>
+              <a href="https://github.com/momentum-cohort-2018-10/w8-group-project-2-peter-max-sam-and-ardra" target="_blank"> <h4 class="font4 black"> <i class="fab fa-github  "></i><b> See this project on Github </b> </h4></a>
                          <br>
                           <br>
                            <br>
                             <br>
                             <br>
-                          <br>
-                           <br>
-                            <br>
-
+                          
 
 
              
@@ -292,7 +293,7 @@
             </article>
             
             
-            <article class="col-md-12 text-left news-sidebar">
+            {% comment %} <article class="col-md-12 text-left news-sidebar">
                 <h3 class="font2 dark">More Projects</h3>
                 <div class="liner color-bg"></div>
                 <ul class="font4 dark">
@@ -301,7 +302,7 @@
                   <li><a href="post.html">The Oak House</a></li>
                   <li><a href="post.html">Itunes</a></li>
                   <li><a href="post.html">Wayfinder</a></li>
-                </ul>
+                </ul> {% endcomment %}
                 
                 <!-- <div class="post-tags">
                     <a href="news.html" class="btn btn-otto btn-otto-dark">Django</a>
@@ -315,7 +316,7 @@
                     <a href="news.html" class="btn btn-otto btn-otto-dark">Sketch</a>
                     <a href="news.html" class="btn btn-otto btn-otto-dark">minimal</a>
                 </div> -->
-            </article>
+            {% comment %} </article> {% endcomment %}
           </div>
         </div>
     </section>
@@ -328,13 +329,13 @@
   <footer class="mastfoot container-fluid white-bg">
     <div class="row">
           <article class="credits col-md-6">
-              <p class="font4 dark">Copyright &copy; 2015 <a target="_blank" href="http://wwww.designova.net">Designova</a>.<br/><a target="_blank" href="http://themeforest.net/user/designova/portfolio">Buy this template</a></p>
+              <!-- <p class="font4 dark">Copyright &copy; 2019 <a target="_blank" > </a></p> -->
           </article>
           <ul class="foot-social col-md-6 text-right">
-            <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/02.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/03.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/04.svg"/></a></li>
+            <li><h2><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"></span></a></h2></li>
+            
+            <li><h2> <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"></span></a></h2></li>
+            <li><h2><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"></span></a></h2></li>
           </ul>
     </div>
   </footer>
@@ -355,20 +356,33 @@
 
 
 
-
-<!--share panel :starts -->
 <section class="share-panel white-bg fullheight">
       <a href="#0" class="share-panel-close white">x</a>
-      <div class="share-panel-heading font3 dark">social share</div>
+      {% comment %} <div class="share-panel-heading font3 dark"> Contact / Download Resume </div>
+      <div class="share-panel-heading font3 dark"> Contact / Download Resume </div> {% endcomment %}
+      <br>
+      <br>
+      <br>
+      <br>
+      
       <div class="valign">
+      <p> Contact / Download Resume </p>
           <ul>
-            <li><a href="#"><span class="ion-social-twitter dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-facebook dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-pinterest dark"></span></a></li>
+            {% comment %} <li><a href="#"><span class="ion-social-twitter dark"></span></a></li> {% endcomment %}
+            <li><a href="mailto:sflocascio@gmail.com"><span class="ion-ios-email-outline dark"></span></a></li>
+            
+            <li><a href="https://www.dropbox.com/s/hs9jv4cgzzjrsu7/SamLoCascio.pdf?dl=0 " target="_blank" ><span class="ion-ios-download-outline dark"></span></a></li>
+          </ul>
+          <br>
+          <p> Social  </p>
+          <ul>
+            {% comment %} <li><a href="#"><span class="ion-social-twitter dark"></span></a></li> {% endcomment %}
+            <li><a href="https://www.linkedin.com/in/sam-locascio/" target="_blank" ><span class="ion-social-linkedin-outline"></span></a></li>
+            <li><a href="https://github.com/sflocascio" target="_blank" ><span class="ion-social-github-outline"></span></a></li>
+          <li><a href="https://www.facebook.com/sflocascio " target="_blank" ><span class="ion-social-facebook-outline"></span></a></li>
           </ul>
       </div>
-</section> 
-<!-- share panel :ends -->
+</section>
 
 
 
