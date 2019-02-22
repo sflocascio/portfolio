@@ -1677,7 +1677,7 @@ fieldset h1 {
                     transition: all .4s ease-in-out;
 }
 .poster-img{
-	background:url(../images/poster.jpg) center center no-repeat !important;
+	background:center center no-repeat !important;
 	background-size: cover !important;
 }
 
