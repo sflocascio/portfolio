@@ -85,7 +85,7 @@
             </ul>
 
           <!-- Body of Nav area Starts Here  -->
-            <div class="row add-top">
+            <div class="row ">
             <div class="# ">
               <center> <img alt="picture of sam locascio" title="picture of sam locascio" class="img-responsive imgcenter" width="40%" src="https://lh3.googleusercontent.com/CYkrIDquGW_L_pYr7ouEHZ1yodBjDCag_MP0hcjYT2XPdM8d7yRgcRHBKEMZ8mSbeSk_m69x2u8Bn9FS-EevuEUT8u2LrB9X7iz13XeMNmBAYVcE55PJM95iKtxdfTnzquHh0bM1wVFZiwxO-ws38vcAoD8RSOO5Jj0oVoolc2zPLZCl_k2Flligcm_MQbMlTlY-KI-k7yftgSU3ZWljQbxal3QRJ8R0e7zIiDqsicwtz6T_16Tt6HHa7ioRSeE-4zOBsq9YqtmbmZMNCiV7-VixIFQ71n9sRZNVhXO5jt9uUxQUYdpDB9u7Vj606cIL12jw-_m2E-5RqBLj32u3sPSDvb8pkV7A-HN62m9lZELK1jvO0JFGKYBgbSRAMht-qRCZPGG1-bxqpzdGM6AwTDDTQh9P46KBplkksKUQ7xbZ-0sXoAkrEjRQH5eOEOg6H9cxJB1VjhxN4CXgt2644SSqKrkccN5ij-weoYA8eRUk3evO8VBA0rB7FxKP6zQKgrZtTJOljlE32vIsNDxZ6mA4mFvgUjnHL9leWJ9eeMu_OjaOwyYpyEH5qOs6iRtvgGmvoJslNvdAaptGliKo6oSedgktnCZEU8Opzz-vQKlO-G7Dk4jomqipYZ41X7pa3iRJu669aQVSotOhtcD8hR_vbvQKWPI=w444-h477-no"/>  </center>
                       <br>
@@ -105,13 +105,16 @@
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title font2">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         <img alt="About" title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/k6nrD0yVTmv9kFHhg3Xx9eaSBUjXHH4wyJU3VXf67bQlOXKZcn_JYLONIkKGv1G65tpkwGV2mmkttI8LdvlaECwoShc2P0Gz2RwTauqZFtC1NUdCe2SCgSSfn-ZRbDD-U6Oy45wcVmdg_PMAbBhnImz3mRv1KKc81M_xQoISFDnGxhoNdPjHDyCvWTJ6MrlEgQpciPO0wIj4Ln4ON6sTaSYdhvHvWwRo4seQPLBZoxVKTcyIOj6GPlMqh0TcYDNpP1ykrUf-4RmaL2U2T4zXtVYdIarA4ne83li80FlC3lMTepLFFx_aKp80Hkj_Nq4GcADQSpxI8dgjqWexq5GbyHM5KHv57CH-zFXchJ2kNvjbpL4PPYLn5tE5Ttwe5ZfDn3kv4B5X7b9fUEhnAxPusYfUp-ieoBBwMjGmzF_qKt5d8E1QnOb-DMDTTTpFpEgIdVrj6Gzo0aAl6yjeXLAe0oq5yDfOhEmgSL6JYahJL3plkPIoD9yfQwg1GSfWFabsgIeEwuCCrdO7ieeBt2Rj1ZVgC6wr53m6b-c3q4uFEEXNqilIfzCStbUZuKrIMnXvoD9ieQb-6v_1sTbxvCLA3jJx6CEvswofsqEiGAkySaE4p4zwzszFhKgMQSJ-E4_EwYSK0bS5hl1-RXykxN7HfKbGyGtpgNE=w1240-h200-no"/>
+         <h5> About </h5>
+         {% comment %} <img alt="About" title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/k6nrD0yVTmv9kFHhg3Xx9eaSBUjXHH4wyJU3VXf67bQlOXKZcn_JYLONIkKGv1G65tpkwGV2mmkttI8LdvlaECwoShc2P0Gz2RwTauqZFtC1NUdCe2SCgSSfn-ZRbDD-U6Oy45wcVmdg_PMAbBhnImz3mRv1KKc81M_xQoISFDnGxhoNdPjHDyCvWTJ6MrlEgQpciPO0wIj4Ln4ON6sTaSYdhvHvWwRo4seQPLBZoxVKTcyIOj6GPlMqh0TcYDNpP1ykrUf-4RmaL2U2T4zXtVYdIarA4ne83li80FlC3lMTepLFFx_aKp80Hkj_Nq4GcADQSpxI8dgjqWexq5GbyHM5KHv57CH-zFXchJ2kNvjbpL4PPYLn5tE5Ttwe5ZfDn3kv4B5X7b9fUEhnAxPusYfUp-ieoBBwMjGmzF_qKt5d8E1QnOb-DMDTTTpFpEgIdVrj6Gzo0aAl6yjeXLAe0oq5yDfOhEmgSL6JYahJL3plkPIoD9yfQwg1GSfWFabsgIeEwuCCrdO7ieeBt2Rj1ZVgC6wr53m6b-c3q4uFEEXNqilIfzCStbUZuKrIMnXvoD9ieQb-6v_1sTbxvCLA3jJx6CEvswofsqEiGAkySaE4p4zwzszFhKgMQSJ-E4_EwYSK0bS5hl1-RXykxN7HfKbGyGtpgNE=w1240-h200-no"/> {% endcomment %}
         </a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. It was this investigative process that led me to be intrigued by coding and technology. I love the outdoors, recording music, fishing, playing ping pong, and discovering new things. I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019. <br> <br>Feel free to contact me if you want to discuss a project or opportunity.  
+      
+       I’m a natural creative who loves problem solving and the journey of building new things. My first exposure to coding happened sometime in the Myspace era when I began adding HTML and CSS to make my bands (and other bands) pages look better. It was this investigative process that led me to be intrigued by coding and technology. I love the outdoors, recording music, fishing, playing ping pong, and discovering new things. I recently received my Full stack Certification from Momentum Learning in Durham, NC and am currently working freelance on projects set to release in 2019. <br> <br>Feel free to contact me if you want to discuss a project or opportunity.  
+      
       </div>
     </div>
   </div>
@@ -119,7 +122,8 @@
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title font2">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <img alt="Front End " title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/mcmVgZVXP8ryVNzMvhhh5mHzIAP6FWMo2czNrWpXHH3tgIcucfFJ0bIwsvGLGmvVwpf9EXY0E3SPyu4A1X8_MgjX9z_ZZnxKzQ4-3gwC7Z0Wk_cJEfEC4VXKOTN5snOGD4mDnssMcbhARQdid6rZ5_EthQVpzJd_PnRq3CN4zHtmR6DgNRJIOXpY_axKg5Z1NSvUyedeU-xj1lvrHAtYTGoJFJiPYv8wrimzd6Mk_ydoRm8P7bwE96pDuvC9rocU3KgzuqomL5nCzSHi6KwhEhpfB2zZb0L0VA7T1Z-e0hbTVzkQydPSLNa-qgwSPkndOdk2bSC46273SvIBPf20aNEXMHou91-h7p-M_9kgZGH0vXLST3jNmaBHlA0QJbqVi80QSemuk2oiUylU2qgE4XAChNGymI3wM7e4pWAid7-u7iS5d0eZnQMBBylCw2B5r_4zWciZGJbQjinnHip0235dYzhrqoj_LFqneBqYoHu_YclVo0nQe0OxVcY2c60FVwc8rYrnmmvWns7p3w5iR5xAqE8dQ9w5n3TUACEuQDMS4n_t6MASRkJlY8PWjpy9rNyD9Gc7dvFYXqP1I6bdPHsnNQJP0XN3ZJEP0al0T1RbozGqTZe7V-YC1_RyalRDLPXLTm1i8GW_xnQoQMj9LAhtpJGhmg0=w1240-h200-no"/>
+          <h5> Front-End Development </h5>
+          {% comment %} <img alt="Front End " title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/mcmVgZVXP8ryVNzMvhhh5mHzIAP6FWMo2czNrWpXHH3tgIcucfFJ0bIwsvGLGmvVwpf9EXY0E3SPyu4A1X8_MgjX9z_ZZnxKzQ4-3gwC7Z0Wk_cJEfEC4VXKOTN5snOGD4mDnssMcbhARQdid6rZ5_EthQVpzJd_PnRq3CN4zHtmR6DgNRJIOXpY_axKg5Z1NSvUyedeU-xj1lvrHAtYTGoJFJiPYv8wrimzd6Mk_ydoRm8P7bwE96pDuvC9rocU3KgzuqomL5nCzSHi6KwhEhpfB2zZb0L0VA7T1Z-e0hbTVzkQydPSLNa-qgwSPkndOdk2bSC46273SvIBPf20aNEXMHou91-h7p-M_9kgZGH0vXLST3jNmaBHlA0QJbqVi80QSemuk2oiUylU2qgE4XAChNGymI3wM7e4pWAid7-u7iS5d0eZnQMBBylCw2B5r_4zWciZGJbQjinnHip0235dYzhrqoj_LFqneBqYoHu_YclVo0nQe0OxVcY2c60FVwc8rYrnmmvWns7p3w5iR5xAqE8dQ9w5n3TUACEuQDMS4n_t6MASRkJlY8PWjpy9rNyD9Gc7dvFYXqP1I6bdPHsnNQJP0XN3ZJEP0al0T1RbozGqTZe7V-YC1_RyalRDLPXLTm1i8GW_xnQoQMj9LAhtpJGhmg0=w1240-h200-no"/> {% endcomment %}
         </a>
       </h4>
     </div>
@@ -134,7 +138,8 @@
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title font2">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <img alt=" UI / UX " title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/ZT4F2n-LwwIb6S3mqn2lNpoVt4mAGK12QpKWbv_aEfpIC7MzWr6Rf9PN8REm4OD79hymS9saCTcXxyj4G1SCJ8lHfGV2b3ac638GK5SSFG1ghg_dlTgi5snGV3W0iHU2W8cHnMd29WNzs6BGkUIXP0wbns41Vi0ZwVKoSzO8gLHapx53BOBgsvrDBr-Sq6BHoR1DrmxawEWohuZDDZGfUv6uPITZNuXv0kBs9ZlSRsBe7flJ8Jrgsp7mGR7uN3gl-DEpvV1Uw_DX3UHLhm0Loul5lLUWz2JpRo-PVriRoC9QUUDAC7d9JpNYlPBb3HwspBv6cV_T8WExo74h37461NT8u4upOVVVDZ900850eWuX2EEVeLQYqK6O5cu1qd74TKMQDeMPwdAZHW3MkGQu4Ny4rcDXxbyg8JgQU78aHw1icTOZPqJOSkJ1-O3oU5y9qYE65_WFl48Q2TO4z8unYdIB6DMsyXO2WcU8WmuuVi5nhuSKQ1ERM9vdiLXrU-9ROt_Lq5Jk9mvXhZhPan-yYR7h4muOENqBFH5_G4fH9RCGvRXkDKw2wtuBkgZ6SfofHQ-xM_q9HFj6THidbtBKQpwTVQbenl-xqyvay5GpLLl5Rp7E6jJQxxnwWpp5-vc-M4xW4XrWNDuMEhbGL2ERypqXP6Sjq54=w1240-h200-no"/>
+         <h5> UI / UX </h5>
+          {% comment %} <img alt=" UI / UX " title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/ZT4F2n-LwwIb6S3mqn2lNpoVt4mAGK12QpKWbv_aEfpIC7MzWr6Rf9PN8REm4OD79hymS9saCTcXxyj4G1SCJ8lHfGV2b3ac638GK5SSFG1ghg_dlTgi5snGV3W0iHU2W8cHnMd29WNzs6BGkUIXP0wbns41Vi0ZwVKoSzO8gLHapx53BOBgsvrDBr-Sq6BHoR1DrmxawEWohuZDDZGfUv6uPITZNuXv0kBs9ZlSRsBe7flJ8Jrgsp7mGR7uN3gl-DEpvV1Uw_DX3UHLhm0Loul5lLUWz2JpRo-PVriRoC9QUUDAC7d9JpNYlPBb3HwspBv6cV_T8WExo74h37461NT8u4upOVVVDZ900850eWuX2EEVeLQYqK6O5cu1qd74TKMQDeMPwdAZHW3MkGQu4Ny4rcDXxbyg8JgQU78aHw1icTOZPqJOSkJ1-O3oU5y9qYE65_WFl48Q2TO4z8unYdIB6DMsyXO2WcU8WmuuVi5nhuSKQ1ERM9vdiLXrU-9ROt_Lq5Jk9mvXhZhPan-yYR7h4muOENqBFH5_G4fH9RCGvRXkDKw2wtuBkgZ6SfofHQ-xM_q9HFj6THidbtBKQpwTVQbenl-xqyvay5GpLLl5Rp7E6jJQxxnwWpp5-vc-M4xW4XrWNDuMEhbGL2ERypqXP6Sjq54=w1240-h200-no"/> {% endcomment %}
         </a>
       </h4>
     </div>
@@ -149,7 +154,8 @@
     <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title font2">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <img alt="Back End" title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/ABJ8LieN2N_86nVgcGnOvdb5PuScbOLj6R766biYfkyW0NCAskqwiHqh3KQ4t2J2Bd_DjU9tXNB5x4iRyQt1EM_PHX_e_WTjj2pfmtg_4aEbxSqWn56YL2m9KvLbSrjud8m5QbpqsDKDLQyiQGMqYm9aloxcJa7J8ARN-jN2NawMa-UQ5IiDfB080ZqLggVRA5ebfvaA1jq72mVR9UHkU7v8G85fVTg19cF0OzbgRZrgSPCItmUrcgyrvghqh9uKRQPT79wXBWQVERoOCJBALyGdDzP2qGk4yAuEN0izLoKQFSsuTDz1lATq6_7E92aq4Y6pWzHdoxjytQ495ygrGwgXdbLKLPhTua4U3U7VtXqTgGcFCVasLT7OGO796Jtqr0goICyrbHOyEgB_pvjbbzqbDYYlr82Rzc5VMnAv8NXCNCwoZK-5XDDbMkMgtJVusXf48o_Qfo36JYfL2iIR13Bp0z0kt9HsmFvqU3szgc-dl9I5XZ_iatl9RBhMdNGQOB1VyecNQFkOpF_3ngq3TZiSbkaJ5kk9mO-ijupQ0SbDyUJid-8ZzUPHyHeblfxMmqlj-FFRbN45aHgu71UavQBN_71Zet_oIz6HKF6h-6eB94n2zKNc3Z0uDd4p4oLmehrkEA-0K4l4LtJdsle_W8CIqF4zvFg=w1240-h200-no"/>
+          <h5> Back-End Development </h5>
+          {% comment %} <img alt="Back End" title="picture of sam locascio" class="img-responsive imgcenter" width="100%" src="https://lh3.googleusercontent.com/ABJ8LieN2N_86nVgcGnOvdb5PuScbOLj6R766biYfkyW0NCAskqwiHqh3KQ4t2J2Bd_DjU9tXNB5x4iRyQt1EM_PHX_e_WTjj2pfmtg_4aEbxSqWn56YL2m9KvLbSrjud8m5QbpqsDKDLQyiQGMqYm9aloxcJa7J8ARN-jN2NawMa-UQ5IiDfB080ZqLggVRA5ebfvaA1jq72mVR9UHkU7v8G85fVTg19cF0OzbgRZrgSPCItmUrcgyrvghqh9uKRQPT79wXBWQVERoOCJBALyGdDzP2qGk4yAuEN0izLoKQFSsuTDz1lATq6_7E92aq4Y6pWzHdoxjytQ495ygrGwgXdbLKLPhTua4U3U7VtXqTgGcFCVasLT7OGO796Jtqr0goICyrbHOyEgB_pvjbbzqbDYYlr82Rzc5VMnAv8NXCNCwoZK-5XDDbMkMgtJVusXf48o_Qfo36JYfL2iIR13Bp0z0kt9HsmFvqU3szgc-dl9I5XZ_iatl9RBhMdNGQOB1VyecNQFkOpF_3ngq3TZiSbkaJ5kk9mO-ijupQ0SbDyUJid-8ZzUPHyHeblfxMmqlj-FFRbN45aHgu71UavQBN_71Zet_oIz6HKF6h-6eB94n2zKNc3Z0uDd4p4oLmehrkEA-0K4l4LtJdsle_W8CIqF4zvFg=w1240-h200-no"/> {% endcomment %}
         </a>
       </h4>
     </div>
@@ -286,8 +292,7 @@
               
               <br>
               <br>
-              <br>
-              <br>
+              
               
                       <center><img alt="picture of sam locascio" title="picture of sam locascio" class="img-responsive imgcenter" width="40%" src="https://lh3.googleusercontent.com/CYkrIDquGW_L_pYr7ouEHZ1yodBjDCag_MP0hcjYT2XPdM8d7yRgcRHBKEMZ8mSbeSk_m69x2u8Bn9FS-EevuEUT8u2LrB9X7iz13XeMNmBAYVcE55PJM95iKtxdfTnzquHh0bM1wVFZiwxO-ws38vcAoD8RSOO5Jj0oVoolc2zPLZCl_k2Flligcm_MQbMlTlY-KI-k7yftgSU3ZWljQbxal3QRJ8R0e7zIiDqsicwtz6T_16Tt6HHa7ioRSeE-4zOBsq9YqtmbmZMNCiV7-VixIFQ71n9sRZNVhXO5jt9uUxQUYdpDB9u7Vj606cIL12jw-_m2E-5RqBLj32u3sPSDvb8pkV7A-HN62m9lZELK1jvO0JFGKYBgbSRAMht-qRCZPGG1-bxqpzdGM6AwTDDTQh9P46KBplkksKUQ7xbZ-0sXoAkrEjRQH5eOEOg6H9cxJB1VjhxN4CXgt2644SSqKrkccN5ij-weoYA8eRUk3evO8VBA0rB7FxKP6zQKgrZtTJOljlE32vIsNDxZ6mA4mFvgUjnHL9leWJ9eeMu_OjaOwyYpyEH5qOs6iRtvgGmvoJslNvdAaptGliKo6oSedgktnCZEU8Opzz-vQKlO-G7Dk4jomqipYZ41X7pa3iRJu669aQVSotOhtcD8hR_vbvQKWPI=w444-h477-no"/></center>
                       {% comment %} <a  class="venobox" data-gall="portfolio-gallery" href="static/images/photography/sam.png"> {% endcomment %}
@@ -297,11 +302,11 @@
                           </div> {% endcomment %}
                       </a>
                       <br>
-                      <h3 class="center">S a m  &nbsp;&nbsp;L o C a s c i o</h3>
+                      <h3 class="center spsize">S a m  &nbsp;&nbsp;L o C a s c i o</h3>
                       <br>
                      
-                      <p class="center sppad3 black"> Web Developer - Musician - Recording Engineer - Nature Enthusiast - Kayak Owner</p>
-                      <br>
+                      <p class="center sppad3 black spsize1"> Web Developer - Musician - Recording Engineer - Nature Enthusiast - Kayak Owner</p>
+                      
                       <div class ="center ">
                           {% comment %} <i class="fab fa-linkedin fa-2x "></i>&nbsp;&nbsp;
                           <i class="fab fa-github fa-2x "></i>&nbsp;&nbsp;
@@ -328,7 +333,7 @@
                 <br>
                 <br>
                 <br>
-                <br>
+                
                 
                  <center><img alt="About image with sound waves" title="About image with sound waves" class="img-responsive imgcenter" width="30%"  src="https://lh3.googleusercontent.com/3IKZQXEoUb6tHT30v8lggNTQ4EXGkKQ5XT4Gp5ACtmN52xOfOl93xa5YKGoxsJWMHUA49VSuUt6uI4yzRN2ADnP3gRl-goa7D2fcAAJy2CyH_uaUQSqwHvf_IPltv8NHzjnupgcwxJUHVEUokCpAsh2bTnJ2EJejInvqR8tGnwnGs3Bvqi0NuLsDutqI37t6J5cGMy1WKLvtmmO6API71RDRGJxfE8A_GFzKZjiuXNZ9AP9H1FmkJz2fGGn4w5tBDDYDvoueSyaZ6U7nQhj_OsWvRemRVWGOzbnnJs_-7XmXZnz9HV9IsO_WIrsa09ZqyyxjjHSv_XlrViQ0jTIgLIixnyfkURGVX-Ydo80D5Kc9nD6uxJoVq7_861A7nHZ0NfE_07iOHHhl53oLncLcMe2Z52okQ_-d7YGd9r4_1mrmvmUgl7FQmV-utHRDA0A7PVLOE41VUcE74M7n1GfIIeOhS03Jq375OSZ_nkC9Z5WmAjoBOHrBS96--DzAE7ipVpL61XBzYVD1xMyuuPiYv36XDNEZ_IMLVANiBT6SJ_LD7kKbpSM8EBaT4i3an6k1_x0Kd2ZhC5KakPYUrMq3wMXm83Ms0hNSIg5hK6NU5GrFDitW--A3oqNpK4_UC1xrCWK1LkN2iZKd2ha5yQ-0R6Sy2nVt8ZY=w983-h397-no"/></center>
                 

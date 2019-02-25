@@ -32,6 +32,15 @@
 
 
 
+.spsize{
+  font-size: 2vw;
+  opacity: 0.5;
+}
+
+.spsize1{
+  font-size: 1vw;
+}
+
 .not-visible {
   visibility: hidden;
 }
@@ -841,22 +850,30 @@ nav.mastnav a:focus{
         }
         .works-item-inner{
             text-align: left;
-            padding: 30px;
+            padding: 20px;
         }
         .works-item-inner h3{ 
-            font-size: 16px;
+            /* font-size: 16px; */
+            font-size: .8vw;
             letter-spacing: 4px;
-            line-height: 23px;
+            line-height: 20px;
             text-transform: uppercase;
             margin-bottom: 5px;
         }
         .works-item-inner p{  
+          line-height: 22px;
+          margin-top: 0px;
+          font-size: 1vw;
+
+
         }
-        .works-item-inner p > span{  
-            font-size: 16px;
-            line-height: 23px;
+        /* .works-item-inner p > span{  
+            
+            line-height: 2px;
             margin-top: 0px;
-        }
+            font-size: .9vw;
+
+        } */
         .works-item a:hover 
         .works-item-inner h3{ 
         }
